@@ -14,7 +14,6 @@ $(function() {
     handshaking_module(ready);
 
     function ready() {
-
         // Set Up Tally
         if (identity.role[0].inputNumber !== 0) { // might want to change that in the future since source 0 is "Black" in the Atem. -1? undefined?
             tally_module(identity.role[0].inputNumber, '#display');
@@ -36,11 +35,8 @@ $(function() {
         // Setup TX time display
         txtime_module('', '', '', liveStatusTrigger);
 
-
-        if (identity.isWebRtcCapable) {
-            // Setup intercom buttons
-            intercom_listen_module("#muteDir", "#director-playback", "#localTx");
-        }
+        // Setup intercom buttons
+        intercom_listen_module("#muteDir", "#director-playback", "#localTx");
 
     }
 
@@ -54,11 +50,11 @@ $(function() {
         $('div#messageDisplay .message').show();
         $('div#messageDisplay .acknowledge').show();
 
-        var ack = setInterval(function() {
+        var ack = setInterval(function () {
             $('div#messageDisplay .acknowledge').fadeToggle(800);
         }, 800);
 
-        $('div#messageDisplay').on('click', function() {
+        $('div#messageDisplay').on('click', function () {
             messaging_module_acknowledge();
             $('div#messageDisplay .title').hide(400);
             $('div#messageDisplay .message').hide(400);
@@ -78,9 +74,13 @@ $(function() {
     }
 
     $('#requestFullscreen').click(function() {
-        var el = document.body,
-            rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen;
-
+        var
+          el = document.body
+        , rfs =
+               el.requestFullScreen
+            || el.webkitRequestFullScreen
+            || el.mozRequestFullScreen
+        ;
         rfs.call(el);
-    });
+    })
 });
