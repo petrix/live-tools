@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20170731 at Tue Jan 31 18:06:21 1933
+Created by FontForge 20170731 at Thu May 10 02:54:17 2018
  By Aleksey,,,
 Font Typeface: DS-Digital. Created by Dusit Supasawat , DS-Font 1998. All Rights Reserved
 </metadata>
@@ -21,7 +21,7 @@ Font Typeface: DS-Digital. Created by Dusit Supasawat , DS-Font 1998. All Rights
     cap-height="700"
     bbox="-2 -187 1057 900"
     underline-thickness="70"
-    underline-position="-225"
+    underline-position="-295"
     unicode-range="U+0020-2030"
   />
 <missing-glyph horiz-adv-x="550" 
@@ -71,8 +71,8 @@ d="M47 0v104h104v-104h-104z" />
 d="M260 296l-197 -338l-39 143l132 225l90 23zM241 473l132 227l144 37l-198 -339l-53 -14z" />
     <glyph glyph-name="zero" unicode="0" 
 d="M482 700l-104 -105h-196l-104 105h404zM482 0h-404l104 104h196zM162 265v-141l-104 -104v271l39 39zM58 409v271l104 -104v-141l-65 -66zM501 291v-271l-104 104v141l65 65zM397 435v141l104 104v-271l-39 -40z" />
-    <glyph glyph-name="one" unicode="1" horiz-adv-x="314" 
-d="M209 291v-271l-104 104v141l65 65zM105 435v141l104 104v-271l-39 -40z" />
+    <glyph glyph-name="one" unicode="1" 
+d="M501 291v-271l-104 104v141l65 65zM397 435v141l104 104v-271l-39 -40z" />
     <glyph glyph-name="two" unicode="2" 
 d="M482 700l-104 -105h-196l-104 105h404zM482 0h-404l104 104h196zM162 265v-141l-104 -104v271l39 39zM397 435v141l104 104v-271l-39 -40zM391 402l52 -52l-52 -52h-222l-52 52l52 52h222z" />
     <glyph glyph-name="three" unicode="3" 
