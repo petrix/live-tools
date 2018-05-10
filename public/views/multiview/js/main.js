@@ -37,7 +37,7 @@ function updateClock(timeString) {
 
     // light up seconds
     for (i = 0; i < (seconds + 1); i++) {
-        $(".p" + i).css("background", "#EF4136");
+        $(".p" + i).css("background", "#ff8f00");
     }
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
