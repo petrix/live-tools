@@ -1,30 +1,42 @@
-{"socketID":"-K7nzahr-FSR7jMpAAAA","isWebRtcCapable":true,"role":[{"roleName":"Multiview","shortName":"MLTV","roleCategory":"multiview","location":"","inputNumber":0,"hasTalkBack":false,"_id":"qbiWQ6ypr4JXQ8BR"}],"_id":"peEnuCUA0pzTsnbJ"}
-{"$$deleted":true,"_id":"peEnuCUA0pzTsnbJ"}
-{"socketID":"G2OSrozmiG5wBucMAAAC","isWebRtcCapable":true,"role":[{"roleName":"Multiview","shortName":"MLTV","roleCategory":"multiview","location":"","inputNumber":0,"hasTalkBack":false,"_id":"qbiWQ6ypr4JXQ8BR"}],"_id":"kOZwyrCtMIrFmS49"}
-{"$$deleted":true,"_id":"kOZwyrCtMIrFmS49"}
-{"socketID":"HzjCrALxmdOfNtqiAAAH","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"7Br2p2YCnKZp4k8Q"}
-{"$$deleted":true,"_id":"7Br2p2YCnKZp4k8Q"}
-{"socketID":"Lquo7mQjtmjeRgxKAAAI","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"xltpShO3y01AM6uY"}
-{"$$deleted":true,"_id":"xltpShO3y01AM6uY"}
-{"socketID":"wz-p1DHZo0xf1EWlAAAJ","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"AkbYivrwDAi3NUk6"}
-{"$$deleted":true,"_id":"AkbYivrwDAi3NUk6"}
-{"socketID":"ZC1PJqd-QNuGz0ANAAAK","isWebRtcCapable":true,"role":[{"roleName":"Camera 1 - NIK","shortName":"CAM1","roleCategory":"camera","location":"Studio","inputNumber":1,"hasTalkBack":true,"_id":"452qPzXqYWl74z17"}],"_id":"jvYNRvCs0WS3rxVk"}
-{"$$deleted":true,"_id":"jvYNRvCs0WS3rxVk"}
-{"socketID":"zDE4do9QLN74pQZ2AAAL","isWebRtcCapable":true,"role":[{"roleName":"Camera 1 - NIK","shortName":"CAM1","roleCategory":"camera","location":"Studio","inputNumber":1,"hasTalkBack":true,"_id":"452qPzXqYWl74z17"}],"_id":"SNgsSBqjyrnVKDYb"}
-{"$$deleted":true,"_id":"SNgsSBqjyrnVKDYb"}
-{"socketID":"9B7EdDVpjaAr5MErAAAM","isWebRtcCapable":true,"role":[{"roleName":"Camera 2 is stup","shortName":"CAM2","roleCategory":"camera","location":"Studio","inputNumber":2,"hasTalkBack":true,"_id":"LcJOVOiefsobrFWe"}],"_id":"CFcukcxNRU07Wdf9"}
-{"$$deleted":true,"_id":"CFcukcxNRU07Wdf9"}
-{"socketID":"ia3hIA2XU4UcenUGAAAN","isWebRtcCapable":true,"role":[{"roleName":"Camera 2 is stup","shortName":"CAM2","roleCategory":"camera","location":"Studio","inputNumber":2,"hasTalkBack":true,"_id":"LcJOVOiefsobrFWe"}],"_id":"OheuBLwUZgcKH3QP"}
-{"$$deleted":true,"_id":"OheuBLwUZgcKH3QP"}
-{"socketID":"AxH5gEZTEEDiK-hCAAAO","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"X97VlDup65SO8rNh"}
-{"$$deleted":true,"_id":"X97VlDup65SO8rNh"}
-{"socketID":"uCzavI0r6__DS4VaAAAP","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"KTGBzsbDoUHWYfmN"}
-{"$$deleted":true,"_id":"KTGBzsbDoUHWYfmN"}
-{"socketID":"oul__tRaJWLveEe3AAAQ","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"cbyQJYoCEjp038HU"}
-{"$$deleted":true,"_id":"cbyQJYoCEjp038HU"}
-{"socketID":"GZkuPsM4W0rombWNAAAR","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"cCVeroDdW8ueTjfc"}
-{"$$deleted":true,"_id":"cCVeroDdW8ueTjfc"}
-{"socketID":"uFRpiS0bb7lSoTB-AAAS","isWebRtcCapable":true,"role":[{"roleName":"Sound","shortName":"SFX","roleCategory":"general","location":"Gallery","inputNumber":0,"hasTalkBack":true,"_id":"7g1ZhQYbSPjH6B0a"}],"_id":"xluKZhlufzCoeFKI"}
-{"$$deleted":true,"_id":"xluKZhlufzCoeFKI"}
-{"socketID":"OJw6j5nrTCkTzswmAAAT","isWebRtcCapable":true,"role":[{"roleName":"Multiview","shortName":"MLTV","roleCategory":"multiview","location":"","inputNumber":0,"hasTalkBack":false,"_id":"qbiWQ6ypr4JXQ8BR"}],"_id":"3fhZyD5PDkc2KP1H"}
-{"$$deleted":true,"_id":"3fhZyD5PDkc2KP1H"}
+{"socketID":"DN4fcyazHTaqttTCAAAD","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"dDXYtySomOy0A7qK"}
+{"$$deleted":true,"_id":"dDXYtySomOy0A7qK"}
+{"socketID":"Bmeyi7NUz0gwdCZ7AAAE","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"vINELTkzPFD1A69i"}
+{"$$deleted":true,"_id":"vINELTkzPFD1A69i"}
+{"socketID":"70XRsZo4Xl2g_nCKAAAF","isWebRtcCapable":true,"role":[{"roleName":"Multiview","shortName":"MLTV","roleCategory":"multiview","location":"","inputNumber":0,"hasTalkBack":false,"_id":"qbiWQ6ypr4JXQ8BR"}],"_id":"AZnvgzDOuEpFg4u7"}
+{"$$deleted":true,"_id":"AZnvgzDOuEpFg4u7"}
+{"socketID":"2oxf9ar4tPt8gKv9AAAM","isWebRtcCapable":true,"role":[{"roleName":"Multiview","shortName":"MLTV","roleCategory":"multiview","location":"","inputNumber":0,"hasTalkBack":false,"_id":"qbiWQ6ypr4JXQ8BR"}],"_id":"fwnTwBQN1IlfuSdW"}
+{"$$deleted":true,"_id":"fwnTwBQN1IlfuSdW"}
+{"socketID":"xO5ne42xUwSkmt2OAAAO","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"Q51pNhqf5r2LTceH"}
+{"$$deleted":true,"_id":"Q51pNhqf5r2LTceH"}
+{"socketID":"7KHjmKo_FEbsSw20AAAP","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"fi4FC1C47nNe75xj"}
+{"socketID":"boooP-e4vdI3ZDi9AAAQ","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"zTuL9HOEs1j3ducH"}
+{"$$deleted":true,"_id":"zTuL9HOEs1j3ducH"}
+{"socketID":"1HPd5FSQSmnneT4RAAAR","isWebRtcCapable":true,"role":[{"roleName":"Multiview","shortName":"MLTV","roleCategory":"multiview","location":"","inputNumber":0,"hasTalkBack":false,"_id":"qbiWQ6ypr4JXQ8BR"}],"_id":"4foHvyjWpDoldDe4"}
+{"$$deleted":true,"_id":"4foHvyjWpDoldDe4"}
+{"socketID":"K2RmC1IqBg6jTHkvAAAT","isWebRtcCapable":true,"role":[{"roleName":"Camera 1 - NIK","shortName":"CAM1","roleCategory":"camera","location":"Studio","inputNumber":1,"hasTalkBack":true,"_id":"452qPzXqYWl74z17"}],"_id":"Gndxs542J6J2WgOb"}
+{"$$deleted":true,"_id":"Gndxs542J6J2WgOb"}
+{"socketID":"kI-pYfVNX3RM2kvXAAAU","isWebRtcCapable":true,"role":[{"roleName":"Camera 1 - NIK","shortName":"CAM1","roleCategory":"camera","location":"Studio","inputNumber":1,"hasTalkBack":true,"_id":"452qPzXqYWl74z17"}],"_id":"VxPmXgmTqw6L9Isl"}
+{"$$deleted":true,"_id":"VxPmXgmTqw6L9Isl"}
+{"socketID":"Bp8RGYbzketTZKoLAAAV","isWebRtcCapable":true,"role":[{"roleName":"Camera 2 is stup","shortName":"CAM2","roleCategory":"camera","location":"Studio","inputNumber":2,"hasTalkBack":true,"_id":"LcJOVOiefsobrFWe"}],"_id":"Bv719AfTiPXI7CKm"}
+{"$$deleted":true,"_id":"Bv719AfTiPXI7CKm"}
+{"socketID":"zkV6jSfalIp7IPSgAAAW","isWebRtcCapable":true,"role":[{"roleName":"Camera 2 is stup","shortName":"CAM2","roleCategory":"camera","location":"Studio","inputNumber":2,"hasTalkBack":true,"_id":"LcJOVOiefsobrFWe"}],"_id":"xbRvDj7FZLC8lr1o"}
+{"$$deleted":true,"_id":"xbRvDj7FZLC8lr1o"}
+{"socketID":"k5GyxSm3YTJDle3FAAAX","isWebRtcCapable":true,"role":[{"roleName":"Sound","shortName":"SFX","roleCategory":"general","location":"Gallery","inputNumber":0,"hasTalkBack":true,"_id":"7g1ZhQYbSPjH6B0a"}],"_id":"MuMkEAZnHYBw9oLq"}
+{"$$deleted":true,"_id":"MuMkEAZnHYBw9oLq"}
+{"socketID":"gxrZJFUYH2pCFAoxAAAY","isWebRtcCapable":true,"role":[{"roleName":"Multiview","shortName":"MLTV","roleCategory":"multiview","location":"","inputNumber":0,"hasTalkBack":false,"_id":"qbiWQ6ypr4JXQ8BR"}],"_id":"k2QT5ailzZR8ZHlT"}
+{"$$deleted":true,"_id":"k2QT5ailzZR8ZHlT"}
+{"$$deleted":true,"_id":"fi4FC1C47nNe75xj"}
+{"socketID":"L8pQWwC9qAaJE9qYAAAj","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"MxuLM7Tx2fjqjLB9"}
+{"$$deleted":true,"_id":"MxuLM7Tx2fjqjLB9"}
+{"socketID":"YoodtzbmicGcJQ_JAAAk","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"2EmbylOGK5MchrX0"}
+{"$$deleted":true,"_id":"2EmbylOGK5MchrX0"}
+{"socketID":"M3ni7faogwg8AAGHAAAl","isWebRtcCapable":true,"role":[{"roleName":"Multiview","shortName":"MLTV","roleCategory":"multiview","location":"","inputNumber":0,"hasTalkBack":false,"_id":"qbiWQ6ypr4JXQ8BR"}],"_id":"bOKeyrYS8xZKtiIE"}
+{"$$deleted":true,"_id":"bOKeyrYS8xZKtiIE"}
+{"socketID":"k5C_OOAJT1cEHq4_AABY","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"LHj43XcoTy7PhDcF"}
+{"$$deleted":true,"_id":"LHj43XcoTy7PhDcF"}
+{"socketID":"wdqISR4ufE6ewqYFAABZ","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"syFEZuHsaEcwMZJl"}
+{"$$deleted":true,"_id":"syFEZuHsaEcwMZJl"}
+{"socketID":"pHtFA1TVu7wEwcB5AABa","isWebRtcCapable":true,"role":[{"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}],"_id":"Mn1XX9WF2kf2t7fJ"}
+{"$$deleted":true,"_id":"Mn1XX9WF2kf2t7fJ"}
+{"socketID":"CqMnvDkguA7R50NxAABb","isWebRtcCapable":true,"role":[{"roleName":"Multiview","shortName":"MLTV","roleCategory":"multiview","location":"","inputNumber":0,"hasTalkBack":false,"_id":"qbiWQ6ypr4JXQ8BR"}],"_id":"WdjKtwBMvQgHaBbm"}
+{"$$deleted":true,"_id":"WdjKtwBMvQgHaBbm"}
