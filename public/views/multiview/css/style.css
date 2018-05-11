@@ -20,54 +20,31 @@
     text-align: center;
         padding-top: 15px;
     padding-bottom: 15px;
-<<<<<<< HEAD
 	margin-top: 30px;
 	font-size: 80px;
 	font-weight: bold;
 	background-color: rgb(105, 64, 61);
-=======
-        margin-top: 30px;
-        font-size: 80px;
-        font-weight: bold;
-        background-color: rgb(105, 64, 61);
->>>>>>> 6ecd8665da2acaf65bca979c483185653f7caa06
 }
 
 #dir_countdown {
     width: 100%;
     height: 250px;
     text-align: center;
-<<<<<<< HEAD
 	padding-top: 20px;
     padding-bottom: 20px;
 	margin-top: 30px;
 	background-color: rgb(40, 50, 139);
-=======
-        padding-top: 20px;
-    padding-bottom: 20px;
-        margin-top: 30px;
-        background-color: rgb(40, 50, 139);
->>>>>>> 6ecd8665da2acaf65bca979c483185653f7caa06
 }
 
 #vt_countdown {
     width: 100%;
     height: 250px;
     text-align: center;
-<<<<<<< HEAD
 	padding-top: 20px;
     padding-bottom: 20px;
 	margin-top: 30px;
 	background-color: rgb(40, 139, 71);
-=======
-        padding-top: 20px;
-    padding-bottom: 20px;
-        margin-top: 30px;
-        background-color: rgb(40, 139, 71);
->>>>>>> 6ecd8665da2acaf65bca979c483185653f7caa06
-
 }
-
 
 .modulebox {
     font-size: 400%;
