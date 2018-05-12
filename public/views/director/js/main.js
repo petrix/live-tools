@@ -12,13 +12,13 @@ $(function() {
             if ($(toggleSelector).hasClass( 'btn-danger' )) {
                 $(toggleSelector).toggleClass( 'btn-success' );
                 $(toggleSelector).toggleClass( 'btn-danger' );
-                $(toggleSelector).text('VIDEOTRACK ON-AIR');
+                $(toggleSelector).text('DIR. COUNTDOWN');
             };
         } else {
             if ($(toggleSelector).hasClass( 'btn-success' )) {
                 $(toggleSelector).toggleClass( 'btn-success' );
                 $(toggleSelector).toggleClass( 'btn-danger' );
-                $(toggleSelector).text('DIR. COUNTDOWN');
+                $(toggleSelector).text('VIDEOTRACK ON-AIR');
             };
         };
     });
