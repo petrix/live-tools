@@ -16,8 +16,8 @@ $(function() {
             };
         } else {
             if ($(toggleSelector).hasClass( 'btn-success' )) {
-                $(toggleSelector).toggleClass( 'btn-success' );
                 $(toggleSelector).toggleClass( 'btn-danger' );
+                $(toggleSelector).toggleClass( 'btn-success' );
                 $(toggleSelector).text('VIDEOTRACK ON-AIR');
             };
         };
