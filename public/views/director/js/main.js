@@ -74,13 +74,30 @@ $(function() {
             clearTimeout(liveMouseDown);
         }
     });
-
+    
+    
+    $('#cdrm10m').click(function() {
+        socket.emit('custom countdown rm10m');
+    });
+    
+    $('#cdrm1m').click(function() {
+        socket.emit('custom countdown rm1m');
+    });
+    
+    $('#cdrm10s').click(function() {
+        socket.emit('custom countdown rm10s');
+    });
+    
+    $('#cdadd10s').click(function() {
+        socket.emit('custom countdown 10s');
+    });
+    
     $('#cdadd1m').click(function() {
         socket.emit('custom countdown 1m');
     });
 
-    $('#cdadd10s').click(function() {
-        socket.emit('custom countdown 10s');
+    $('#cdadd10m').click(function() {
+        socket.emit('custom countdown 10m');
     });
 
     $('#cdreset').click(function() {
