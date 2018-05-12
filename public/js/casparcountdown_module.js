@@ -19,15 +19,16 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
             countdownFunction(time);
         }
         if(casparcountdownActive  || alwaysActive){
-            var minutes = Math.floor(time / 60);
+            var hours = Math.floor(time / 3600);
+		var minutes = Math.floor(time / 60);
             var seconds = time - (minutes * 60);
 
-            seconds = seconds.toFixed(2);
-
+            seconds = seconds.toFixed(0);
+		hours = (minutes < 10 ? "0" : "") + hours;
             minutes = (minutes < 10 ? "0" : "") + minutes;
             seconds = (seconds < 10 ? "0" : "") + seconds;
 
-            $(timeSelector).text(minutes + ':' + seconds);
+            $(timeSelector).text(hours + ':' + minutes + ':' + seconds);
         }
     });
     
@@ -35,7 +36,7 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
         casparcountdownActive = !customActive;
         if (!customActive){
             $(pathSelector).text("Waiting for VT..");
-            $(timeSelector).text("00:00.00");
+            $(timeSelector).text("00:00:00");
         }
     });
 }
