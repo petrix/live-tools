@@ -41,6 +41,6 @@ function updateClock(timeString) {
     }
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
-        $(".p" + i).css("background", "gray");
+        $(".p" + i).css("background", "#0e0f10");
     }
 }
