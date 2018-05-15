@@ -117,8 +117,10 @@ function intercom_control_module(localPlaybackAudio){
         });
         // B3
         socket.emit('tell client that director is not listening', roleToMute);
-        $('#' + playerId + '-muteRx').removeClass( 'btn-success' );
-        $('#' + playerId + '-muteRx').addClass( 'btn-danger' );
+        $('#' + playerId + '-muteRx').removeClass( 'btn-success' ).addClass( 'btn-danger' );
+
+        //$('#' + playerId + '-muteRx').removeClass( 'btn-success' );
+        //$('#' + playerId + '-muteRx').addClass( 'btn-danger' );
     }
 
     function unmutePlayer(playerId){
@@ -135,20 +137,24 @@ function intercom_control_module(localPlaybackAudio){
 
         // B4
         socket.emit('tell client that director is listening', roleToMute);
-        $('#' + playerId + '-muteRx').removeClass( 'btn-danger' );
-        $('#' + playerId + '-muteRx').addClass( 'btn-success' );
+        $('#' + playerId + '-muteRx').removeClass( 'btn-danger' ).addClass( 'btn-success' );
+        //$('#' + playerId + '-muteRx').removeClass( 'btn-danger' );
+        //$('#' + playerId + '-muteRx').addClass( 'btn-success' );
     }
 
     // A1
     socket.on('director: client not listening', function(roleId){
-        $("#" + roleId + "-muteTx").removeClass( 'btn-success' );
-        $("#" + roleId + "-muteTx").addClass( 'btn-danger' );
+        $("#" + roleId + "-muteTx").removeClass( 'btn-success' ).addClass( 'btn-danger' );
+        //$("#" + roleId + "-muteTx").removeClass( 'btn-success' );
+        //$("#" + roleId + "-muteTx").addClass( 'btn-danger' );
     });
 
     // A2
     socket.on('director: client listening', function(roleId){
-        $("#" + roleId + "-muteTx").addClass( 'btn-success' );
-        $("#" + roleId + "-muteTx").removeClass( 'btn-danger' );
+        $("#" + roleId + "-muteTx").removeClass('btn-danger').addClass( 'btn-success' );
+        //$("#" + roleId + "-muteTx").removeClass( 'btn-danger' );
+        //$("#" + roleId + "-muteTx").addClass( 'btn-success' );
+        
     });
 
     //A3

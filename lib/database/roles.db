@@ -6,4 +6,4 @@
 {"roleName":"Camera 3","shortName":"CAM3","roleCategory":"camera","location":"Studio","inputNumber":3,"hasTalkBack":true,"_id":"WlbFyDwzvdKlm8er"}
 {"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}
 {"roleName":"Multiview","shortName":"MLTV","roleCategory":"multiview","location":"","inputNumber":0,"hasTalkBack":false,"_id":"qbiWQ6ypr4JXQ8BR"}
-{"roleName":"Camera 6","shortName":"CAM6","roleCategory":"camera","location":"Studio","inputNumber":0,"hasTalkBack":true,"_id":"rcUKEltSHpKK4rKq"}
+{"roleName":"Camera 6","shortName":"CAM6","roleCategory":"camera","location":"Studio","inputNumber":6,"hasTalkBack":true,"_id":"rcUKEltSHpKK4rKq"}
