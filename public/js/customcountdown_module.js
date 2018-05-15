@@ -13,18 +13,18 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
             $(titleSelector).text("Director's Countdown");
             
             (data.duration >0) ? hours = Math.floor(data.duration / 3600): hours = Math.abs(Math.ceil(data.duration / 3600));
-            (data.duration >0) ? minutes = Math.floor(data.duration / 60): minutes = Math.abs(Math.ceil(data.duration / 60));
-            (data.duration >0) ? seconds = data.duration - (minutes * 60): seconds = Math.abs(data.duration + (minutes * 60));
+            (data.duration >0) ? minutes = Math.floor((data.duration - hours * 3600) / 60): minutes = Math.abs(Math.ceil((data.duration - hours * 3600) / 60));
+            (data.duration >0) ? seconds = data.duration - (minutes * 60 + hours * 3600): seconds = Math.abs(data.duration + (minutes * 60 + hours * 3600));
             
             
             
             seconds = seconds.toFixed(0);
             hours = ((hours < 10 && hours >= 0) ? "0" : "") + hours;
             minutes = ((minutes < 10 && minutes >= 0) ? "0" : "") + minutes;
-            if (data.duration < 0) {minutes = "-" + minutes}
+            if (data.duration < 0) {hours = "-" + hours}
             seconds = ((seconds < 10 && seconds >= 0) ? "0" : "") + seconds;
 
-            $(timeSelector).text(minutes + ':' + seconds);
+            $(timeSelector).text(hours + ':' + minutes + ':' + seconds);
         }
     });
 }
