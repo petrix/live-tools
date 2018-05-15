@@ -14,7 +14,7 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
             
             (data.duration >0) ? hours = Math.floor(data.duration / 3600): hours = Math.abs(Math.ceil(data.duration / 3600));
             (data.duration >0) ? minutes = Math.floor(data.duration / 60): minutes = Math.abs(Math.ceil(data.duration / 60));
-            (data.duration >0) ? seconds = data.duration - (minutes * 60): seconds = Math.abs(data.duration + (minutes * 60));
+            (data.duration >0) ? seconds = data.time - (minutes * 60): seconds = Math.abs(data.duration + (minutes * 60));
             
             seconds = seconds.toFixed(0);
             hours = ((hours < 10 && hours >= 0) ? "0" : "") + hours;
