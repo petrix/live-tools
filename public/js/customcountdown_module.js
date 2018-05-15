@@ -19,7 +19,7 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
             seconds = seconds.toFixed(0);
             hours = ((hours < 10 && hours >= 0) ? "0" : "") + hours;
             minutes = ((minutes < 10 && minutes >= 0) ? "0" : "") + minutes;
-            if (data.duration < 0) {hours = "-" + hours}
+            //if (data.duration < 0) {hours = "-" + hours}
             seconds = ((seconds < 10 && seconds >= 0) ? "0" : "") + seconds;
 
             $(timeSelector).text(hours + ':' + minutes + ':' + seconds);
