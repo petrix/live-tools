@@ -30,9 +30,9 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
             
             //}
             //else{
-            //if (data.duration < 15){
-            //    setInterval(function() {$(timeSelector).css( "color" , "#ff0000" );}setInterval(function()
-            //    setInterval(function() {$(timeSelector).css( "color" , "#000000" );}, 500);
+            if (seconds <= 15){
+                setInterval(function() {$(timeSelector).css( "color" , "#ff0000" );}
+                setInterval(function() {$(timeSelector).css( "color" , "#000000" );}, 500);
             //}
             
             //if (data.duration < 15) setInterval(function() {
