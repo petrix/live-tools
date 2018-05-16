@@ -4,6 +4,7 @@ logs
 
 # Config Files
 public/js/config.js
+package-lock.json
 
 # Runtime data
 pids
