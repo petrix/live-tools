@@ -21,10 +21,29 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
             seconds = seconds.toFixed(0);
             hours = ((hours < 10 && hours >= 0) ? "0" : "") + hours;
             minutes = ((minutes < 10 && minutes >= 0) ? "0" : "") + minutes;
+            
             if (data.duration < 0) {hours = "-" + hours}
             seconds = ((seconds < 10 && seconds >= 0) ? "0" : "") + seconds;
 
             $(timeSelector).text(hours + ':' + minutes + ':' + seconds);
+            //if (seconds > 15) {
+            $(timeSelector).css( "color" , "#d4d5d6" );
+            //}
+            //else{
+            //if (data.duration < 15){
+            //    setInterval(function() {$(timeSelector).css( "color" , "#ff0000" );}setInterval(function()
+            //    setInterval(function() {$(timeSelector).css( "color" , "#000000" );}, 500);
+            //}
+            
+            //if (data.duration < 15) setInterval(function() {
+           //            $(timeSelector).css( "color" , "#ff0000" ); 
+        //}   , 500);
+            if (data.duration < 0) {
+                socket.emit('reset custom countdown');
+               $(timeSelector).css( "color" , "#646566" ); 
+            }
+             
         }
+
     });
 }

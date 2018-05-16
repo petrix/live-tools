@@ -13,12 +13,16 @@ $(function() {
                 $(toggleSelector).toggleClass( 'btn-success' );
                 $(toggleSelector).toggleClass( 'btn-danger' );
                 $(toggleSelector).text('DIR. COUNTDOWN');
+                $('.btn-group').show();
+                //$('.' + $(this).val()).show();
             };
         } else {
             if ($(toggleSelector).hasClass( 'btn-success' )) {
                 $(toggleSelector).toggleClass( 'btn-danger' );
                 $(toggleSelector).toggleClass( 'btn-success' );
                 $(toggleSelector).text('VIDEOTRACK ON-AIR');
+                $('.btn-group').hide();
+                //$(#countdown).css("color", "#ccc");
             };
         };
     });
