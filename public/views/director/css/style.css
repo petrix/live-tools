@@ -45,7 +45,17 @@ div {
 
 #countdown {
 	font-size: 150px;
+	color: #D4D5D6;
 }
+#countdown_red {
+	font-size: 150px;
+	color: #ff0000;
+}
+#countdown_tr {
+	font-size: 150px;
+	opacity: 0;
+}
+
 
 #countdownTitle{
     height: 65px;
