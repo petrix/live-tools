@@ -1,1 +1,1 @@
-var PEERJSKEY = 'apikey';
+var PEERJSKEY = 'peerjs';

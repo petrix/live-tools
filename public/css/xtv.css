@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'DS-Digital';
-    src: url(./'DS-Digital-Bold.eot');
+    src: url('./DS-Digital-Bold.eot');
     src: url('./DS-Digital-Bold.eot?#iefix') format('embedded-opentype'),
         url('./DS-Digital-Bold.woff2') format('woff2'),
         url('./DS-Digital-Bold.woff') format('woff'),
