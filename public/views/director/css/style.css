@@ -43,6 +43,10 @@ div {
     border-color: white;
     border-width: 0px;}
 
+#countdown {
+	font-size: 150px;
+}
+
 #countdownTitle{
     height: 65px;
     padding-top: 10px;
