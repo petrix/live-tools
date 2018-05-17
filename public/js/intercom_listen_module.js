@@ -34,24 +34,33 @@ function intercom_listen_module(localPlaybackButton, localPlaybackAudio, localTx
 
     $(localPlaybackButton).click(function() {
         if (!$(localPlaybackButton).hasClass( 'highlighted' )) {
+            $(localPlaybackButton).removeClass( 'highlighted' );
+            $(localPlaybackButton).addClass( 'highlighted' );
             // unmute
-            document.getElementById(localPlaybackAudio.substring(1)).muted = false;
+            document.getElementById(localPlaybackAudio.substring(1)).muted = true;
             // A2
             socket.emit('tell director that client is listening to director', identity.role[0]._id);
         } else {
+            $(localPlaybackButton).addClass( 'highlighted' );
+            $(localPlaybackButton).removeClass( 'highlighted' );
             // mute
-            document.getElementById(localPlaybackAudio.substring(1)).muted = true;
+            document.getElementById(localPlaybackAudio.substring(1)).muted = false;
             //A1
             socket.emit('tell director that client is not listening to director', identity.role[0]._id);
+            
         };
     });
 
     $(localTxButton).click(function() {
         if (!$(localTxButton).hasClass( 'highlighted' )) {
+            $(localTxButton).removeClass( 'highlighted' );
+            $(localTxButton).addClass( 'highlighted' );
             // A3
             socket.emit('tell director to listen to client', identity.role[0]._id);
            // toggle class on director confirm
         } else {
+           $(localTxButton).addClass( 'highlighted' );
+            $(localTxButton).removeClass( 'highlighted' );           
             // A4
            socket.emit('tell director to stop listening to client', identity.role[0]._id);
            // toggle class on director confirm
@@ -62,6 +71,7 @@ function intercom_listen_module(localPlaybackButton, localPlaybackAudio, localTx
     socket.on('client: director not listening', function(roleId) {
         console.log('got a B2 for ' + roleId);
         if (roleId == identity.role[0]._id){
+            $(localTxButton).addClass( 'highlighted' );
             $(localTxButton).removeClass( 'highlighted' );
         };
     });
@@ -70,6 +80,7 @@ function intercom_listen_module(localPlaybackButton, localPlaybackAudio, localTx
     socket.on('client: director is listening', function(roleId) {
         console.log('got a B4 for ' + roleId);
         if (roleId == identity.role[0]._id){
+            $(localTxButton).removeClass( 'highlighted' );
             $(localTxButton).addClass( 'highlighted' );
         };
     });
@@ -80,6 +91,7 @@ function intercom_listen_module(localPlaybackButton, localPlaybackAudio, localTx
             document.getElementById(localPlaybackAudio.substring(1)).muted = true;
             // A1
             socket.emit('tell director that client is not listening to director', identity.role[0]._id);
+            $(localPlaybackButton).addClass( 'highlighted' );
             $(localPlaybackButton).removeClass( 'highlighted' );
         };
     });
@@ -90,6 +102,7 @@ function intercom_listen_module(localPlaybackButton, localPlaybackAudio, localTx
             document.getElementById(localPlaybackAudio.substring(1)).muted = false;
             //A2
             socket.emit('tell director that client is listening to director', identity.role[0]._id);
+            $(localPlaybackButton).removeClass( 'highlighted' );
             $(localPlaybackButton).addClass( 'highlighted' );
         };
     });
