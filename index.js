@@ -8,6 +8,22 @@ var fs = require('fs');
 var app = express();
 var http = require('http').Server(app);
 var PORT = 3000;
+// var http = require('https').Server(app);
+
+// var options = { 
+//     key: fs.readFileSync('./keys/server-key.pem'), 
+//     cert: fs.readFileSync('./keys/server-crt.pem'), 
+//     ca: fs.readFileSync('./keys/ca-crt.pem'), 
+// }; 
+// http.createServer(options, function (req, res) { 
+//     console.log(new Date()+' '+ 
+//         req.connection.remoteAddress+' '+ 
+//         req.method+' '+req.url); 
+//     res.writeHead(200); 
+//     res.end("hello world\n"); 
+// }).listen(PORT);
+
+
 
 // Log all requests in server output
 // app.use(logger('dev'));
