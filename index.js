@@ -16,7 +16,7 @@ var options = {
 
 var server = require('http').createServer(app);
 
-app.use('/peerjs', ExpressPeerServer(server, options));
+app.use('/', ExpressPeerServer(server, options));
 
 server.listen(9000);
 
