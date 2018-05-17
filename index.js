@@ -8,19 +8,18 @@ var fs = require('fs');
 var app = express();
 var http = require('http').Server(app);
 var PORT = 3000;
-var ExpressPeerServer = require('peer').ExpressPeerServer;
-var options = {
-    debug: true
-}
 
 
-var server = require('http').createServer(app);
+// var ExpressPeerServer = require('peer').ExpressPeerServer;
+// var options = {
+//     debug: true
+// }
+// var server2 = require('http').createServer(app);
+// app.use('/', ExpressPeerServer(server2, options));
+// server2.listen(9000);
 
-app.use('/', ExpressPeerServer(server, options));
-
-server.listen(9000);
-
-
+var PeerServer = require('peer').PeerServer;
+var server = PeerServer({port: 9000, path: '/'});
 
 
 
@@ -61,6 +60,12 @@ http.listen(PORT, function() {
 
 // Run all modules defined in modules.js
 var modules = require('./modules')(http);
+
+
+
+
+
+
 
 process.on('SIGINT', function() {
     fs.unlink(__dirname + '/lib/database/connected-clients.db', function(err) {
