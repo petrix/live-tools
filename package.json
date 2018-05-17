@@ -1,6 +1,6 @@
 {
   "name": "live-tools",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A node.js based system providing various functionality during live broadcasts.",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xtv-online/live-tools.git"
+    "url": "git+https://github.com/petrix/live-tools.git"
   },
-  "author": "Sam Hutchings, Nik Rahmel",
+  "author": "Sam Hutchings, Nik Rahmel, p3xx",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xtv-online/live-tools/issues"
+    "url": "https://github.com/petrix/live-tools/issues"
   },
-  "homepage": "https://github.com/xtv-online/live-tools#readme",
+  "homepage": "https://github.com/petrix/live-tools#readme",
   "dependencies": {
     "atem": "^0.1.8",
     "colour": "^0.7.1",
@@ -26,5 +26,11 @@
     "q": "^1.4.1",
     "peer": "^0.2.8",
     "socket.io": "^2.1.0"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "live-tools"
+  ]
 }
