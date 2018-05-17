@@ -8,20 +8,19 @@ var fs = require('fs');
 var app = express();
 var http = require('http').Server(app);
 var PORT = 3000;
-// var http = require('https').Server(app);
+var ExpressPeerServer = require('peer').ExpressPeerServer;
+var options = {
+    debug: true
+}
 
-// var options = { 
-//     key: fs.readFileSync('./keys/server-key.pem'), 
-//     cert: fs.readFileSync('./keys/server-crt.pem'), 
-//     ca: fs.readFileSync('./keys/ca-crt.pem'), 
-// }; 
-// http.createServer(options, function (req, res) { 
-//     console.log(new Date()+' '+ 
-//         req.connection.remoteAddress+' '+ 
-//         req.method+' '+req.url); 
-//     res.writeHead(200); 
-//     res.end("hello world\n"); 
-// }).listen(PORT);
+
+var server = require('http').createServer(app);
+
+app.use('/peerjs', ExpressPeerServer(server, options));
+
+server.listen(9000);
+
+
 
 
 
