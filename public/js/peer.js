@@ -778,7 +778,7 @@ function Peer(id, options) {
     return;
   }
   // Ensure not using unsecure cloud server on SSL page
-  if (options.secure && options.host === '0.peerjs.com') {
+  if (options.secure && options.host === 'localhost') {
     this._delayedAbort('ssl-unavailable',
       'The cloud server currently does not support HTTPS. Please run your own PeerServer to use HTTPS.');
     return;
@@ -1429,7 +1429,7 @@ var RTCPeerConnection = require('./adapter').RTCPeerConnection;
 var util = {
   noop: function() {},
 
-  CLOUD_HOST: '0.peerjs.com',
+  CLOUD_HOST: 'localhost',
   CLOUD_PORT: 9000,
 
   // Browsers that need chunking:
