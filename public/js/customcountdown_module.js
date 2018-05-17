@@ -58,4 +58,4 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
               }
               
               setInterval(blinker, 1000); 
-               */console.log(data.duration);
+               console.log(data.duration);*/
