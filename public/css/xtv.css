@@ -43,13 +43,17 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    background-color: #2a001b;
+    margin: 0px;
+    padding: 0px;
 }
 
 #display {
     height: 100vh;
     width: 100vw;
-    background: #0e0f10;
+    /* background: #2a001b; */
     color: #D4D5D6;
+   
 }
 
 .row {
@@ -59,12 +63,13 @@ body{
 }
 
 .modulebox {
-    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
     text-align: center;
     border: 0px solid;
-    height: 100%;
-    font-size: 300%;
-    text-align: center;
+    /* height: 100%; */
+    /* font-size: 300%; */
 }
 
 .digital {
@@ -76,9 +81,11 @@ body{
 
 .boxtitle {
     font-size: 16pt;
-    text-align: center;
+    text-align: left;
     font-family: 'Open Sans';
+    font-weight: bold;
     line-height: 16pt;
+    padding-left: 30px;
 }
 
 .btn-circle {

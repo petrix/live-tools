@@ -13,15 +13,15 @@ $(function() {
                 $(toggleSelector).toggleClass( 'btn-success' );
                 $(toggleSelector).toggleClass( 'btn-danger' );
                 $(toggleSelector).text('DIR. COUNTDOWN');
-                $('.btn-group').show();
+                $('#countdown-items').show();
                 //$('.' + $(this).val()).show();
             };
         } else {
             if ($(toggleSelector).hasClass( 'btn-success' )) {
                 $(toggleSelector).toggleClass( 'btn-danger' );
                 $(toggleSelector).toggleClass( 'btn-success' );
-                $(toggleSelector).text('VIDEOTRACK ON-AIR');
-                $('.btn-group').hide();
+                $(toggleSelector).text('TRACK ON-AIR');
+                $('#countdown-items').hide();
                 //$(#countdown).css("color", "#ccc");
             };
         };

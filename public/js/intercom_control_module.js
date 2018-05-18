@@ -16,6 +16,8 @@ function intercom_control_module(localPlaybackAudio){
                             startCall(client._id)
                             enableButton = true;
                         }
+                        else {startCall(client._id)}
+
                     });
                     addButtons(role.shortName, role._id, enableButton);
                 }
@@ -38,8 +40,12 @@ function intercom_control_module(localPlaybackAudio){
             localstream = stream;
             callback();
           },
-          function(err) {
-            console.log('Failed to get local stream' ,err);
+        //   function(err) {
+        //     console.log('Failed to get local stream' ,err);
+        function(stream) {
+            localstream = stream;
+            callback();
+
         });
 
     };
