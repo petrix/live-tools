@@ -76,7 +76,7 @@ $(function() {
 
         // init countdown
         $("#cdtoggle").trigger( "click" );
-        $("#cdgo").trigger( "click" );
+        // $("#cdgo").trigger( "click" );
     }
 
     // toggle on air status
