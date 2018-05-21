@@ -27,6 +27,27 @@ $(function() {
         };
     });
 
+    socket.on('custom play-pause', function(customActive2){
+        toggleSelector2 = "#cdgo"
+        if (customActive2){
+            if ($(toggleSelector2).hasClass( 'btn-danger' )) {
+                $(toggleSelector2).addClass( 'btn-danger' );
+                $(toggleSelector2).removeClass( 'btn-success' );
+                $(toggleSelector2).text('DIR. COUNTDOWN');
+                // $('#countdown-items').show();
+                //$('.' + $(this).val()).show();
+            };
+        } else {
+            if ($(toggleSelector2).hasClass( 'btn-success' )) {
+                $(toggleSelector2).addClass( 'btn-success' );
+                $(toggleSelector2).removeClass( 'btn-danger' );
+                $(toggleSelector2).text('TRACK ON-AIR');
+                // $('#countdown-items').hide();
+                //$(#countdown).css("color", "#ccc");
+            };
+        };
+    });
+
     function ready() {
 
         // Set Up Tally
@@ -55,7 +76,7 @@ $(function() {
 
         // init countdown
         $("#cdtoggle").trigger( "click" );
-
+        $("#cdgo").trigger( "click" );
     }
 
     // toggle on air status

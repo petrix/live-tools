@@ -29,19 +29,6 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
 
             $(timeSelector).text(hours + ':' + minutes + ':' + seconds);
 
-             
-            //if (seconds > 15) {
-            
-            //}
-            //else{
-            //if (seconds <= 15){
-            //    setInterval(function() {$(timeSelector).css( "color" , "#ff0000" );}
-            //    setInterval(function() {$(timeSelector).css( "color" , "#000000" );}, 500);
-            //}
-            
-            //if (data.duration < 15) setInterval(function() {
-           //            $(timeSelector).css( "color" , "#ff0000" ); 
-        //}   , 500);
             if (data.duration < 0) {
                 
                 socket.emit('reset custom countdown');
@@ -52,10 +39,3 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
 
     });
 }
-/* if (data.duration <= 15) function blinker() {
-                $('.digital').fadeOut(500);
-                $('.digital').fadeIn(500);
-              }
-              
-              setInterval(blinker, 1000); 
-               console.log(data.duration);*/
