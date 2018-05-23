@@ -68,7 +68,7 @@ div {
     border-width: 0px;}
 
 #countdown {
-	font-size: 250px;
+	font-size: 150px;
     color: #D4D5D6;
 }
 #countdown_red {
@@ -116,6 +116,26 @@ div.footer-container .btn-group button {
 div.footer-container .btn-group button.highlighted {
     color: #2a001b;
     background-color: #D4D5D6;
+}
+@media (max-width: @screen-xs-max) {
+	#countdown {
+	font-size: 80px;
+	}
+				}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+	#countdown {
+	font-size: 160px;
+	}
+}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+	#countdown {
+	font-size: 240px;
+	}
+}
+@media (min-width: @screen-lg-min) {
+	#countdown {
+	font-size: 600px;
+	}
 }
 @media only screen and (max-width: 567px) {
     div.footer-container .btn-group {
