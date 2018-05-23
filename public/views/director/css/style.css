@@ -120,26 +120,29 @@ div.footer-container .btn-group button.highlighted {
 }
 @media (max-width: 768px) {
 	#countdown {
-	font-size: 80px;
+	font-size: 160px;
 		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 }
 @media (min-width: 768px) {
 	#countdown {
 	font-size: 160px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 }
-@media (min-width: 992px) {
+@media (min-width: 1100px) {
 	#countdown {
 	font-size: 240px;
 	}
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
 	#countdown {
 	font-size: 360px;
 	}
 }
-@media (min-width: 1600px) {
+@media (min-width: 1800px) {
 	#countdown {
 	font-size: 480px;
 	}
