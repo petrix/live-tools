@@ -223,10 +223,8 @@
         </div>
          End Row 3-->
 
-       <div id="row3" class="row"></div>
-            <!-- Log Out Button -->
-            <div class="footer-container" style="padding-left: 0px; padding-right: 0px;">
-		    <div id="countdown-items" class="btn-group" >                 
+       <div id="row3" class="row">
+			      <div id="countdown-items" class="btn-group" >                 
 		  <button id="cdreset" class="btn btn-danger">RESET</button>		
 		  <button id="cdrm10m" class="btn btn-default">-10 Min</button>
                   <button id="cdrm1m" class="btn btn-default">-1 Min</button>
@@ -236,6 +234,9 @@
                   <button id="cdadd10m" class="btn btn-default">+10 Min</button>
 			<button id="cdgo" class="btn btn-success">START</button>
 			</div>
+			      </div>
+            <!-- Log Out Button -->
+            <div class="footer-container" style="padding-left: 0px; padding-right: 0px;">
                 <div class="btn-group">
                     <button class="button" style="position:absolute; z-index:10; bottom:12px; left:12px;" onclick="localStorage.removeItem('identity'); document.location.href='/';"><span class="glyphicon glyphicon-log-out"></span></button>
                 </div>
