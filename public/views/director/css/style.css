@@ -117,7 +117,7 @@ div.footer-container .btn-group button.highlighted {
     color: #2a001b;
     background-color: #D4D5D6;
 }
-@media (max-width: 480) {
+@media (max-width: 480px) {
 	div#countdown .digital {
 	font-size: 80px;
 	}
