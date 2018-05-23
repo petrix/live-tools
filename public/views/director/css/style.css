@@ -121,6 +121,7 @@ div.footer-container .btn-group button.highlighted {
 @media (max-width: 768px) {
 	#countdown {
 	font-size: 80px;
+		padding-top: 30px;
 	}
 }
 @media (min-width: 768px) {
