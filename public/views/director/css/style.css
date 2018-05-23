@@ -128,7 +128,7 @@ div.footer-container .btn-group button.highlighted {
 	}
 }
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
-	ddiv#countdown.segment.digital {
+	div#countdown.segment.digital {
 	font-size: 240px;
 	}
 }
