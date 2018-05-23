@@ -117,22 +117,22 @@ div.footer-container .btn-group button.highlighted {
     color: #2a001b;
     background-color: #D4D5D6;
 }
-@media (max-width: @screen-xs-max) {
+@media (max-width: 480) {
 	div#countdown .digital {
 	font-size: 80px;
 	}
 				}
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+@media (max-width: 768px) {
 	div#countdown .digital {
 	font-size: 160px;
 	}
 }
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+@media (max-width: 992px) {
 	div#countdown .digital {
 	font-size: 240px;
 	}
 }
-@media (min-width: @screen-lg-min) {
+@media (min-width: 1200) {
 	div#countdown .digital {
 	font-size: 600px;
 	}
