@@ -12,6 +12,7 @@
             <option value="director">Director</option>
             <option value="general">General</option>
             <option value="multiview">Multiview</option>
+            <option value="mv2">Multiview-v2</option>
             <option value="presenter">Presenter</option>
             <option value="runner" disabled>Runner</option>
         </select>
