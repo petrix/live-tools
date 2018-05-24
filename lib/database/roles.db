@@ -4,6 +4,7 @@
 {"roleName":"Camera 2 is stup","shortName":"CAM2","roleCategory":"camera","location":"Studio","inputNumber":2,"hasTalkBack":true,"_id":"LcJOVOiefsobrFWe"}
 {"roleName":"Camera 5","shortName":"CAM5","roleCategory":"camera","location":"Studio","inputNumber":5,"hasTalkBack":true,"_id":"V7cdvRVvlSbk1507"}
 {"roleName":"Camera 3","shortName":"CAM3","roleCategory":"camera","location":"Studio","inputNumber":3,"hasTalkBack":true,"_id":"WlbFyDwzvdKlm8er"}
+{"roleName":"Multiview-v2","shortName":"MV2","roleCategory":"mv2","location":"","inputNumber":0,"hasTalkBack":false,"_id":"dqR0e1qxH7KkhAWD"}
 {"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}
 {"roleName":"Multiview","shortName":"MLTV","roleCategory":"multiview","location":"","inputNumber":0,"hasTalkBack":false,"_id":"qbiWQ6ypr4JXQ8BR"}
 {"roleName":"Camera 6","shortName":"CAM6","roleCategory":"camera","location":"Studio","inputNumber":6,"hasTalkBack":true,"_id":"rcUKEltSHpKK4rKq"}
