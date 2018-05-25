@@ -97,7 +97,8 @@
 	padding-top: 20px;
     padding-bottom: 20px;
 	margin-top: 30px;
-	background-color: rgb(40, 139, 71);
+	color: rgb (20,255,20);
+	background-color: #2a001b;
 }
 
 #vt_countdown_blink_red {
