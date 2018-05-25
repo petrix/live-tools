@@ -1,12 +1,11 @@
+#vt_countdown_time {
+color: rgb (20,255,20);
+}
 @media (max-width: 768px) {
 	#vt_countdown_time {
 	font-size: 120px;
 		padding-top: 30px;
 		padding-bottom: 30px;
-	}
-	div#countdown-items.btn-group button {
-	padding-left: 4px;
-		padding-right: 4px;
 	}
 	
 }
@@ -97,7 +96,6 @@
 	padding-top: 20px;
     padding-bottom: 20px;
 	margin-top: 30px;
-	color: rgb (20,255,20);
 	background-color: #2a001b;
 }
 
