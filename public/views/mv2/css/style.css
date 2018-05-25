@@ -24,12 +24,12 @@
 }
 @media (min-width: 1300px) {
 	#vt_countdown_time {
-	font-size: 360px;
+	font-size: 240px;
 	}
 }
 @media (min-width: 1800px) {
 	#vt_countdown_time {
-	font-size: 480px;
+	font-size: 240px;
 	}
 }
 
