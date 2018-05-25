@@ -53,8 +53,8 @@ color: rgb(20, 255, 20);
 
 #righthandSide {
 	position: absolute;
-	margin-left:1100px;
-    width: 780px;
+	margin-left:600px;
+    width: 100%;
 }
 
 #livestatus {
