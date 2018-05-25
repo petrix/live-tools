@@ -1,3 +1,20 @@
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
+}
+
+#row1 {
+    height: 30%;
+}
+#row2 {
+    height: 40%;
+}
+#row3 {
+    height: 25%;
+}
+
+
 #righthandSide {
 	position: absolute;
 	margin-left:1100px;
