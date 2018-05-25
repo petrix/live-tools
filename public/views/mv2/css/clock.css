@@ -1,7 +1,7 @@
 .clock{
 	position:absolute;
-	width:600px;
-	height:700px;
+	width:530px;
+	height:560px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-left: 20px;
@@ -276,7 +276,8 @@
 	text-align: center;
 	top: 25%;
 	margin: 0 auto;
-	font-size: 120pt;
+	font-size: 150pt;
 	color: #ff8f00;
 	font-weight: bold;
 }
+.center#s {margin-top: -50px;}
