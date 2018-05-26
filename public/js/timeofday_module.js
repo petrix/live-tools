@@ -22,7 +22,7 @@ function timeofday_module(clockSelector, timeFunction) {
             timeFunction(date);
         }
 		if (clockSelector) {
-		var hour = moment(HH);
+		var hour = moment(hh);
 		var min = moment(mm);
 		var sec = moment(ss);
 		 $(clockSelector).text(hour + ":" + min + ":" + sec);
