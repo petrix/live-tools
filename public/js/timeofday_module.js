@@ -1,7 +1,7 @@
 function timeofday_module(clockSelector, timeFunction) {
 
     socket.on('timeofday', function(newDate) {	
-		/*
+		
         var date = new Date(newDate);
         if (timeFunction !== undefined) {
             timeFunction(date);
@@ -15,18 +15,19 @@ function timeofday_module(clockSelector, timeFunction) {
             sec = (sec < 10 ? "0" : "") + sec;
             $(clockSelector).text(hour + ":" + min + ":" + sec);
        
-		*/
 		
+		/*
 		var date = new Date(newDate);
         if (timeFunction !== undefined) {
             timeFunction(date);
-        }
-		if (clockSelector) {
+        				}
+		if (clockSelector) 	{
 		var hour = moment(hh);
 		var min = moment(mm);
 		var sec = moment(ss);
 		 $(clockSelector).text(hour + ":" + min + ":" + sec);
-		 }
+		 			}
+    		*/
     });
 
-}
+		}
