@@ -14,7 +14,7 @@ function timeofday_module(clockSelector, timeFunction) {
             var sec = date.getSeconds();
             sec = (sec < 10 ? "0" : "") + sec;
             $(clockSelector).text(hour + ":" + min + ":" + sec);
-       
+	}
 		
 		/*
 		var date = new Date(newDate);
