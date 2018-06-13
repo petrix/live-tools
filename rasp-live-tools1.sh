@@ -26,7 +26,7 @@ modprobe i2c-bcm2708
 ntpd -gq
 hwclock -w
 apt-get update
-apt-get install -y git unclutter chromium-browser
+apt-get install -y git curl unclutter chromium-browser
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 apt-get install -y nodejs
 apt-get install -y build-essential
