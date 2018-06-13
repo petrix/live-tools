@@ -38,7 +38,7 @@ npm i pm2 -g
 pm2 startup
 npm install
 pm2 start index.js
-
+pm2 save
 cp /opt/p3xx/live-tools/lib/autostart.conf /home/pi/.config/lxsession/LXDE-pi/autostart
 
 reboot
