@@ -13,8 +13,9 @@
 	left:370px;
 	top:260px;
 	border-radius:50%;
-	border: 1px solid #ff8f00;;
-	background:gray;
+	border: 0px solid #ff8f00;
+    box-shadow: 0px 0px 5px #ff8f00;
+	background-color: #000;
 }
 .points, .tune, .glass{
 	position:absolute;
