@@ -40,5 +40,6 @@ npm install
 pm2 start index.js
 pm2 save
 cp /opt/p3xx/live-tools/lib/autostart.conf /home/pi/.config/lxsession/LXDE-pi/autostart
+cp /opt/p3xx/live-tools/lib/CASPAR-CG-bootloader.png /usr/share/plymouth/themes/pix/splash.png
 
 reboot
