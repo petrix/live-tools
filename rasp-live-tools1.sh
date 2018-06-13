@@ -31,8 +31,12 @@ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 git clone https://github.com/petrix/live-tools.git
 cd live-tools
-npm install
+
 npm i npm@latest -g
+npm i pm2 -g
+pm2 startup
+npm install
+pm2 start index.js
 
 cp /opt/p3xx/live-tools/lib/autostart.conf /home/pi/.config/lxsession/LXDE-pi/autostart
 
