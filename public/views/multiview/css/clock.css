@@ -7,16 +7,17 @@
 	margin-left: 50px;
 }
 .point{
-    position:absolute;
-    width:20px;
-    height:20px;
-    left:370px;
-    top:260px;
-    border-radius:50%;
-    border: 0px solid #ff8f00;
+	position:absolute;
+	width:40px;
+	height:40px;
+	left:800px;
+	top:490px;
+	border-radius:50%;
+	 border: 0px solid #ff8f00;
     box-shadow: 0px 0px 5px #ff8f00;
     background-color: #000;
 }
+
 .points, .tune, .glass{
 	position:absolute;
 	width:100%;
