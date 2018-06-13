@@ -14,12 +14,9 @@ var PORT = 3000;
 // var options = {
 //     debug: true
 // }
-// var server2 = require('http').createServer(app);
-// app.use('/', ExpressPeerServer(server2, options));
-// server2.listen(9000);
 
-var PeerServer = require('peer').PeerServer;
-var server = PeerServer({port: 9000, path: '/'});
+//var PeerServer = require('peer').PeerServer;
+//var server = PeerServer({port: 9000, path: '/'});
 
 
 
