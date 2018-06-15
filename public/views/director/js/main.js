@@ -1,4 +1,5 @@
 $(function() {
+
     // temp for debugging
     $("#timeofday").click(function() {
         addButtons('CAM1');
@@ -6,26 +7,26 @@ $(function() {
 
     handshaking_module(ready);
 
-    socket.on('custom active', function(customActive){
-        toggleSelector = "#cdtoggle"
-        if (customActive){
-            if ($(toggleSelector).hasClass( 'btn-danger' )) {
-                $(toggleSelector).toggleClass( 'btn-success' );
-                $(toggleSelector).toggleClass( 'btn-danger' );
-                $(toggleSelector).text('DIR. COUNTDOWN');
-                $('#countdown-items').show();
-                //$('.' + $(this).val()).show();
-            };
-        } else {
-            if ($(toggleSelector).hasClass( 'btn-success' )) {
-                $(toggleSelector).toggleClass( 'btn-danger' );
-                $(toggleSelector).toggleClass( 'btn-success' );
-                $(toggleSelector).text('TRACK ON-AIR');
-                $('#countdown-items').hide();
-                //$(#countdown).css("color", "#ccc");
-            };
-        };
-    });
+    // socket.on('custom active', function(customActive){
+    //     toggleSelector = "#cdtoggle"
+    //     if (customActive){
+    //         if ($(toggleSelector).hasClass( 'btn-danger' )) {
+    //             $(toggleSelector).toggleClass( 'btn-success' );
+    //             $(toggleSelector).toggleClass( 'btn-danger' );
+    //             $(toggleSelector).text('DIR. COUNTDOWN');
+    //             $('#countdown-items').show();
+    //             //$('.' + $(this).val()).show();
+    //         };
+    //     } else {
+    //         if ($(toggleSelector).hasClass( 'btn-success' )) {
+    //             $(toggleSelector).toggleClass( 'btn-danger' );
+    //             $(toggleSelector).toggleClass( 'btn-success' );
+    //             $(toggleSelector).text('TRACK ON-AIR');
+    //             $('#countdown-items').hide();
+    //             //$(#countdown).css("color", "#ccc");
+    //         };
+    //     };
+    // });
 
     socket.on('custom play-pause', function(customActive2){
         toggleSelector2 = "#cdgo"
@@ -60,10 +61,10 @@ $(function() {
         timeofday_module('#timeofday span');
 
         // Setup Caspar Countdown Module
-        casparcountdown_module('#countdown span', '#countdownTitle span');
+        casparcountdown_module('#vt_countdown_time', '#vt_countdown_title', true);
 
         // Setup Custom Countdown
-        customcountdown_module('#countdown span', '#countdownTitle span');
+        customcountdown_module('#dir_countdown_time', '#dir_countdown_title', true);
 
         // Setup Messaging Module
         messaging_module_initialise(newMessage, newAcknowledgement);
@@ -75,7 +76,7 @@ $(function() {
         intercom_control_module();
 
         // init countdown
-        $("#cdtoggle").trigger( "click" );
+        // $("#cdtoggle").trigger( "click" );
         // $("#cdgo").trigger( "click" );
     }
 

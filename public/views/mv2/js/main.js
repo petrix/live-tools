@@ -22,8 +22,6 @@ $(function() {
 
 });
 
-
-
 function updateClock(timeString) {
     var date = new Date(timeString);
 

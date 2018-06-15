@@ -35,6 +35,41 @@
   src: local('Open Sans Light'), local('OpenSans-Light'), url('./OpenSans-Light.woff2') format('woff2'), url('OpenSans-Light.ttf') format('truetype');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('Comfortaa-Regular.eot');
+    src: url('Comfortaa-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Comfortaa-Regular.woff2') format('woff2'),
+        url('Comfortaa-Regular.woff') format('woff'),
+        url('Comfortaa-Regular.ttf') format('truetype'),
+        url('Comfortaa-Regular.svg#Comfortaa-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('Comfortaa-Light.eot');
+    src: url('Comfortaa-Light.eot?#iefix') format('embedded-opentype'),
+        url('Comfortaa-Light.woff2') format('woff2'),
+        url('Comfortaa-Light.woff') format('woff'),
+        url('Comfortaa-Light.ttf') format('truetype'),
+        url('Comfortaa-Light.svg#Comfortaa-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('Comfortaa-Bold.eot');
+    src: url('Comfortaa-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Comfortaa-Bold.woff2') format('woff2'),
+        url('Comfortaa-Bold.woff') format('woff'),
+        url('Comfortaa-Bold.ttf') format('truetype'),
+        url('Comfortaa-Bold.svg#Comfortaa-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
 
 body{
     -webkit-touch-callout: none;
@@ -77,6 +112,17 @@ body{
 	font-size: 100%;
 	line-height: 100%;
 	font-weight: bold;
+}
+
+.dirvttitle {
+  font-family: 'Comfortaa';
+    font-weight: 300;
+    font-style: normal;
+}
+.dirvttitlebold {
+  font-family: 'Comfortaa';
+    font-weight: bold;
+    font-style: normal;
 }
 
 .boxtitle {

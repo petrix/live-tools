@@ -54,7 +54,7 @@ Time since RX: #timeRX
     <!-- Log Out Button in bottom left corner-->
     <div class="footer-container" style="padding-left: 0px; padding-right: 0px;">
     <div class="btn-group">
-            <button class="button" style="position:absolute; z-index:10; bottom:12px; left:12px;" onclick="localStorage.removeItem('identity'); document.location.href='/';"><span class="glyphicon glyphicon-log-out"></span></button>
+            <button class="button" style="position:absolute; z-index:10; bottom:12px; left:12px;" onclick="localStorage.removeItem('identity'); document.location.href='/';"><span class="glyphicon glyphicon-equalizer"></span></button>
         </div></div>
     <!-- <button class="btn btn-default" style="position:absolute; z-index:10; bottom:12px; left:12px;" onclick="localStorage.removeItem('identity'); document.location.href='/';">
         <span class="glyphicon glyphicon-log-out"></span>
@@ -129,19 +129,19 @@ Time since RX: #timeRX
         </div>
 
         <div id="righthandSide">
-            <div id="livestatus" class="segment" style="background:rgb(126, 0, 0);">
+            <div id="livestatus" class="segment dirvttitle" style="background:rgb(126, 0, 0);">
                 <span>OFF AIR</span>
             </div>
-            <div id="livetime" class="segment">
-                TX: <span id="timeTX" class="digital" style="font-size: 100px;">00:00:00</span>
+            <div id="livetime" class="segment dirvttitle">
+                TX: <span id="timeTX" class="digital">00:00:00</span>
             </div>
             <div id="dir_countdown" class="segment">
-                <div id="dir_countdown_title" style="font-size: 30px;">Director's Countdown</div>
-                <span id="dir_countdown_time" class="digital" style="font-size: 180px;">00:00:00</span>
+                <div id="dir_countdown_title" class="dirvttitle">Director's Countdown</div>
+                <span id="dir_countdown_time" class="digital">00:00:00</span>
             </div>
             <div id="vt_countdown" class="segment">
-                <div id="vt_countdown_title" style="font-size: 30px;">VT Countdown</div>
-                <span id="vt_countdown_time" class="digital" style="font-size: 180px;">00:00:00</span>
+                <div id="vt_countdown_title" class="dirvttitle">VT Countdown</div>
+                <span id="vt_countdown_time" class="digital">00:00:00</span>
             </div>
         </div>
 

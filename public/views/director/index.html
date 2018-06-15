@@ -46,7 +46,7 @@
 </head>
 
     
-    <body style="background-color:#2a001b;">
+    <body style="background-color: #0e0f10">
     <!-- Players for Intercom -->
     <div id="playback"></div>
     <!-- View -->
@@ -64,7 +64,7 @@
                     <span id="livestatusText">OFF AIR</span><br /><span id="livetimer" class="digital" style="font-size: 70px; margin-top: 10px; margin-bottom: 10px;">00:00:00</span>
                 </div>
 
-                <button id="cdtoggle" class="btn btn-success btn-lg" style="width: 220px; margin: 10px;">DIR. COUNTDOWN</button>
+                <!-- <button id="cdtoggle" class="btn btn-success btn-lg" style="width: 220px; margin: 10px;">DIR. COUNTDOWN</button> -->
   
 <!-- Messaging Modal -->
                 <!-- <button type="button" class="btn btn-primary btn-lg" style="width: 220px; margin: 10px;" data-toggle="modal" data-target="#msgModal">Send Message..</button> -->
@@ -84,13 +84,14 @@
 		
 		
 <!-- Countdown Settings: col-4 -->
-	<div class="modulebox col-xs-12 col-sm-12 col-md-12 col-lg-12" style="min-width: 450px; height:270px; align-content: center; align-self: auto; padding-left: 0px; padding-right: 0px;">
-        	<div id="countdownTitle" class="boxtitle" style="text-align: center; font-size: 30px;">
-                    <span>Initialise first..</span>
+	<div class="modulebox col-xs-12 col-sm-12 col-md-12 col-lg-12" style="min-width: 450px; align-content: center; align-self: auto; padding-left: 0px; padding-right: 0px;">
+        	<div id="dir_countdown" class="segment">
+          <div id="dir_countdown_title">
+                    <span>Director's Countdown</span>
                 </div>
-                <div id="countdown" class="segment digital">
-                    <span>88:88:88</span>
-		</div>
+                <div id="dir_countdown_time" class="digital">
+                    <span>00:00:00</span>
+		</div></div>
 		<div id="countdown-items" class="btn-group" >                 
 		  <button id="cdreset" class="btn btn-danger">RESET</button>		
 		  <button id="cdrm10m" class="btn btn-default">-10 Min</button>
@@ -101,6 +102,10 @@
                   <button id="cdadd10m" class="btn btn-default">+10 Min</button>
 			<button id="cdgo" class="btn btn-success">START</button>
 			</div>
+      <div id="vt_countdown" class="segment">
+                <div id="vt_countdown_title"><span>VT Countdown</span></div>
+                <span id="vt_countdown_time" class="digital">00:00:00</span>
+            </div>
     </div>	
 </div>					       
 <!-- Countdown Settings: col-4 -->					       
@@ -238,7 +243,7 @@
             <!-- Log Out Button -->
             <div class="footer-container" style="padding-left: 0px; padding-right: 0px;">
                 <div class="btn-group">
-                    <button class="button" style="position:absolute; z-index:10; bottom:12px; left:12px;" onclick="localStorage.removeItem('identity'); document.location.href='/';"><span class="glyphicon glyphicon-log-out"></span></button>
+                    <button class="button" style="position:absolute; z-index:10; bottom:12px; left:12px;" onclick="localStorage.removeItem('identity'); document.location.href='/';"><span class="glyphicon glyphicon-equalizer"></span></button>
                 </div>
             </div>
         </div>

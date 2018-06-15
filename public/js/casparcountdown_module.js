@@ -34,10 +34,25 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
 		hours = (hours < 10 ? "0" : "") + hours;
             minutes = (minutes < 10 ? "0" : "") + minutes;
             seconds = (seconds < 10 ? "0" : "") + seconds;
-
+       
             $(timeSelector).text(hours + ':' + minutes + ':' + seconds);
-            
         }
+        var secdot = time;
+        var secdotonly;
+        secdot = secdot.toFixed(1);
+        secdotonly = seconds - secdot;
+        if (secdot <= 15){
+        if (secdotonly < 0 ){
+            $(timeSelector).css( "color" , "#0000" );
+        
+        } else {
+        $(timeSelector).css( "color" , "rgb(255, 20, 20)" );
+        // console.log(secdotonly);
+        }
+} 
+    else {
+      $(timeSelector).css( "color" , "rgb(20, 255, 20)" );  
+    }
     });
     
     socket.on('custom active', function(customActive) {
