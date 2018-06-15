@@ -97,11 +97,10 @@ div {
 }
 #dir_countdown_time {
     font-size: 120px;
-    color: rgb(50, 50, 255);
+    color: rgb(50, 150, 255);
 }
 
 #dir_countdown_title{
-    font-family: 
     /*padding-top: 30px;*/
     font-size: 30px;
     font-family: 'Comfortaa';

@@ -29,8 +29,8 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
             //var hours = Math.floor(time / 3600);
             //var minutes = Math.floor(time / 60);
             //var seconds = time - (minutes * 60);
-
-            seconds = seconds.toFixed(0);
+              seconds = Math.floor(seconds);
+            // seconds = seconds.toFixed(0);
 		hours = (hours < 10 ? "0" : "") + hours;
             minutes = (minutes < 10 ? "0" : "") + minutes;
             seconds = (seconds < 10 ? "0" : "") + seconds;
