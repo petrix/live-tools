@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<!--    user-scalable=yes -->
+    <!--    user-scalable=yes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
     <title>Client Template</title>
@@ -27,8 +27,8 @@
     <!-- Socket.io -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
 
-	
-	<script src="/js/moment.min.js"></script>
+
+    <script src="/js/moment.min.js"></script>
     <!-- Local JS -->
     <script src="js/main.js"></script>
     <script src="/js/config.js"></script>
@@ -45,18 +45,18 @@
     <script src="/js/jquery.textfill.min.js"></script>
 </head>
 
-    
-    <body style="background-color: #0e0f10">
+
+<body style="background-color: #0e0f10">
     <!-- Players for Intercom -->
     <div id="playback"></div>
     <!-- View -->
     <div id="display">
 
-<!-- Row 1-->
+        <!-- Row 1-->
         <div id="row1" class="row mainrow" style="align-content: center; padding-left: 0px; padding-right: 0px;">
-<!-- Time of Day -->
-            <div class="modulebox col-xs-12 col-sm-12 col-md-12 col-lg-12" style="min-width: 320px; align-self: auto; padding-left: 0px; padding-right: 0px;"> 
-		    
+            <!-- Time of Day -->
+            <div class="modulebox col-xs-12 col-sm-12 col-md-12 col-lg-12" style="min-width: 320px; align-self: auto; padding-left: 0px; padding-right: 0px;">
+
                 <div id="timeofday" class="segment digital" style="font-size: 70px;">
                     <span>88:88:88</span>
                 </div>
@@ -65,52 +65,57 @@
                 </div>
 
                 <!-- <button id="cdtoggle" class="btn btn-success btn-lg" style="width: 220px; margin: 10px;">DIR. COUNTDOWN</button> -->
-  
-<!-- Messaging Modal -->
+
+                <!-- Messaging Modal -->
                 <!-- <button type="button" class="btn btn-primary btn-lg" style="width: 220px; margin: 10px;" data-toggle="modal" data-target="#msgModal">Send Message..</button> -->
 
 
-		    
-             </div>	
-<!--END  Time of Day -->
+
+            </div>
+            <!--END  Time of Day -->
 
 
 
 
-<!-- <div class="modulebox col-xs-6 col-sm-6 col-md-3" style="width: 250px;">						    
+            <!-- <div class="modulebox col-xs-6 col-sm-6 col-md-3" style="width: 250px;">						    
               
     
 </div> -->
-		
-		
-<!-- Countdown Settings: col-4 -->
-	<div class="modulebox col-xs-12 col-sm-12 col-md-12 col-lg-12" style="min-width: 450px; align-content: center; align-self: auto; padding-left: 0px; padding-right: 0px;">
-        	<div id="dir_countdown" class="segment">
-          <div id="dir_countdown_title">
-                    <span>Director's Countdown</span>
-                </div>
-                <div id="dir_countdown_time" class="digital">
-                    <span>00:00:00</span>
-		</div></div>
-		<div id="countdown-items" class="btn-group" >                 
-		  <button id="cdreset" class="btn btn-danger">RESET</button>		
-		  <button id="cdrm10m" class="btn btn-default">-10 Min</button>
-                  <button id="cdrm1m" class="btn btn-default">-1 Min</button>
-                  <button id="cdrm10s" class="btn btn-default">-10 Sec</button>                               
-                  <button id="cdadd10s" class="btn btn-default">+10 Sec</button>
-                  <button id="cdadd1m" class="btn btn-default">+1 Min</button>
-                  <button id="cdadd10m" class="btn btn-default">+10 Min</button>
-			<button id="cdgo" class="btn btn-success">START</button>
-			</div>
-      <div id="vt_countdown" class="segment">
-                <div id="vt_countdown_title"><span>VT Countdown</span></div>
-                <span id="vt_countdown_time" class="digital">00:00:00</span>
-            </div>
-    </div>	
-</div>					       
-<!-- Countdown Settings: col-4 -->					       
 
-              <!-- Modal --><!--
+
+            <!-- Countdown Settings: col-4 -->
+            <div class="modulebox col-xs-12 col-sm-12 col-md-12 col-lg-12" style="min-width: 450px; align-content: center; align-self: auto; padding-left: 0px; padding-right: 0px;">
+                <div id="dir_countdown" class="segment">
+                    <div id="dir_countdown_title">
+                        <span>Director's Countdown</span>
+                    </div>
+                    <div id="dir_countdown_time" class="digital">
+                        <span>00:00:00</span>
+                    </div>
+                </div>
+
+                <div id="countdown-items" class="btn-group">
+
+                    <button id="cdreset" class="btn btn-danger">RESET</button>
+                    <button id="cdrm10m" class="btn btn-default">-10 Min</button>
+                    <button id="cdrm1m" class="btn btn-default">-1 Min</button>
+                    <button id="cdrm10s" class="btn btn-default">-10 Sec</button>
+                    <button id="cdadd10s" class="btn btn-default">+10 Sec</button>
+                    <button id="cdadd1m" class="btn btn-default">+1 Min</button>
+                    <button id="cdadd10m" class="btn btn-default">+10 Min</button>
+                    <button id="cdgo" class="btn btn-success">START</button>
+                </div>
+
+                <div id="vt_countdown" class="segment">
+                    <div id="vt_countdown_title"><span>VT Countdown</span></div>
+                    <span id="vt_countdown_time" class="digital">00:00:00</span>
+                </div>
+            </div>
+        </div>
+        <!-- Countdown Settings: col-4 -->
+
+        <!-- Modal -->
+        <!--
               <div class="modal fade" id="msgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
@@ -132,8 +137,9 @@
                   </div>
                 </div>
 	       </div>
-	       --><!-- Modal -->
-	
+	       -->
+        <!-- Modal -->
+
         <!-- End Row 1-->
 
         <!-- Row 2
@@ -149,11 +155,11 @@
           Row 2-->
 
         <!-- Row 2a-->
-                      <div id="row2" class="row mainrow" >
+        <div id="row2" class="row mainrow">
 
-          
-          <!-- Intercom TX Control: col-8 (to be filled dynamically, incl. Tally) -->
-                  <!--
+
+            <!-- Intercom TX Control: col-8 (to be filled dynamically, incl. Tally) -->
+            <!--
                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-left: 0px; padding-right: 0px; min-width: 630px;">
 
                   <div class="boxtitle">
@@ -164,12 +170,12 @@
                   <div id="txControl" class="btn-left"></div>
              </div>
           -->
-        
-        <!-- End Row 2a-->
-        <!-- Row 2-->
-        
-              <!-- Intercom RX Control: col-8 (to be filled dynamically)-->
-                  <!--    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-left: 0px; padding-right: 0px; padding-top: 10px; min-width: 630px;">
+
+            <!-- End Row 2a-->
+            <!-- Row 2-->
+
+            <!-- Intercom RX Control: col-8 (to be filled dynamically)-->
+            <!--    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-left: 0px; padding-right: 0px; padding-top: 10px; min-width: 630px;">
 
                   <div class="boxtitle">
                       <p>RX Control</p>
@@ -179,13 +185,13 @@
               </div>
           
         </div>-->
-        <!-- End Row 2b-->
-
-        
-        <!-- End Row 2-->
+            <!-- End Row 2b-->
 
 
-        <!-- Row 3: Schedule Control 
+            <!-- End Row 2-->
+
+
+            <!-- Row 3: Schedule Control 
         <div id="row3" class="row">
            
             <div class="col-xs-1 modulebox" >
@@ -239,7 +245,7 @@
         </div>
          End Row 3-->
 
-       <div id="row3" class="row"></div>
+            <div id="row3" class="row"></div>
             <!-- Log Out Button -->
             <div class="footer-container" style="padding-left: 0px; padding-right: 0px;">
                 <div class="btn-group">
