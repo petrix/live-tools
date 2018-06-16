@@ -20,7 +20,7 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
             var secdotonly;
             secdot = secdot.toFixed(1);
             secdotonly = seconds - secdot;
-            secdotonly = secdotonly.toFixed(2);
+            secdotonly = secdotonly + 1;
             // seconds = seconds.toFixed(0);
             seconds = Math.floor(seconds);
 
@@ -34,17 +34,17 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
 
             $(timeSelector).text(hours + ':' + minutes + ':' + seconds);
 
-if (data.duration <=15 && data.duration > 0){
+if (data.duration <=15 && data.duration > 0 && data.customActive == true){
  
         $(timeSelector).css( "color" , "rgb(255, 20, 20)" );
         // console.log(secdotonly);
         
-console.log(secdotonly);
+// console.log(secdotonly);
   } else {
     $(timeSelector).css( "color" , "rgb(50, 150, 255)" );  
   }
             if (data.duration < 0) {
-                
+                // active = false;
                 socket.emit('reset custom countdown');
                //$(timeSelector).css( "color" , "#646566" ); 
             }

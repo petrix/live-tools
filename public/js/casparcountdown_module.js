@@ -9,7 +9,13 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
     socket.on('cg countdown path', function(path) {
 		
         if(casparcountdownActive || alwaysActive){
+            if (path.length > 35){
+               path = path.substr(0, 33) + "...";
+            }
+            // console.log(path.length);
             $(pathSelector).text(path);
+
+
         }
     });
 
@@ -40,14 +46,15 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
         var secdot = time;
         var secdotonly;
         secdot = secdot.toFixed(1);
-        secdotonly = seconds - secdot;
+        secdotonly = (seconds - secdot) + 0.5;
         if (secdot <= 15){
-        if (secdotonly < 0 ){
-            $(timeSelector).css( "color" , "#0000" );
+            // console.log(secdotonly);
+        if (secdotonly >= 0 ){
+            $(timeSelector).css( "color" , "rgb(255, 20, 20)" );
         
         } else {
-        $(timeSelector).css( "color" , "rgb(255, 20, 20)" );
-        // console.log(secdotonly);
+        
+        $(timeSelector).css( "color" , "#0000" );
         }
 } 
     else {

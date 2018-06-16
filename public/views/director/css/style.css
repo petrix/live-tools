@@ -70,6 +70,7 @@ div {
     /*font-size: 150px;*/
     color: #D4D5D6;
     width: 80%;
+    min-width: 430px;
     /*height: 100%;*/
     text-align: center;
     margin-top: 10px;
@@ -84,6 +85,7 @@ div {
     /*font-size: 150px;*/
     color: #D4D5D6;
     width: 80%;
+    min-width: 430px;
     /*height: 100%;*/
     text-align: center;
     margin-top: 20px;
@@ -101,7 +103,7 @@ div {
 }
 
 #dir_countdown_title{
-    /*padding-top: 30px;*/
+    padding-top: 20px;
     font-size: 30px;
     font-family: 'Comfortaa';
     font-weight: 300;
@@ -113,7 +115,7 @@ div {
 }
 
 #vt_countdown_title{
-    /*padding-top: 10px;*/
+    padding-top: 20px;
     font-size: 30px;
     font-family: 'Comfortaa';
     font-weight: 300;
@@ -134,13 +136,15 @@ div#countdown-items {
 }
 
 div#countdown-items.btn-group button {
+text-align: center;
+  vertical-align: center;
     font-family: 'Comfortaa';
     font-weight: bold;
     font-style: normal;
     cursor: crosshair;
 }
+@media (min-width: 600px) {
 
-@media (max-width: 768px) {
     #dir_countdown_time{
     font-size: 120px;
    }
@@ -148,24 +152,24 @@ div#countdown-items.btn-group button {
     font-size: 120px;
    }
 
-div#countdown-items.btn-group button {
+/*div#countdown-items.btn-group button {
 
-    padding-left: 4px;
-        padding-right: 4px;
-    }
+    padding-left: 2px;
+        padding-right: 2px;
+    }*/
 #livestatus {
     font-size: 80px;
 
 }
 }
 
+@media (max-width: 768px) {
 
-@media (min-width: 600px) {
     #dir_countdown_time{
-    font-size: 120px;
+    font-size: 100px;
    }
    #vt_countdown_time{
-    font-size: 120px;
+    font-size: 100px;
    }
       #dir_countdown_title{
         /*padding-top: 10px;*/
@@ -174,6 +178,22 @@ div#countdown-items.btn-group button {
    #vt_countdown_title{
     font-size: 20px;
    }
+   div#countdown-items.btn-group button {
+
+    padding-left: 2px;
+        padding-right: 2px;
+    }
+    #dir_countdown {
+    width: 90%;
+    margin-left: 5%;
+      margin-right: 5%;
+}
+    #vt_countdown {
+    width: 90%;
+    margin-left: 5%;
+      margin-right: 5%;
+}
+
 #livestatus {
     font-size: 80px;
 }
@@ -197,6 +217,14 @@ div#countdown-items.btn-group button {
 }
 }
 
+@media (min-width: 1270px) {
+ #dir_countdown_title{
+    font-size: 37px;
+   }
+   #vt_countdown_title{
+    font-size: 37px;
+   }
+}
 
 
 @media (min-width: 1800px) {

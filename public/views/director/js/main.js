@@ -28,25 +28,25 @@ $(function() {
     //     };
     // });
 
-    socket.on('custom play-pause', function(customActive2){
-        toggleSelector2 = "#cdgo"
-        if (customActive2){
-            if ($(toggleSelector2).hasClass( 'btn-danger' )) {
-                $(toggleSelector2).addClass( 'btn-danger' );
-                $(toggleSelector2).removeClass( 'btn-success' );
-                $(toggleSelector2).text('DIR. COUNTDOWN');
+    socket.on('custom play-pause', function(customActive){
+        toggleSelector = "#cdgo"
+        if (customActive){
+            if ($(toggleSelector).hasClass( 'btn-success' )) {
+                $(toggleSelector).removeClass( 'btn-success' );
+                $(toggleSelector).addClass( 'btn-warning' );
+                $(toggleSelector).text('PAUSE');
                 // $('#countdown-items').show();
                 //$('.' + $(this).val()).show();
-            };
+            // }
         } else {
-            if ($(toggleSelector2).hasClass( 'btn-success' )) {
-                $(toggleSelector2).addClass( 'btn-success' );
-                $(toggleSelector2).removeClass( 'btn-danger' );
-                $(toggleSelector2).text('TRACK ON-AIR');
-                // $('#countdown-items').hide();
-                //$(#countdown).css("color", "#ccc");
-            };
-        };
+            
+if ($(toggleSelector).hasClass( 'btn-warning' )) {
+                $(toggleSelector).removeClass( 'btn-warning' );
+                $(toggleSelector).addClass( 'btn-success' );
+                $(toggleSelector).text('START');
+            }
+        }
+    }
     });
 
     function ready() {
@@ -128,6 +128,23 @@ $(function() {
 
     $('#cdreset').click(function() {
         socket.emit('reset custom countdown');
+        if ($(toggleSelector).hasClass( 'btn-warning' )) {
+                $(toggleSelector).removeClass( 'btn-warning' );
+                $(toggleSelector).addClass( 'btn-success' );
+                $(toggleSelector).text('START');
+            }
+        //      else {
+        // if ($(toggleSelector).hasClass( 'btn-success' )) {
+        //     $(toggleSelector).removeClass( 'btn-success' );
+        //         $(toggleSelector).addClass( 'btn-success' );
+        //         $(toggleSelector).text('START');
+        //                     socket.emit('reset custom countdown');
+
+        //     }
+        // }
+
+        // $(toggleSelector).addClass( 'btn-success' );
+        
     });
 
     $('#cdgo').click(function() {
