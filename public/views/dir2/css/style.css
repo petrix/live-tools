@@ -145,6 +145,7 @@ div#countdown-items {
 
 div#countdown-items.btn-group button {
     width: 80px;
+    height: 50px;
     text-align: center;
     vertical-align: center;
     font-size: 15px;
