@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--    user-scalable=yes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+    <title>Client Template</title>
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/xtv.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- JQuery from Google-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Socket.io -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+
+
+    <script src="/js/moment.min.js"></script>
+    <!-- Local JS -->
+    <script src="js/main.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/peer.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/handshaking_module.js"></script>
+    <script src="/js/tally_module.js"></script>
+    <script src="/js/timeofday_module.js"></script>
+    <script src="/js/casparcountdown_module.js"></script>
+    <script src="/js/customcountdown_module.js"></script>
+    <script src="/js/messaging_module.js"></script>
+    <script src="/js/txtime_module.js"></script>
+    <script src="/js/intercom_control_module.js"></script>
+    <script src="/js/jquery.textfill.min.js"></script>
+    <script src="/js/jquery.hotkeys.js"></script>
+</head>
+
+
+<body style="background-color: #0e0f10">
+    <!-- Players for Intercom -->
+    <div id="playback"></div>
+    <!-- View -->
+    <div id="display">
+
+        <!-- Row 1-->
+        <div id="row1" class="row mainrow" style="align-content: center; padding-left: 0px; padding-right: 0px;">
+            <!-- Time of Day -->
+            <div class="modulebox col-xs-12 col-sm-12 col-md-12 col-lg-12" style="min-width: 320px; align-self: auto; padding-left: 0px; padding-right: 0px;">
+
+                <div id="timeofday" class="segment digital" style="font-size: 70px; color: #ff8f00">
+                    <span>88:88:88</span>
+                </div>
+                <div id="livestatus" style="background-color:rgb(126, 0, 0); font-size: 40px; margin-top: 10px; margin-bottom: 10px;">
+                    <span id="livestatusText">OFF AIR</span><br /><span id="livetimer" class="digital" style="font-size: 70px; margin-top: 10px; margin-bottom: 10px;">00:00:00</span>
+                </div>
+
+                <!-- <button id="cdtoggle" class="btn btn-success btn-lg" style="width: 220px; margin: 10px;">DIR. COUNTDOWN</button> -->
+
+                <!-- Messaging Modal -->
+                <!-- <button type="button" class="btn btn-primary btn-lg" style="width: 220px; margin: 10px;" data-toggle="modal" data-target="#msgModal">Send Message..</button> -->
+
+
+
+            </div>
+            <!--END  Time of Day -->
+
+
+
+
+            <!-- <div class="modulebox col-xs-6 col-sm-6 col-md-3" style="width: 250px;">						    
+              
+    
+</div> -->
+
+
+            <!-- Countdown Settings: col-4 -->
+            <div class="modulebox col-xs-12 col-sm-12 col-md-12 col-lg-12" style="min-width: 450px; align-content: center; align-self: auto; padding-left: 0px; padding-right: 0px;">
+                <div id="dir_countdown" class="segment">
+                    <div id="dir_countdown_title">
+                        <span>Director's Countdown</span>
+                    </div>
+                    <div id="dir_countdown_time" class="digital">
+                        <span>00:00:00</span>
+                    </div>
+                </div>
+
+                <div id="countdown-items" class="btn-group">
+
+                    <button id="cdreset" class="btn btn-danger">RESET</button>
+                    <button id="cdrm10m" class="btn btn-default">-10 Min</button>
+                    <button id="cdrm1m" class="btn btn-default">-1 Min</button>
+                    <button id="cdrm10s" class="btn btn-default">-10 Sec</button>
+                    <button id="cdadd10s" class="btn btn-default">+10 Sec</button>
+                    <button id="cdadd1m" class="btn btn-default">+1 Min</button>
+                    <button id="cdadd10m" class="btn btn-default">+10 Min</button>
+                    <button id="cdgo" class="btn btn-success">START</button>
+                </div>
+
+                <div id="vt_countdown" class="segment">
+                    <div id="vt_countdown_title"><span>VT Countdown</span></div>
+                    <span id="vt_countdown_time" class="digital">00:00:00</span>
+                </div>
+            </div>
+        </div>
+        <!-- Countdown Settings: col-4 -->
+
+        <!-- Modal -->
+        <!--
+              <div class="modal fade" id="msgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+					    
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Send Message</h4>
+                    </div>
+					     
+                    <div class="modal-body">
+                      <textarea class="form-control" id="customMessage" rows="3"></textarea>
+                    </div>
+										
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button id="sndMsg" class="btn btn-primary">Send Message</button>
+                    </div>
+								 
+                  </div>
+                </div>
+	       </div>
+	       -->
+        <!-- Modal -->
+
+        <!-- End Row 1-->
+
+        <!-- Row 2
+        <div id="row2" class="row mainrow">
+          
+          <div class="col-xs-3 modulebox" >
+            <div class="boxtitle">
+                <p>Broadcast Message</p>
+            </div>
+            <textarea id="customMessage" rows="3"></textarea>
+            <button id="sndMsg" class="btn btn-success">Send</button>
+          </div>
+          Row 2-->
+
+        <!-- Row 2a-->
+        <div id="row2" class="row mainrow">
+
+
+            <!-- Intercom TX Control: col-8 (to be filled dynamically, incl. Tally) -->
+            <!--
+                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-left: 0px; padding-right: 0px; min-width: 630px;">
+
+                  <div class="boxtitle">
+                      <p>TX Control</p>
+                  </div>
+                  
+                  <div id="tallyIndicator"></div>
+                  <div id="txControl" class="btn-left"></div>
+             </div>
+          -->
+
+            <!-- End Row 2a-->
+            <!-- Row 2-->
+
+            <!-- Intercom RX Control: col-8 (to be filled dynamically)-->
+            <!--    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-left: 0px; padding-right: 0px; padding-top: 10px; min-width: 630px;">
+
+                  <div class="boxtitle">
+                      <p>RX Control</p>
+                  </div>
+                  <div id="rxControl" class="btn-left"></div>
+                  <div id="statusIndicator"></div>
+              </div>
+          
+        </div>-->
+            <!-- End Row 2b-->
+
+
+            <!-- End Row 2-->
+
+
+            <!-- Row 3: Schedule Control 
+        <div id="row3" class="row">
+           
+            <div class="col-xs-1 modulebox" >
+               <div class="boxtitle">
+                    <p>Set As</p>
+                </div>
+                <span></span>
+            </div>
+           
+            <div id="page" class="col-xs-1 modulebox" >
+                <div class="boxtitle">
+                    <p>Page</p>
+                </div>
+                <span></span>
+            </div>
+
+            <div id="title" class="col-xs-2 modulebox" >
+                <div class="boxtitle">
+                    <p>Title</p>
+                </div>
+                <span></span>
+            </div>
+
+            <div id="startTime" class="col-xs-1 modulebox" >
+                <div class="boxtitle">
+                    <p>Start</p>
+                </div>
+                <span></span>
+            </div>
+
+            <div id="duration" class="col-xs-1 modulebox" >
+                <div class="boxtitle">
+                    <p>Duration</p>
+                </div>
+                <span></span>
+            </div>
+           
+            <div id="location" class="col-xs-2 modulebox" >
+                <div class="boxtitle">
+                    <p>Location</p>
+                </div>
+                <span></span>
+            </div>
+            
+            <div id="detail" class="col-xs-4 modulebox" >
+                <div class="boxtitle">
+                    <p>Detail</p>
+                </div>
+                <span></span>
+            </div>
+        </div>
+         End Row 3-->
+
+            <div id="row3" class="row"></div>
+            <!-- Log Out Button -->
+            <div class="footer-container" style="padding-left: 0px; padding-right: 0px;">
+                <div class="btn-group">
+                    <button class="button" style="position:absolute; z-index:10; bottom:12px; left:12px;" onclick="localStorage.removeItem('identity'); document.location.href='/';"><span class="glyphicon glyphicon-equalizer"></span></button>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

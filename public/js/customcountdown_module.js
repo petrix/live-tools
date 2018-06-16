@@ -7,6 +7,7 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
         if (countdownFunction !== undefined) {
             countdownFunction(time);
         }
+        
         casparcountdownActive = !data.customActive;
 
         if (data.customActive || alwaysActive) {
@@ -16,6 +17,10 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
             (data.duration > 0) ? minutes = Math.floor((data.duration - hours * 3600) / 60): minutes = Math.abs(Math.ceil((data.duration - hours * 3600) / 60));
             (data.duration > 0) ? seconds = data.duration - (minutes * 60 + hours * 3600): seconds = Math.abs(data.duration - (minutes * 60 + hours * 3600));
 
+// socket.emit('active custom status', true);
+
+ // console.log(alwaysActive + "- alWays active");     
+   // console.log(casparcountdownActive + "- casparcountdownActive");
             var secdot = seconds;
             var secdotonly;
             secdot = secdot.toFixed(1);
