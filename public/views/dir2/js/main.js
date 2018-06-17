@@ -1,21 +1,4 @@
-var cdstatus = false;
-
 $(function() {
-
-// toggleSelector = "#cdgo";
-// $(function() {if (!customActive){
-//         if ($(toggleSelector).hasClass('btn-success')) {
-//             $(toggleSelector).removeClass('btn-success');
-//             $(toggleSelector).addClass('btn-warning');
-//             $(toggleSelector).text('PAUSE');
-//         } else { 
-//             $(toggleSelector).removeClass('btn-warning');
-//             $(toggleSelector).addClass('btn-success');
-//             $(toggleSelector).text('START');
-// }}
-// console.log(customActive);
-// });
-
 
     $(document).bind('keyup', 'del', function() {
         socket.emit('custom countdown rm10s');
@@ -62,94 +45,28 @@ $(function() {
 
     handshaking_module(ready);
 
-    // socket.on('custom active', function(customActive){
-    //     toggleSelector = "#cdtoggle"
-    //     if (customActive){
-    //         if ($(toggleSelector).hasClass( 'btn-danger' )) {
-    //             $(toggleSelector).toggleClass( 'btn-success' );
-    //             $(toggleSelector).toggleClass( 'btn-danger' );
-    //             $(toggleSelector).text('DIR. COUNTDOWN');
-    //             $('#countdown-items').show();
-    //             //$('.' + $(this).val()).show();
-    //         };
-    //     } else {
-    //         if ($(toggleSelector).hasClass( 'btn-success' )) {
-    //             $(toggleSelector).toggleClass( 'btn-danger' );
-    //             $(toggleSelector).toggleClass( 'btn-success' );
-    //             $(toggleSelector).text('TRACK ON-AIR');
-    //             $('#countdown-items').hide();
-    //             //$(#countdown).css("color", "#ccc");
-    //         };
-    //     };
-    // });
-$(document).ready(function() {
-// socket.on('cdactive false', function(active) {
-if (active == true) {
-
-    toggleSelector = "#cdgo";
-     if ($(toggleSelector).hasClass('btn-success')) {
-    $(toggleSelector).removeClass('btn-success');
-            $(toggleSelector).addClass('btn-warning');
-            $(toggleSelector).text('PAUSE');
-} else {  $(toggleSelector).removeClass('btn-warning');
-            $(toggleSelector).addClass('btn-success');
-            $(toggleSelector).text('START');
-// }
-}
-}
-
-});
-
-
-    // socket.on('custom play-pause', function(customActive) {
-    //     toggleSelector = "#cdgo";
-    //     if ($(toggleSelector).hasClass('btn-success')) {
-    //         $(toggleSelector).removeClass('btn-success');
-    //         $(toggleSelector).addClass('btn-warning');
-    //         $(toggleSelector).text('PAUSE');
-    //     } else {
-    //         $(toggleSelector).removeClass('btn-warning');
-    //         $(toggleSelector).addClass('btn-success');
-    //         $(toggleSelector).text('START');
-    //     }
-    // });
-    socket.on('custom play', function(customActive) {
+    socket.on('custom play', function() {
         toggleSelector = "#cdgo";
-        if ($(toggleSelector).hasClass('btn-warning')) {
-            $(toggleSelector).removeClass('btn-warning');
-            $(toggleSelector).addClass('btn-success');
-            $(toggleSelector).text('START');
-        }
+        $(toggleSelector).removeClass('btn-warning');
+        $(toggleSelector).addClass('btn-success');
+        $(toggleSelector).text('START');
+        $('#dir_countdown_time').css('color', 'rgb(30, 90, 150)');
+        // $('#dir_countdown_time').css('text-shadow', '0px 0px 100px #3296ff;');
     });
 
-    socket.on('custom pause', function(customActive) {
+    socket.on('custom pause', function() {
         toggleSelector = "#cdgo";
-if ($(toggleSelector).hasClass('btn-success')) {
-            $(toggleSelector).removeClass('btn-success');
-            $(toggleSelector).addClass('btn-warning');
-            $(toggleSelector).text('PAUSE');
-        }
+        $(toggleSelector).removeClass('btn-success');
+        $(toggleSelector).addClass('btn-warning');
+        $(toggleSelector).text('PAUSE');
+        // $('#dir_countdown').css('background-color', 'rgb(50, 25, 0)');
     });
-socket.on('cdactive true', function() {
-        toggleSelector = "#cdgo";
-// if ($(toggleSelector).hasClass('btn-success')) {
-            $(toggleSelector).removeClass('btn-success');
-            $(toggleSelector).addClass('btn-warning');
-            $(toggleSelector).text('PAUSE');
-// }
-    });
-// ocket.on('cdactive false', function() {
-//         toggleSelector = "#cdgo";
-// // if ($(toggleSelector).hasClass('btn-success')) {
-//             $(toggleSelector).removeClass('btn-warning');
-//             $(toggleSelector).addClass('btn-success');
-//             $(toggleSelector).text('PAUSE');
-// // }
-//     });
-
-
 
     function ready() {
+
+
+
+
 
         // Set Up Tally
         if (identity.role[0].inputID !== 0) {
@@ -255,16 +172,16 @@ socket.on('cdactive true', function() {
     $('#cdgo').click(function() {
         socket.emit('toggle custom countdown');
     });
-    $('#cdplay').click(function() {
-        socket.emit('play custom countdown');
-    });
-    $('#cdpause').click(function() {
-        socket.emit('pause custom countdown');
-    });
+    // $('#cdplay').click(function() {
+    //     socket.emit('play custom countdown');
+    // });
+    // $('#cdpause').click(function() {
+    //     socket.emit('pause custom countdown');
+    // });
 
-    $('#cdtoggle').click(function() {
-        socket.emit('toggle countdowns');
-    });
+    // $('#cdtoggle').click(function() {
+    //     socket.emit('toggle countdowns');
+    // });
 
     $('#sndMsg').click(function() {
         messaging_module_broadcastMessage($('#customMessage').val());
@@ -283,3 +200,6 @@ socket.on('cdactive true', function() {
     }
 
 });
+// socket.on('countdown', function(data){
+
+// });

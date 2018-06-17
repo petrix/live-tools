@@ -28,26 +28,6 @@ $(function() {
     //     };
     // });
 
-    socket.on('custom play-pause', function(customActive){
-        toggleSelector = "#cdgo"
-        if (customActive){
-            if ($(toggleSelector).hasClass( 'btn-success' )) {
-                $(toggleSelector).removeClass( 'btn-success' );
-                $(toggleSelector).addClass( 'btn-warning' );
-                $(toggleSelector).text('PAUSE');
-                // $('#countdown-items').show();
-                //$('.' + $(this).val()).show();
-            // }
-        } else {
-            
-if ($(toggleSelector).hasClass( 'btn-warning' )) {
-                $(toggleSelector).removeClass( 'btn-warning' );
-                $(toggleSelector).addClass( 'btn-success' );
-                $(toggleSelector).text('START');
-            }
-        }
-    }
-    });
 
     function ready() {
 
@@ -85,7 +65,7 @@ if ($(toggleSelector).hasClass( 'btn-warning' )) {
 
     $('#livestatus').mousedown(function() {
         liveMouseDown = setTimeout(function() {
-            switch($('#livestatus').css('background-color')) {
+            switch ($('#livestatus').css('background-color')) {
                 case 'rgb(239, 65, 54)':
                     socket.emit('status off air');
                     break;
@@ -100,24 +80,24 @@ if ($(toggleSelector).hasClass( 'btn-warning' )) {
             clearTimeout(liveMouseDown);
         }
     });
-    
-    
+
+
     $('#cdrm10m').click(function() {
         socket.emit('custom countdown rm10m');
     });
-    
+
     $('#cdrm1m').click(function() {
         socket.emit('custom countdown rm1m');
     });
-    
+
     $('#cdrm10s').click(function() {
         socket.emit('custom countdown rm10s');
     });
-    
+
     $('#cdadd10s').click(function() {
         socket.emit('custom countdown 10s');
     });
-    
+
     $('#cdadd1m').click(function() {
         socket.emit('custom countdown 1m');
     });
@@ -128,11 +108,11 @@ if ($(toggleSelector).hasClass( 'btn-warning' )) {
 
     $('#cdreset').click(function() {
         socket.emit('reset custom countdown');
-        if ($(toggleSelector).hasClass( 'btn-warning' )) {
-                $(toggleSelector).removeClass( 'btn-warning' );
-                $(toggleSelector).addClass( 'btn-success' );
-                $(toggleSelector).text('START');
-            }
+        if ($(toggleSelector).hasClass('btn-warning')) {
+            $(toggleSelector).removeClass('btn-warning');
+            $(toggleSelector).addClass('btn-success');
+            $(toggleSelector).text('START');
+        }
         //      else {
         // if ($(toggleSelector).hasClass( 'btn-success' )) {
         //     $(toggleSelector).removeClass( 'btn-success' );
@@ -144,16 +124,35 @@ if ($(toggleSelector).hasClass( 'btn-warning' )) {
         // }
 
         // $(toggleSelector).addClass( 'btn-success' );
-        
+
     });
 
     $('#cdgo').click(function() {
         socket.emit('toggle custom countdown');
     });
+    socket.on('toggle custom countdown', function(customActive) {
+        toggleSelector = "#cdgo"
+            // if (customActive) {
+        if ($(toggleSelector).hasClass('btn-success')) {
+            $(toggleSelector).removeClass('btn-success');
+            $(toggleSelector).addClass('btn-warning');
+            $(toggleSelector).text('PAUSE');
+            // $('#countdown-items').show();
+            //$('.' + $(this).val()).show();
+            // }
+        } else {
 
-    $('#cdtoggle').click(function() {
-        socket.emit('toggle countdowns');
+            // if ($(toggleSelector).hasClass('btn-warning')) {
+            $(toggleSelector).removeClass('btn-warning');
+            $(toggleSelector).addClass('btn-success');
+            $(toggleSelector).text('START');
+            // }
+            // }
+        }
     });
+    // $('#cdtoggle').click(function() {
+    //     socket.emit('toggle countdowns');
+    // });
 
     $('#sndMsg').click(function() {
         messaging_module_broadcastMessage($('#customMessage').val());
@@ -164,7 +163,7 @@ if ($(toggleSelector).hasClass( 'btn-warning' )) {
 
     function newAcknowledgement(senderId) {
         console.log('Acknowledgement from ' + senderId);
-        $('#' + senderId +'-status').css("background", "linear-gradient(to bottom, #5CB85C 0px, #419641 100%)");
+        $('#' + senderId + '-status').css("background", "linear-gradient(to bottom, #5CB85C 0px, #419641 100%)");
     }
 
     function newMessage(message, sender) {

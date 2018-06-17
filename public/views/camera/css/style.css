@@ -3,6 +3,7 @@
     src: url('./DSDIGI.eot');
     src: local('DSDIGI'), url('./DSDIGI.woff') format('woff'), url('./DSDIGI.ttf') format('truetype');
 }
+
 .btn-circle {
     width: 49px !important;
     height: 49px !important;
@@ -12,6 +13,7 @@
     line-height: 2.00 !important;
     border-radius: 30px !important;
 }
+
 .btn-circle-micro {
     width: 19px !important;
     height: 19px !important;
@@ -21,6 +23,7 @@
     line-height: 0.1 !important;
     border-radius: 30px !important;
 }
+
 .btn-circle-sm {
     width: 35px !important;
     height: 35px !important;
@@ -30,6 +33,7 @@
     line-height: 1.65 !important;
     border-radius: 30px !important;
 }
+
 .btn-circle-lg {
     width: 79px !important;
     height: 79px !important;
@@ -40,6 +44,7 @@
     border-radius: 70px !important;
     margin: 5px;
 }
+
 .btn-circle-res {
     width: 48px !important;
     height: 48px !important;
@@ -50,17 +55,20 @@
     border-radius: 50% !important;
     margin: 5px;
 }
+
 #display {
     height: 100vh;
     width: 100vw;
     background: #2a001b;
     color: #D4D5D6;
 }
+
 .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
     width: 100%;
 }
+
 .modulebox {
     padding: 10px;
     text-align: center;
@@ -69,11 +77,14 @@
     font-size: 300%;
     text-align: center;
 }
-.digital {
+
+
+/* .digital {
     font-family: 'DSDIGI';
     font-size: 115%;
     line-height: 100%
-}
+} */
+
 .boxtitle {
     font-size: 14pt;
     text-align: center;
@@ -81,6 +92,7 @@
     line-height: 1em;
     font-weight: 100;
 }
+
 div#liveSymbol {
     background-color: #EF4136;
     border: 2px solid #2a001b;
@@ -94,12 +106,14 @@ div#liveSymbol {
     top: 0.4em;
     margin-left: 0.5em;
 }
+
 #portraitWarning {
     position: absolute;
     z-index: -10;
     top: 12px;
     left: 12px;
 }
+
 @media only screen and (max-width: 567px) {
     .modulebox {
         font-size: 255%;
@@ -108,11 +122,13 @@ div#liveSymbol {
         font-size: 10pt;
     }
 }
+
 @media screen and (orientation:portrait) {
     #display {
         visibility: hidden;
     }
 }
+
 @media screen and (orientation:landscape) {
     #display {
         visibility: visible;
@@ -121,29 +137,36 @@ div#liveSymbol {
         visibility: hidden;
     }
 }
+
 #row1 {
     height: 25%;
 }
+
 #row2 {
     height: 60%;
 }
+
 #row3 {
     height: 15%;
 }
+
 #livestatus {
     text-align: center;
 }
+
 div#messageDisplay {
     width: 100%;
     height: 100%;
     text-align: center;
     position: relative;
 }
+
 div#messageDisplay .title {
     font-size: 2.5em;
     padding-left: 2em;
     padding-right: 2em;
 }
+
 div#messageDisplay .message {
     font-size: 1.7em;
     padding-left: 3em;
@@ -151,6 +174,7 @@ div#messageDisplay .message {
     width: 100%;
     font-weight: 100;
 }
+
 div#messageDisplay .acknowledge {
     font-size: 1.4em;
     padding-left: 3em;
@@ -166,6 +190,7 @@ div#messageDisplay .acknowledge {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
 @media only screen and (max-width: 567px) {
     div#messageDisplay .title {
         font-size: 2em;
@@ -174,12 +199,14 @@ div#messageDisplay .acknowledge {
         font-size: 1.2em;
     }
 }
+
 div.footer-container {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
 }
+
 div.footer-container .btn-group {
     position: absolute;
     width: 100%;
@@ -187,13 +214,14 @@ div.footer-container .btn-group {
     padding-left: 8px;
     right: 0;
 }
+
 div.footer-container .btn-group button {
     display: inline-block;
     width: 50px;
     height: 50px;
     text-align: center;
     font-size: 20px;
-    border-radius: 50% !important ;
+    border-radius: 50% !important;
     margin-bottom: 8px;
     margin-right: 8px;
     outline: 0 !important;
@@ -201,10 +229,12 @@ div.footer-container .btn-group button {
     border: solid 2px #D4D5D6;
     background-color: rgba(0, 0, 0, 0);
 }
+
 div.footer-container .btn-group button.highlighted {
     color: #2a001b;
     background-color: #D4D5D6;
 }
+
 @media only screen and (max-width: 567px) {
     div.footer-container .btn-group {
         padding-left: 6px;
