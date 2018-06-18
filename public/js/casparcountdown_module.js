@@ -21,6 +21,13 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
 
     socket.on('cg countdown timeData', function(time, totalTime) {
 
+        // procent time
+        var procentTime = ((time * 100) / totalTime);
+
+        $('.progress-bar').css('width', procentTime + '%');
+        // console.log("procentTime - " + procentTime.toFixed(0) + '%');
+// console.log("time - " + time);
+// console.log("totalTime - " + totalTime);
         if (countdownFunction !== undefined) {
             countdownFunction(time);
         }
