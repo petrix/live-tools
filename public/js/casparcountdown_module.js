@@ -24,7 +24,7 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
         // procent time
         var procentTime = ((time * 100) / totalTime);
 
-        $('.progress-bar-success').css('width', procentTime.toFixed(0) + '%');
+        $('.progress-bar-success').css('width', procentTime.toFixed(2) + '%');
         // console.log("procentTime - " + procentTime.toFixed(0) + '%');
 // console.log("time - " + time);
 // console.log("totalTime - " + totalTime);

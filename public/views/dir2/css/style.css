@@ -47,11 +47,6 @@ textarea {
     /*padding-bottom: 10px;*/
 }
 
-#statusIndicator {
-    width: 100%;
-    /*padding-top: 20px;*/
-}
-
 .btn-left {
     float: none;
 }
@@ -62,41 +57,19 @@ div {
     border-width: 0px;
 }
 
-#countdown {
-    font-size: 150px;
-    color: #D4D5D6;
-}
-
-#dir_countdown {
+#dir_countdown, #vt_countdown, #livestatus {
     /*font-size: 150px;*/
     color: #D4D5D6;
     width: 80%;
     min-width: 430px;
     /*height: 100%;*/
     text-align: center;
-    margin-top: 10px;
+   /* margin-top: 10px;*/
     margin-left: 10%;
     margin-right: 10%;
     border: 2px solid #ff8f00;
     box-shadow: 0px 0px 5px #ff8f00;
     border-radius: 30px;
-    background-color: rgb(30, 15, 0);
-}
-
-#vt_countdown {
-    /*font-size: 150px;*/
-    color: #D4D5D6;
-    width: 80%;
-    min-width: 430px;
-    /*height: 100%;*/
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    border: 2px solid #ff8f00;
-    box-shadow: 0px 0px 5px #ff8f00;
-    border-radius: 30px;
-    overflow: hidden;
     background-color: rgb(30, 15, 0);
 }
 
@@ -104,47 +77,37 @@ div {
     font-size: 120px;
     color: rgb(50, 150, 255);
 }
-
-#dir_countdown_title {
-    padding-top: 20px;
-    font-size: 30px;
-    font-family: 'Comfortaa';
-    font-weight: 300;
-    font-style: normal;
-}
-
 #vt_countdown_time {
     font-size: 120px;
 }
-
-#vt_countdown_title {
-    text-align: center;
-    /* width: 100%; */
+#dir_countdown_title, #vt_countdown_title, #livestatus {
     padding-top: 20px;
     font-size: 30px;
     font-family: 'Comfortaa';
     font-weight: 300;
-    /* overflow: hidden; */
     font-style: normal;
 }
-
-#livestatus {
-    font-family: 'Comfortaa';
+#livestatus
+ {
+    margin-top: 20px;
+    font-size: 100px;
     font-weight: bold;
-    font-style: normal;
 }
 
 div#countdown-items {
     margin-top: 15px;
-    min-width: 430px;
-    border: 1px solid #000;
+    min-width: 400px;
+    width: 60%;
+    /*height: 50px;*/
+    /*border: 1px solid #000;
     box-shadow: 0px 0px 5px #ff8f00;
     border-radius: 30px;
-    overflow: hidden;
+    overflow: hidden;*/
 }
 
 div#countdown-items.btn-group button {
-    width: 80px;
+    width: 12.5%;
+    min-width: 50px;
     height: 50px;
     text-align: center;
     vertical-align: center;
@@ -155,129 +118,159 @@ div#countdown-items.btn-group button {
     cursor: crosshair;
 }
 
-@media (min-width: 600px) {
-    #dir_countdown_time {
-        font-size: 120px;
+@media only screen and (min-width: 100px) {
+    #livestatus{
+        position: absolute;
+        visibility: hidden;
     }
-    #vt_countdown_time {
-        font-size: 120px;
+    #dir_countdown, #vt_countdown{
+    width: 98%;
+    margin-top: 10px;
+        margin-left: 1%;
+        margin-right: 1%;
     }
-    div#countdown-items.btn-group button {
-        width: 70px;
-        padding-left: 2px;
-        padding-right: 2px;
-    }
-    #livestatus {
-        font-size: 80px;
-    }
-}
-
-@media (max-width: 768px) {
-    #dir_countdown_time {
+    #dir_countdown_time, #vt_countdown_time {
         font-size: 100px;
+        line-height: 80%;
     }
-    #vt_countdown_time {
-        font-size: 100px;
-    }
-    #dir_countdown_title {
-        /*padding-top: 10px;*/
+    #dir_countdown_title, #vt_countdown_title{
+        padding-top: 10px;
         font-size: 20px;
     }
-    #vt_countdown_title {
-        font-size: 20px;
+    div#countdown-items {
+    margin-top: 15px;
+    min-width: 400px;
+    width: 90%;
     }
     div#countdown-items.btn-group button {
         font-size: 11px;
-        width: 56px;
         padding-left: 1px;
         padding-right: 1px;
     }
-    #dir_countdown {
-        width: 98%;
+}
+
+@media only screen and (min-width: 600px) {
+    #livestatus{
+        position: absolute;
+        visibility: hidden;
+    }
+    #dir_countdown, #vt_countdown{
+    width: 98%;
+    margin-top: 10px;
         margin-left: 1%;
         margin-right: 1%;
     }
-    #vt_countdown {
-        width: 98%;
+    #vt_countdown{
+    width: 98%;
+    margin-top: 20px;
         margin-left: 1%;
         margin-right: 1%;
     }
-    #livestatus {
-        font-size: 80px;
+    #dir_countdown_time, #vt_countdown_time {
+        font-size: 100px;
+        line-height: 80%;
     }
-}
-
-@media (min-width: 1100px) {
-    #dir_countdown_time {
-        font-size: 200px;
+    #dir_countdown_title, #vt_countdown_title{
+        padding-top: 10px;
+        font-size: 20px;
     }
-    #vt_countdown_time {
-        font-size: 200px;
-    }
-    #dir_countdown_title {
-        font-size: 30px;
-    }
-    #vt_countdown_title {
-        font-size: 30px;
-    }
-    #livestatus {
-        font-size: 200px;
-    }
-}
-
-@media (min-width: 1270px) {
-    #dir_countdown_title {
-        font-size: 37px;
-    }
-    #vt_countdown_title {
-        font-size: 37px;
+    div#countdown-items {
+    margin-top: 15px;
+    min-width: 400px;
+    width: 90%;
     }
     div#countdown-items.btn-group button {
-        width: 80px;
+        font-size: 13px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+     #livestatus{
+        position: relative;
+        visibility: visible;
+    }
+    #dir_countdown, #vt_countdown{
+    width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-bottom: 15px;
+        margin-top: 20px;
+    }
+    #dir_countdown_time, #vt_countdown_time {
+        font-size: 140px;
+        padding-bottom: 20px;
+        /*line-height: 80%;*/
+    }
+    #dir_countdown_title, #vt_countdown_title{
+        /*padding-top: 10px;*/
+        font-size: 30px;
+    }
+    .progress{
+       margin:30px;
+    }
+    div#countdown-items {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    min-width: 400px;
+    width: 60%;
+    }
+    div#countdown-items.btn-group button {
+        font-size: 15px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #dir_countdown, #vt_countdown{
+    width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20px;
+    }
+    #dir_countdown{
+        margin-top: 40px;
+    }
+    #dir_countdown_time, #vt_countdown_time {
+        font-size: 170px;
+        padding-bottom: 10px;
+    }
+    #dir_countdown_title, #vt_countdown_title{
+        /*padding-top: 10px;*/
+        font-size: 40px;
+    }
+    .progress{
+       margin:30px;
+    }
+    div#countdown-items {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    min-width: 400px;
+    width: 60%;
+    }
+    div#countdown-items.btn-group button {
+        font-size: 15px;
+        padding-left: 1px;
+        padding-right: 1px;
     }
 }
 
 @media (min-width: 1800px) {
-    #dir_countdown_time {
-        font-size: 280px;
+    #dir_countdown{
+        margin-top: 20px;
     }
-    #vt_countdown_time {
-        font-size: 280px;
+    #dir_countdown_time, #vt_countdown_time{
+        font-size: 300px;
     }
-    #dir_countdown_title {
-        font-size: 50px;
+    #dir_countdown_title, #vt_countdown_title {
+        font-size: 60px;
     }
-    #vt_countdown_title {
-        font-size: 50px;
-    }
-    #livestatus {
-        font-size: 130px;
-    }
-}
-
-
-/*@media (min-width: 1800px) {
-    #dir_countdown_time{
-    font-size: 400px;
-   }
-   #vt_countdown_time{
-    font-size: 400px;
-   }
-    #livestatus {
-    font-size: 130px;
-                }
-   }*/
-
-@media only screen and (max-width: 567px) {
-    div.footer-container .btn-group {
-        padding-left: 6px;
-    }
-    div.footer-container .btn-group button {
-        width: 42px;
-        height: 42px;
-        font-size: 14px;
-        margin-bottom: 3px;
-        margin-right: 6px;
+    div#countdown-items {
+        width: 600px;
+         position: absolute; 
+        visibility: hidden;
     }
 }
 

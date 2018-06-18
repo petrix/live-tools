@@ -1,12 +1,12 @@
 $(function() {
-
-    $(document).bind('keyup', 'del', function() {
+       var toggleSelector = "#cdgo";
+    $(document).bind('keyup', 'd', function() {
         socket.emit('custom countdown rm10s');
     });
-    $(document).bind('keyup', 'end', function() {
+    $(document).bind('keyup', 's', function() {
         socket.emit('custom countdown rm1m');
     });
-    $(document).bind('keyup', 'pagedown', function() {
+    $(document).bind('keyup', 'a', function() {
         socket.emit('custom countdown rm10m');
     });
     $(document).bind('keyup', 'esc', function() {
@@ -15,27 +15,22 @@ $(function() {
         $(toggleSelector).addClass('btn-success');
         $(toggleSelector).text('START');
     });
-    $(document).bind('keyup', 'insert', function() {
+    $(document).bind('keyup', 'e', function() {
         socket.emit('custom countdown 10s');
     });
-    $(document).bind('keyup', 'home', function() {
+    $(document).bind('keyup', 'w', function() {
         socket.emit('custom countdown 1m');
     });
-    $(document).bind('keyup', 'pageup', function() {
+    $(document).bind('keyup', 'q', function() {
         socket.emit('custom countdown 10m');
+    });
+    $(document).bind('keyup', 'r', function() {
+        socket.emit('toggle custom countdown');
     });
     $(document).bind('keyup', 'return', function() {
         socket.emit('toggle custom countdown');
     });
-    $(document).bind('keyup', 'space', function() {
-        socket.emit('toggle custom countdown');
-    });
-    $(document).bind('keyup', 'q', function() {
-        socket.emit('play custom countdown');
-    });
-    $(document).bind('keyup', 'w', function() {
-        socket.emit('pause custom countdown');
-    });
+  
 
 
     // temp for debugging
@@ -46,19 +41,19 @@ $(function() {
     handshaking_module(ready);
 
     socket.on('custom play', function() {
-        toggleSelector = "#cdgo";
         $(toggleSelector).removeClass('btn-warning');
         $(toggleSelector).addClass('btn-success');
         $(toggleSelector).text('START');
         $('#dir_countdown_time').css('color', 'rgb(30, 90, 150)');
+        socket.emit('status off air');
         // $('#dir_countdown_time').css('text-shadow', '0px 0px 100px #3296ff;');
     });
 
     socket.on('custom pause', function() {
-        toggleSelector = "#cdgo";
         $(toggleSelector).removeClass('btn-success');
         $(toggleSelector).addClass('btn-warning');
         $(toggleSelector).text('PAUSE');
+        socket.emit('status on air reset');
         // $('#dir_countdown').css('background-color', 'rgb(50, 25, 0)');
     });
 
@@ -87,8 +82,8 @@ $(function() {
         messaging_module_initialise(newMessage, newAcknowledgement);
 
         // Setup RX time display
-        txtime_module('#livetimer', '#livestatusText', '#livestatus');
-
+        // txtime_module('#livetimer', '#livestatusText', '#livestatus');
+        txtime_module('#timeTX', '#livestatus span', '#livestatus');
         // Setup intercom controllers
         intercom_control_module();
 
@@ -98,28 +93,25 @@ $(function() {
     }
 
     // toggle on air status
-    var liveMouseDown;
+    // var liveMouseDown;
 
-    $('#livestatus').mousedown(function() {
-        liveMouseDown = setTimeout(function() {
-            switch ($('#livestatus').css('background-color')) {
-                case 'rgb(239, 65, 54)':
-                    socket.emit('status off air');
-                    break;
-                case 'rgb(126, 0, 0)':
-                    socket.emit('status on air reset');
-                    break;
-            }
-        }, 1200);
-    });
-    $('#livestatus').mouseup(function() {
-        if (liveMouseDown) {
-            clearTimeout(liveMouseDown);
-        }
-    });
-
-
-
+    // $('#livestatus').mousedown(function() {
+    //     liveMouseDown = setTimeout(function() {
+    //         switch ($('#livestatus').css('background-color')) {
+    //             case 'rgb(239, 65, 54)':
+    //                 socket.emit('status off air');
+    //                 break;
+    //             case 'rgb(126, 0, 0)':
+    //                 socket.emit('status on air reset');
+    //                 break;
+    //         }
+    //     }, 1200);
+    // });
+    // $('#livestatus').mouseup(function() {
+    //     if (liveMouseDown) {
+    //         clearTimeout(liveMouseDown);
+    //     }
+    // });
 
     $('#cdrm10m').click(function() {
         socket.emit('custom countdown rm10m');

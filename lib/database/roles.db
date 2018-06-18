@@ -1,8 +1,9 @@
 {"roleName":"Camera 1 - NIK","shortName":"CAM1","roleCategory":"camera","location":"Studio","inputNumber":1,"hasTalkBack":true,"_id":"452qPzXqYWl74z17"}
-{"roleName":"Sound","shortName":"SFX","roleCategory":"general","location":"Gallery","inputNumber":0,"hasTalkBack":true,"_id":"7g1ZhQYbSPjH6B0a"}
+{"roleName":"Sound","shortName":"SFX","roleCategory":"mv2","location":"Gallery","inputNumber":0,"hasTalkBack":true,"_id":"7g1ZhQYbSPjH6B0a"}
 {"roleName":"Camera 4","shortName":"CAM4","roleCategory":"camera","location":"Studio","inputNumber":4,"hasTalkBack":true,"_id":"HWlqNMHD5TG57VQo"}
 {"roleName":"Camera 2 is stup","shortName":"CAM2","roleCategory":"camera","location":"Studio","inputNumber":2,"hasTalkBack":true,"_id":"LcJOVOiefsobrFWe"}
 {"roleName":"Dir2","shortName":"DIR2","roleCategory":"dir2","location":"Studio","inputNumber":0,"hasTalkBack":true,"_id":"Ov1Uj9fUa9mwZZVC"}
+{"roleName":"MULTI-X2","shortName":"MX2","roleCategory":"mx2","location":"Studio","inputNumber":0,"hasTalkBack":false,"_id":"RHAWlHW2VeZan6Kj"}
 {"roleName":"Camera 5","shortName":"CAM5","roleCategory":"camera","location":"Studio","inputNumber":5,"hasTalkBack":true,"_id":"V7cdvRVvlSbk1507"}
 {"roleName":"Camera 3","shortName":"CAM3","roleCategory":"camera","location":"Studio","inputNumber":3,"hasTalkBack":true,"_id":"WlbFyDwzvdKlm8er"}
 {"roleName":"Multiview-v2","shortName":"MV2","roleCategory":"mv2","location":"","inputNumber":0,"hasTalkBack":false,"_id":"dqR0e1qxH7KkhAWD"}

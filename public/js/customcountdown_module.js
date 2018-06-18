@@ -25,10 +25,13 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
             var secdotonly;
             secdot = secdot.toFixed(1);
             secdotonly = seconds - secdot;
-            secdotonly = secdotonly + 1;
+            // secdotonly = secdotonly + 1;
+            secdotonly = secdotonly.toFixed(2);
             // seconds = seconds.toFixed(0);
+            
+// console.log('secdotonly - ' + secdotonly);
+// console.log(seconds);
             seconds = Math.floor(seconds);
-
             hours = ((hours < 10 && hours >= 0) ? "0" : "") + hours;
             minutes = ((minutes < 10 && minutes >= 0) ? "0" : "") + minutes;
 
@@ -39,22 +42,23 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
 
             $(timeSelector).text(hours + ':' + minutes + ':' + seconds);
 
-            if (data.duration <= 15 && data.duration > 0) {
+            // if (data.duration <= 15 && data.duration > 0) {
+                if (data.duration <= 15 && data.duration > 0) {
 
                 $(timeSelector).css("color", "rgb(255, 20, 20)");
                 // console.log(secdotonly);
 
-                console.log(secdotonly);
+                
             } else {
                 $(timeSelector).css("color", "rgb(50, 150, 255)");
             }
+            
             if (data.duration < 0) {
                 // active = false;
                 socket.emit('reset custom countdown');
                 //$(timeSelector).css( "color" , "#646566" ); 
             }
         }
-
-
+        //here
     });
 }
