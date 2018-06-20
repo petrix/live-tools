@@ -31,7 +31,7 @@
 	transform-origin: -455px 0px;
 }
 .p0{
-    -webkit-transform: translateX(144px) rotate(268deg);
+    -webkit-transform: translateX(142px) rotate(268deg);
     transform: translateX(142px) rotate(268deg);
 	width:40px;
 	height:40px;
@@ -53,8 +53,8 @@
     transform: translateX(144px) rotate(292deg);
 }
 .p5{
-    -webkit-transform: translateX(144px) rotate(298deg);
-    transform: translateX(144px) rotate(298deg);
+    -webkit-transform: translateX(142px) rotate(298deg);
+    transform: translateX(142px) rotate(298deg);
 }
 .p6{
     -webkit-transform: translateX(144px) rotate(304deg);
@@ -73,8 +73,8 @@
     transform: translateX(144px) rotate(322deg);
 }
 .p10{
-    -webkit-transform: translateX(144px) rotate(328deg);
-    transform: translateX(144px) rotate(328deg);
+    -webkit-transform: translateX(142px) rotate(328deg);
+    transform: translateX(142px) rotate(328deg);
 }
 .p11{
     -webkit-transform: translateX(144px) rotate(334deg);
@@ -93,8 +93,8 @@
     transform: translateX(144px) rotate(352deg);
 }
 .p15{
-    -webkit-transform: translateX(144px) rotate(358deg);
-    transform: translateX(144px) rotate(358deg);
+    -webkit-transform: translateX(142px) rotate(358deg);
+    transform: translateX(142px) rotate(358deg);
 }
 .p16{
     -webkit-transform: translateX(144px) rotate(364deg);
@@ -143,7 +143,7 @@
 .p27{
     -webkit-transform: translateX(144px) rotate(430deg);
     transform: translateX(144px) rotate(430deg);
-}/*gfhgfhgfhgfhgfh*/
+}
 .p28{
     -webkit-transform: translateX(144px) rotate(436deg);
     transform: translateX(144px) rotate(436deg);
@@ -153,8 +153,8 @@
     transform: translateX(144px) rotate(442deg);
 }
 .p30{
-    -webkit-transform: translateX(144px) rotate(448deg);
-    transform: translateX(144px) rotate(448deg);
+    -webkit-transform: translateX(142px) rotate(448deg);
+    transform: translateX(142px) rotate(448deg);
 }
 .p31{
     -webkit-transform: translateX(144px) rotate(454deg);
@@ -213,8 +213,8 @@
     transform: translateX(144px) rotate(532deg);
 }
 .p45{
-    -webkit-transform: translateX(144px) rotate(538deg);
-    transform: translateX(144px) rotate(538deg);
+    -webkit-transform: translateX(142px) rotate(538deg);
+    transform: translateX(142px) rotate(538deg);
 }
 .p46{
     -webkit-transform: translateX(144px) rotate(544deg);
@@ -243,7 +243,7 @@
 .p52{
     -webkit-transform: translateX(144px) rotate(580deg);
     transform: translateX(144px) rotate(580deg);
-}/**/
+}
 .p53{
     -webkit-transform: translateX(144px) rotate(586deg);
     transform: translateX(144px) rotate(586deg);
