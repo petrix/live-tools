@@ -13,14 +13,14 @@ textarea {
 div.progress {
     background-image: linear-gradient(to bottom,#ff1414 0,#ff1414 100%);
     height: 30px;
-    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+    box-shadow: 0 0 0 #000 inset, 0 0 0 #444;
     border-radius: 15px;
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 div.progress-bar.progress-bar-success {
     background-image: linear-gradient(to bottom,#14ff14 0,#14ff14 100%);
-    box-shadow: 0 2px 0 rgba(255, 255, 255, .5) inset;
+    box-shadow: 0 0 0 rgba(255, 255, 255, .5) inset;
     margin-bottom: 5px;
 
 }
@@ -95,7 +95,7 @@ div {
     font-size: 120px;
 }
 #dir_countdown_title, #vt_countdown_title, #livestatus {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 30px;
     font-family: 'Comfortaa';
     font-weight: 300;
@@ -274,9 +274,11 @@ div#countdown-items.btn-group button {
 @media (min-width: 1800px) {
     #dir_countdown{
         margin-top: 20px;
+        padding-bottom: 0px;
     }
     #dir_countdown_time, #vt_countdown_time{
-        font-size: 300px;
+        font-size: 370px;
+        line-height: 70%
     }
     #dir_countdown_title, #vt_countdown_title {
         font-size: 60px;
