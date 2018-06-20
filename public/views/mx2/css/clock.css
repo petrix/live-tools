@@ -271,6 +271,12 @@
     transform: translateX(144px) rotate(622deg);
 }
 
+
+
+.points0x2{
+	-webkit-transform-origin: -400px 0px;
+	transform-origin: -400px 0px;
+}
 .p0x2 {
     -webkit-transform: translateX(144px) rotate(268deg);
     transform: translateX(144px) rotate(268deg);
