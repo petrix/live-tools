@@ -8,8 +8,8 @@
 }
 .point{
 	position:absolute;
-	width:34px;
-	height:34px;
+	width:32px;
+	height:32px;
 	left:800px;
 	top:490px;
 	border-radius:50%;
@@ -274,32 +274,32 @@
 
 
 .points0x2{
-	-webkit-transform-origin: -400px 0px;
-	transform-origin: -400px 0px;
+	-webkit-transform-origin: -455px 0px;
+	transform-origin: -455px 0px;
 }
 .p0x2 {
     -webkit-transform: translateX(144px) rotate(268deg);
-    transform: translateX(144px) rotate(268deg);
+    transform: translateX(144px) translateY(50px) rotate(268deg);
 }
 .p10x2{
     -webkit-transform: translateX(144px) rotate(328deg);
-    transform: translateX(144px) rotate(328deg);
+    transform: translateX(103px) translateY(25px) rotate(328deg);
 }
 .p20x2{
     -webkit-transform: translateX(144px) rotate(388deg);
-    transform: translateX(144px) rotate(388deg);
+    transform: translateX(103px) translateY(-25px) rotate(388deg);
 }
 .p30x2{
     -webkit-transform: translateX(144px) rotate(448deg);
-    transform: translateX(144px) rotate(448deg);
+    transform: translateX(144px) translateY(-50px) rotate(448deg);
 }
 .p40x2{
     -webkit-transform: translateX(144px) rotate(508deg);
-    transform: translateX(144px) rotate(508deg);
+    transform: translateX(185px) translateY(-25px) rotate(508deg);
 }
 .p50x2{
     -webkit-transform: translateX(144px) rotate(568deg);
-    transform: translateX(144px) rotate(568deg);
+    transform: translateX(185px)  translateY(25px) rotate(568deg);
 }
 
 /* Styling */

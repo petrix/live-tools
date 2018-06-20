@@ -41,4 +41,11 @@ function updateClock(timeString) {
     for (i = (seconds + 1); i < 60; i++) {
         $(".p" + i).css("background", "#140b00");
     }
+    for (i = 0; i < (seconds + 1); i++) {
+        $(".p" + i + "x2").css("background", "#ff0000");
+    }
+    // clear remaining seconds
+    for (i = (seconds + 1); i < 60; i++) {
+        $(".p" + i + "x2").css("background", "#140b00");
+    }
 }

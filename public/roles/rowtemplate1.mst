@@ -7,8 +7,16 @@
     </td>
     <td>
         <select class="{{_id}} {{add}}" name="roleCategory">
+            <option value="autocue" disabled>Autocue</option>
+            <option value="camera">Camera</option>
+            <option value="director">Director</option>
+            <option value="general">General</option>
+            <option value="multiview">Multiview</option>
+            <option value="mv2">Multiview-v2</option>
             <option value="dir2">Dir-v2</option>
             <option value="mx2">Multiview-x2</option>
+            <option value="presenter">Presenter</option>
+            <option value="runner" disabled>Runner</option>
         </select>
     </td>
     <td>
