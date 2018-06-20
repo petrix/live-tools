@@ -31,10 +31,12 @@
 	transform-origin: -455px 0px;
 }
 .p0{
-    -webkit-transform: translateX(142px) rotate(268deg);
-    transform: translateX(142px) rotate(268deg);
-	width:60px;
-	height:60px;
+    -webkit-transform: translateX(144px) rotate(268deg);
+    transform: translateX(144px) rotate(268deg);
+}
+.p0x2 {
+    -webkit-transform: translateX(144px) rotate(268deg);
+    transform: translateX(144px) rotate(268deg);
 }
 .p1{
     -webkit-transform: translateX(144px) rotate(274deg);
