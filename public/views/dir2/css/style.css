@@ -18,6 +18,9 @@ div.progress {
     margin-bottom: 5px;
     margin-top: 15px;
 }
+div.progress-bar {
+    transition: width 0.2s ease;
+}
 div.progress-bar.progress-bar-success {
     background-image: linear-gradient(to bottom,#14ff14 0,#14ff14 100%);
     box-shadow: 0 0 0 rgba(255, 255, 255, .5) inset;
