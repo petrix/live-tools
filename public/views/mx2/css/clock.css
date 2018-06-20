@@ -158,6 +158,10 @@
     -webkit-transform: translateX(144px) rotate(448deg);
     transform: translateX(144px) rotate(448deg);
 }
+.p30x2{
+    -webkit-transform: translateX(144px) rotate(448deg);
+    transform: translateX(144px) translateY(-50px) rotate(448deg);
+}
 .p31{
     -webkit-transform: translateX(144px) rotate(454deg);
     transform: translateX(144px) rotate(454deg);
