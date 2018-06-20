@@ -36,7 +36,7 @@
 }
 .p0x2 {
     -webkit-transform: translateX(144px) rotate(268deg);
-    transform: translateX(144px) rotate(268deg);
+    transform: translateX(144px) translateY(50px) rotate(268deg);
 }
 .p1{
     -webkit-transform: translateX(144px) rotate(274deg);
