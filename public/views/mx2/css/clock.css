@@ -78,6 +78,10 @@
     -webkit-transform: translateX(144px) rotate(328deg);
     transform: translateX(144px) rotate(328deg);
 }
+.p10x2{
+    -webkit-transform: translateX(144px) rotate(328deg);
+    transform: translateX(144px) rotate(328deg);
+}
 .p11{
     -webkit-transform: translateX(144px) rotate(334deg);
     transform: translateX(144px) rotate(334deg);
@@ -115,6 +119,10 @@
     transform: translateX(144px) rotate(382deg);
 }
 .p20{
+    -webkit-transform: translateX(144px) rotate(388deg);
+    transform: translateX(144px) rotate(388deg);
+}
+.p20x2{
     -webkit-transform: translateX(144px) rotate(388deg);
     transform: translateX(144px) rotate(388deg);
 }
@@ -202,6 +210,10 @@
     -webkit-transform: translateX(144px) rotate(508deg);
     transform: translateX(144px) rotate(508deg);
 }
+.p40x2{
+    -webkit-transform: translateX(144px) rotate(508deg);
+    transform: translateX(144px) rotate(508deg);
+}
 .p41{
     -webkit-transform: translateX(144px) rotate(514deg);
     transform: translateX(144px) rotate(514deg);
@@ -239,6 +251,10 @@
     transform: translateX(144px) rotate(562deg);
 }
 .p50{
+    -webkit-transform: translateX(144px) rotate(568deg);
+    transform: translateX(144px) rotate(568deg);
+}
+.p50x2{
     -webkit-transform: translateX(144px) rotate(568deg);
     transform: translateX(144px) rotate(568deg);
 }
