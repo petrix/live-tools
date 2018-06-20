@@ -8,8 +8,8 @@
 }
 .point{
 	position:absolute;
-	width:35px;
-	height:35px;
+	width:34px;
+	height:34px;
 	left:800px;
 	top:490px;
 	border-radius:50%;
@@ -32,7 +32,9 @@
 }
 .p0{
     -webkit-transform: translateX(144px) rotate(268deg);
-    transform: translateX(144px) rotate(268deg);
+    transform: translateX(141px) rotate(268deg);
+	width:40px;
+	height:40px;
 }
 .p1{
     -webkit-transform: translateX(144px) rotate(274deg);
