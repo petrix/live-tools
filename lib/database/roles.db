@@ -10,3 +10,15 @@
 {"roleName":"Director","shortName":"DIR","roleCategory":"director","location":"Gallery","inputNumber":0,"hasTalkBack":false,"_id":"od1NGULaAPXsHs1B"}
 {"roleName":"Multiview","shortName":"MLTV","roleCategory":"multiview","location":"","inputNumber":0,"hasTalkBack":false,"_id":"qbiWQ6ypr4JXQ8BR"}
 {"roleName":"Camera 6","shortName":"CAM6","roleCategory":"camera","location":"Studio","inputNumber":6,"hasTalkBack":true,"_id":"rcUKEltSHpKK4rKq"}
+{"$$deleted":true,"_id":"452qPzXqYWl74z17"}
+{"$$deleted":true,"_id":"LcJOVOiefsobrFWe"}
+{"$$deleted":true,"_id":"WlbFyDwzvdKlm8er"}
+{"$$deleted":true,"_id":"HWlqNMHD5TG57VQo"}
+{"$$deleted":true,"_id":"V7cdvRVvlSbk1507"}
+{"$$deleted":true,"_id":"rcUKEltSHpKK4rKq"}
+{"$$deleted":true,"_id":"od1NGULaAPXsHs1B"}
+{"$$deleted":true,"_id":"qbiWQ6ypr4JXQ8BR"}
+{"$$deleted":true,"_id":"dqR0e1qxH7KkhAWD"}
+{"$$deleted":true,"_id":"7g1ZhQYbSPjH6B0a"}
+{"roleName":"Dir2","shortName":"DIR2","roleCategory":"dir2","location":"Studio","inputNumber":0,"hasTalkBack":true,"_id":"Ov1Uj9fUa9mwZZVC"}
+{"roleName":"MULTI-X2","shortName":"MX2","roleCategory":"mx2","location":"Studio","inputNumber":0,"hasTalkBack":false,"_id":"RHAWlHW2VeZan6Kj"}
