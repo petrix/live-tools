@@ -1,6 +1,30 @@
 function txtime_module(timeSelector, titleSelector, divSelector, liveFunction) {
 
 //     socket.on('live status', function(duration, status) {
+        // socket.on('current language', function(language){
+        //     switch(status) {
+        //     case 'lang ru':
+        //     moment.lang(ru);
+        //     date = moment().format('dddd ll'); 
+        //     $(langSelector).text(date);
+        //         break;
+        //         case 'lang en':
+        //     moment.lang(en);
+        //     date = moment().format('dddd ll'); 
+        //     $(langSelector).text(date);
+        //         break;
+        // }
+        // });
+
+
+
+
+
+
+
+
+
+
          socket.on('live status', function(status) {
 
 //         hours = Math.floor(duration / 3600);

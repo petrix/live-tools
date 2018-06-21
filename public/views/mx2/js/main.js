@@ -12,7 +12,12 @@ $(function() {
         // Setup RX time display
         txtime_module('#timeTX', '#livestatus span', '#livestatus');
     }
-
+// socket.on('lang ru', function() {
+//         $('#currentdate_txt').moment().format('dddd ll');
+//     });
+// socket.on('lang en', function() {
+//         $('#currentdate_txt').moment().format('dddd ll');
+//     });
 
 socket.on('custom play', function() {
         $('#dir_countdown_time').css('color', 'rgb(30, 90, 150)');
@@ -42,19 +47,32 @@ function updateClock(timeString) {
         $(".p" + i).css("background", "#140b00");
     }
     for (i = 0; i < (seconds + 1); i++) {
-        $(".p" + i + "x2").css("background", "#ff0000");
+        $(".p" + i + "x2").css("background", "#eb1212");
     }
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
         $(".p" + i + "x2").css("background", "#140b00");
    }
-    
-//     var date = moment().format('LL');
-//         var date = moment().format('dddd');
-         var date = moment().format('dddd ll');
-//          var date = moment().format('MMM');
+// }    
+
+   
+
+
+// $("#currentdate_txt").click(function(){
+// var langvar='ru';
 moment.lang('uk');
+var date = moment().format('dddd ll');
+$("#currentdate_txt").text(date);
+// }
+ }
+// langvar='en';
+// }else{
+// moment.lang('ru');
+// langvar='ru';
+// }
+// });
+
 // moment();
-        $('#currentdate_txt').text(date);
+   
     
-}
+
