@@ -51,7 +51,7 @@ function updateClock(timeString) {
     
 //     var date = moment().format('LL');
 //         var date = moment().format('dddd');
-         var date = moment().format('dddd DD MMM YYYY');
+         var date = moment().format('dddd ll');
 //          var date = moment().format('MMM');
 moment.lang('uk');
 // moment();
