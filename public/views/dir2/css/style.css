@@ -244,9 +244,9 @@ div#countdown-items.btn-group button {
 
 @media only screen and (min-width: 1000px) {
     #dir_countdown, #vt_countdown{
-    width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+    width: 88%;
+        margin-left: 6%;
+        margin-right: 6%;
         margin-top: 20px;
     }
     #dir_countdown{
