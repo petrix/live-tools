@@ -76,16 +76,16 @@ div {
     border-width: 0px;
 }
 
-#dir_countdown, #vt_countdown, #livestatus {
+#dir_countdown, #vt_countdown, #livestatus, #currentdate {
     /*font-size: 150px;*/
     color: #D4D5D6;
-    width: 80%;
+    width: 88%;
     min-width: 430px;
     /*height: 100%;*/
     text-align: center;
    /* margin-top: 10px;*/
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 6%;
+    margin-right: 6%;
     border: 2px solid #ff8f00;
     box-shadow: 0px 0px 5px #ff8f00;
     border-radius: 30px;
