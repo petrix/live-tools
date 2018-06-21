@@ -13,7 +13,7 @@ div.progress {
     margin-top: 5px;
 }
 div.progress-bar {
-    transition: width 0.2s ease;
+    transition: width 0.3s ease;
     }
 div.progress-bar.progress-bar-success {
     background-image: linear-gradient(to bottom,#14ff14 0,#14ff14 100%);
