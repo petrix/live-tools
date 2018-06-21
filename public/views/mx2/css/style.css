@@ -11,6 +11,8 @@ div.progress {
     border-radius: 15px;
     margin-bottom: 5px;
     margin-top: 5px;
+	margin-left: 3%; 
+	margin-right: 3%;
 }
 div.progress-bar {
     transition: width 0.3s ease;
