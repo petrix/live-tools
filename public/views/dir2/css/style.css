@@ -211,9 +211,9 @@ div#countdown-items.btn-group button {
         visibility: visible;
     }
     #dir_countdown, #vt_countdown{
-    width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+    width: 88%;
+        margin-left: 6%;
+        margin-right: 6%;
         padding-bottom: 15px;
         margin-top: 20px;
     }
