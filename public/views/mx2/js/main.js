@@ -49,8 +49,9 @@ function updateClock(timeString) {
         $(".p" + i + "x2").css("background", "#140b00");
    
     
-    var currentdate_txt = moment();
-moment.lang('ru');
+    var date = moment();
+moment.lang('uk');
 moment().format('LL');
+        $('#currentdate_txt').text(date);
     }
 }
