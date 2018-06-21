@@ -50,7 +50,8 @@ function updateClock(timeString) {
    
     
 //     var date = moment().format('LL');
-        var date = moment().format('dddd');
+//         var date = moment().format('dddd');
+         var date = moment().format('MMM');
 moment.lang('uk');
 // moment();
         $('#currentdate_txt').text(date);
