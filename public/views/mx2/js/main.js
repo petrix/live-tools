@@ -47,5 +47,10 @@ function updateClock(timeString) {
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
         $(".p" + i + "x2").css("background", "#140b00");
+   
+    
+    var currentdate_txt = moment();
+moment.lang('ru');
+moment().format('LL');
     }
 }
