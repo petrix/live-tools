@@ -47,7 +47,7 @@ function updateClock(timeString) {
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
         $(".p" + i + "x2").css("background", "#140b00");
-   
+   }
     
 //     var date = moment().format('LL');
 //         var date = moment().format('dddd');
@@ -56,5 +56,5 @@ function updateClock(timeString) {
 moment.lang('uk');
 // moment();
         $('#currentdate_txt').text(date);
-    }
+    
 }
