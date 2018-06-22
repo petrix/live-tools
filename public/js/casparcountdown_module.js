@@ -15,7 +15,7 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
     });
     socket.on('cg countdown timeData', function(time, totalTime) {
         var procentTime = ((time * 100) / totalTime);
-        $('.progress-bar-success').css('width', procentTime.toFixed(0) + '%');
+        $('.progress-bar-success').css('width', procentTime.toFixed(2) + '%');
         if (countdownFunction !== undefined) {
             countdownFunction(time);
         }
@@ -34,12 +34,12 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
         secdot = secdot.toFixed(1);
         if (secdot <= 15) {
             if (secdot >= 0) {
-                $(timeSelector).css("color", "rgb(255, 20, 20)");
+                $(timeSelector).css("color", "rgb(255, 20, 20)").css("filter", "brightness(80%)");
             } else {
                 $(timeSelector).css("color", "#0000");
             }
         } else {
-            $(timeSelector).css("color", "rgb(20, 255, 20)");
+            $(timeSelector).css("color", "rgb(20, 255, 20)").css("filter", "brightness(80%)");
         }
     });
     socket.on('custom active', function(customActive) {

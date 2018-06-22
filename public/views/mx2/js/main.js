@@ -43,31 +43,31 @@ function updateClock(timeString) {
 
 
     for (i = 0; i < (seconds + 1); i++) {
-        $(".p" + i).css("background", "#FF8F00").css("box-shadow", "0px 0px 20px 0px #FF8F00").css("filter", "blur(1px)");
+        $(".p" + i).css("background", "#FF8F00").css("box-shadow", "0px 0px 10px 1px #FF8F00").css("filter", "brightness(80%)");
     }
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
-        $(".p" + i).css("background", "#573100").css("box-shadow", "inset 0px 0px 5px 0px #03090F,0px 0px 0px 0px #03090F");
+        $(".p" + i).css("background", "#FF8F00").css("box-shadow", "0px 0px 5px 1px #FF8F00").css("filter", "brightness(20%)");
         
 
     }
     for (i = 0; i < (seconds + 1); i++) {
-        $(".p" + i + "x2").css("background", "#eb1212").css("box-shadow", "0px 0px 20px 0px #eb1212").css("filter", "blur(1px)");    
+        $(".p" + i + "x2").css("background", "#eb1212").css("box-shadow", "0px 0px 10px 1px #eb1212").css("filter", "brightness(70%)");    
     }
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
-        $(".p" + i + "x2").css("background", "#570606").css("box-shadow", "inset 0px 0px 5px 0px #03090F,0px 0px 0px 10px #03090F");
+        $(".p" + i + "x2").css("background", "#eb1212").css("box-shadow", "0px 0px 5px 1px #eb1212").css("filter", "brightness(30%)");
     }
 
 
 
 
    for (i = 0; i < (seconds + 1); i++) {
-        $(".p" + i + "x3").css("background", "#FF8F00").css("box-shadow", "0px 0px 20px 0px #FF8F00").css("filter", "blur(1px)");
+        $(".p" + i + "x3").css("background", "#FF8F00").css("box-shadow", "0px 0px 10px 1px #FF8F00").css("filter", "brightness(80%)");
     }
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
-        $(".p" + i + "x3").css("background", "#573100").css("box-shadow", "inset 0px 0px 5px 2px #03090F,0px 0px 0px 1px #03090F");
+        $(".p" + i + "x3").css("background", "#FF8F00").css("box-shadow", "0px 0px 5px 1px #FF8F00").css("filter", "brightness(20%)");
    }
 // }    
 
