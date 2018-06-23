@@ -1,3 +1,11 @@
+html{
+	--brightval: teal;
+}
+
+
+body{
+	filter: brightness(var(--brightval));
+}
 #righthandSide {
 	position: absolute;
 	margin-left:1070px;

@@ -101,6 +101,14 @@ $(function() {
     $('#cdgo').click(function() {
         socket.emit('toggle custom countdown');
     });
+	$('#brightup').click(function() {
+        socket.emit('brightness plus');
+		console.log("socket.emit brightness plus");
+    });
+	$('#brightdown').click(function() {
+        socket.emit('brightness minus');
+		console.log("socket.emit brightness minus");
+    });
     $('#sndMsg').click(function() {
         messaging_module_broadcastMessage($('#customMessage').val());
         $('.status').css("background", "linear-gradient(to bottom, #F0AD4E 0px, #EB9316 100%)");

@@ -11,6 +11,8 @@ $(function() {
         customcountdown_module('#dir_countdown_time', '#dir_countdown_title', true);
         // Setup RX time display
         txtime_module('#timeTX', '#livestatus span', '#livestatus');
+		brightness_module('brightness');
+		console.log(brightness);
     }
 // socket.on('lang ru', function() {
 //         $('#currentdate_txt').moment().format('dddd ll');
