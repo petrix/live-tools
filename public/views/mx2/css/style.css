@@ -17,7 +17,7 @@ body{
     margin-left: 310px;
     position: absolute;
     transform: scale(0.7,0.7);
-    filter: brightness(50%);
+    /*filter: brightness(50%);*/
     box-shadow: 0px 0px 6px 3px #ff8f00;
 
 }
@@ -30,7 +30,7 @@ div.progress {
     margin-top: 5px;
 	margin-left: 3%; 
 	margin-right: 3%;
-    filter: brightness(80%);
+    /*filter: brightness(80%);*/
     /*filter: blur(1px);*/
 }
 div.progress-bar {
@@ -40,7 +40,7 @@ div.progress-bar.progress-bar-success {
     background-image: linear-gradient(to bottom,#14ff14 0,#14ff14 100%);
     /*filter: blur(1px);*/
     margin-bottom: 5px;
-    filter: brightness(80%);
+    /*filter: brightness(80%);*/
 }
 
 
@@ -121,19 +121,19 @@ div.progress-bar.progress-bar-success {
 }
 #currentdate_txt{
     font-size: 50px;
-    filter: brightness(90%);
+    /*filter: brightness(90%);*/
 }
 #dir_countdown_time{
     font-size: 210px;
     color: rgb(50, 150, 255);
     line-height: 85%;
-    filter: brightness(90%);
+    /*filter: brightness(90%);*/
     /*filter: blur(1px);*/
 }
 #vt_countdown_time{
     font-size: 210px;
     line-height: 85%;
-    filter: brightness(90%);
+    /*filter: brightness(90%);*/
     /*filter: blur(1px);*/
 }
 .modulebox {

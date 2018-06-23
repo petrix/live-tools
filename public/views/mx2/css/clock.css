@@ -416,6 +416,6 @@
 	font-size: 240pt;
 	color: #ff8f00;
 	font-weight: bold;
-    filter: brightness(85%);
+    /*filter: brightness(85%);*/
     /*filter:blur(1px);*/
 }
