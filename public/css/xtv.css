@@ -70,6 +70,18 @@ body {
     /* background: #2a001b; */
     color: #D4D5D6;
 }
+#display-dir-layout {
+    height: 100vh;
+    width: 100vw;
+    /* background: #2a001b; */
+    color: #D4D5D6;
+}
+#display-multi-layout {
+    height: 100vh;
+    width: 100vw;
+    /* background: #2a001b; */
+    color: #D4D5D6;
+}
 
 .row {
     margin-left: 0 !important;

@@ -44,14 +44,15 @@
     <script src="/js/intercom_control_module.js"></script>
     <script src="/js/jquery.textfill.min.js"></script>
     <script src="/js/jquery.hotkeys.js"></script>
+    <script src="/js/brightness_module.js"></script>
 </head>
 
 
-<body style="background-color: #0e0f10">
+<body style="background-color: #0e0f10; overflow: hidden;">
     <!-- Players for Intercom -->
     <div id="playback"></div>
     <!-- View -->
-    <div id="display">
+    <div id="display-dir-layout">
 
         <!-- Row 1-->
         <div id="row1" class="row mainrow" style="align-content: center; padding-left: 0px; padding-top: 0px; padding-right: 0px;">
@@ -116,21 +117,29 @@
                     <span id="vt_countdown_time" class="digital">00:00:00</span>
 
 
-                    <div class="progress">
-  <div class="progress-bar progress-bar-success" role="progressbar" style="width: 70%;">
+                    <div id="ccg-bar" class="progress">
+  <div  id="ccg-bar" class="progress-bar progress-bar-success" role="progressbar" style="width: 70%;">
   </div></div>
                 </div>
+
+ <!-- <span>Brightness</span> -->
+
+
 				<div id="brightness-setup" class="segment">
-				<div id="brightness-items" class="btn-group-vertical">
                    
-                    <button id="brightup" class="btn btn-default">brightup</button> 
-					<button id="brightdown" class="btn btn-default">brightdown</button>
-
+				<div id="brightness-items" class="btn-group-vertical">
+                    <button id="brightup" class="btn btn-default"><span class="glyphicon glyphicon-upload"></span><span class="glyphicon glyphicon-adjust"></span><span class="glyphicon glyphicon-adjust"></span></button> 
 					
+                    <button id="brightdown" class="btn btn-default"><span class="glyphicon glyphicon-download"></span><span id="brightval">100%</span></button>		                   			
                 </div>
-				</div>
-
 		   </div>
+
+
+
+
+
+
+
         </div>
         <!-- Countdown Settings: col-4 -->
 
@@ -264,14 +273,15 @@
             </div>
         </div>
          End Row 3-->
-
+<!-- Log Out Button -->
             <div id="row3" class="row"></div>
-            <!-- Log Out Button -->
+            
             <div class="footer-container" style="padding-left: 0px; padding-right: 0px;">
                 <div class="btn-group">
                     <button class="button" style="position:absolute; z-index:10; bottom:12px; left:12px;" onclick="localStorage.removeItem('identity'); document.location.href='/';"><span class="glyphicon glyphicon-equalizer"></span></button>
                 </div>
             </div>
+
         </div>
 </body>
 

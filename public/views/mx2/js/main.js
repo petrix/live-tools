@@ -11,7 +11,7 @@ $(function() {
         customcountdown_module('#dir_countdown_time', '#dir_countdown_title', true);
         // Setup RX time display
         txtime_module('#timeTX', '#livestatus span', '#livestatus');
-		brightness_module('brightness');
+        brightness_module('brightness');
 		// console.log(brightness);
     }
 // socket.on('lang ru', function() {
@@ -45,31 +45,31 @@ function updateClock(timeString) {
 
 
     for (i = 0; i < (seconds + 1); i++) {
-        $(".p" + i).css("background", "#FF8F00").css("box-shadow", "0px 0px 10px 1px #FF8F00").css("filter", "brightness(80%)");
+        $(".p" + i).css("background", "#FF8F00").css("box-shadow", "0px 0px 10px 1px #ff8f00");
     }
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
-        $(".p" + i).css("background", "#FF8F00").css("box-shadow", "0px 0px 5px 1px #FF8F00").css("filter", "brightness(20%)");
+        $(".p" + i).css("background", "#422500").css("box-shadow", "0px 0px 5px 1px #422500");
         
 
     }
     for (i = 0; i < (seconds + 1); i++) {
-        $(".p" + i + "x2").css("background", "#eb1212").css("box-shadow", "0px 0px 10px 1px #eb1212").css("filter", "brightness(70%)");    
+        $(".p" + i + "x2").css("background", "#cc1010").css("box-shadow", "0px 0px 10px 1px #cc1010");    
     }
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
-        $(".p" + i + "x2").css("background", "#eb1212").css("box-shadow", "0px 0px 5px 1px #eb1212").css("filter", "brightness(30%)");
+        $(".p" + i + "x2").css("background", "#420505").css("box-shadow", "0px 0px 5px 1px #420505");
     }
 
 
 
 
    for (i = 0; i < (seconds + 1); i++) {
-        $(".p" + i + "x3").css("background", "#FF8F00").css("box-shadow", "0px 0px 10px 1px #FF8F00").css("filter", "brightness(80%)");
+        $(".p" + i + "x3").css("background", "#FF8F00").css("box-shadow", "0px 0px 10px 1px #FF8F00");
     }
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
-        $(".p" + i + "x3").css("background", "#FF8F00").css("box-shadow", "0px 0px 5px 1px #FF8F00").css("filter", "brightness(20%)");
+        $(".p" + i + "x3").css("background", "#422500").css("box-shadow", "0px 0px 5px 1px #422500");
    }
 // }    
 

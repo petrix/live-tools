@@ -76,6 +76,8 @@ $(function() {
         txtime_module('#timeTX', '#livestatus span', '#livestatus');
         // Setup intercom controllers
         intercom_control_module();
+
+        brightness_module('brightness');
     }
     $('#cdrm10m').click(function() {
         socket.emit('custom countdown rm10m');
@@ -109,6 +111,7 @@ $(function() {
         socket.emit('brightness minus');
 		console.log("socket.emit brightness minus");
     });
+    
     $('#sndMsg').click(function() {
         messaging_module_broadcastMessage($('#customMessage').val());
         $('.status').css("background", "linear-gradient(to bottom, #F0AD4E 0px, #EB9316 100%)");

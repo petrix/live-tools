@@ -298,8 +298,7 @@
     border-radius:50%;
      /*border: 0px solid #ff8f00;*/
     /*box-shadow: 0px 0px 5px #ff8f00;*/
-    /*background-color: #eb1212;*/
-    /*filter: brightness(30%);*/
+    /*background-color: #cc1010;*/
 }
 
 
@@ -416,6 +415,5 @@
 	font-size: 240pt;
 	color: #ff8f00;
 	font-weight: bold;
-    /*filter: brightness(85%);*/
     /*filter:blur(1px);*/
 }
