@@ -357,8 +357,8 @@
 
 .pointx3{
     position:absolute;
-    width:26px;
-    height:26px;
+    width:28px;
+    height:28px;
     left:800px;
     top:490px;
     border-radius:50%;
@@ -392,20 +392,20 @@
     transform-origin: -455px 0px;
 }
 .p0x4 {
-    -webkit-transform: translateX(148px) translateY(75px) rotate(268deg);
-    transform: translateX(148px) translateY(75px) rotate(268deg);
+    -webkit-transform: translateX(148.7px) translateY(75px) rotate(268deg);
+    transform: translateX(148.7px) translateY(75px) rotate(268deg);
 }
 .p15x4{
-    -webkit-transform:translateX(72px) translateY(3px) rotate(358deg);
-    transform:translateX(72px) translateY(3px) rotate(358deg);
+    -webkit-transform:translateX(72px) translateY(3.7px) rotate(358deg);
+    transform:translateX(72px) translateY(3.7px) rotate(358deg);
 }
 .p30x4{
-    -webkit-transform: translateX(138px) translateY(-75px) rotate(88deg);
-    transform: translateX(138px)  translateY(-75px) rotate(88deg);
+    -webkit-transform: translateX(137.7px) translateY(-75px) rotate(88deg);
+    transform: translateX(137.7px)  translateY(-75px) rotate(88deg);
 }
 .p45x4{
-    -webkit-transform: translateX(218px) translateY-3px) rotate(178deg);
-    transform: translateX(218px) translateY(-3px) rotate(178deg);
+    -webkit-transform: translateX(218px) translateY-3.7px) rotate(178deg);
+    transform: translateX(218px) translateY(-3.2px) rotate(178deg);
 }
 
 
