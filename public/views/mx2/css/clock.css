@@ -357,8 +357,8 @@
 
 .pointx3{
     position:absolute;
-    width:28px;
-    height:28px;
+    width:26px;
+    height:26px;
     left:800px;
     top:490px;
     border-radius:50%;
@@ -383,8 +383,8 @@
 }
 .pointx4{
     position:absolute;
-    width:24px;
-    height:24px;
+    width:22px;
+    height:22px;
     left:800px;
     top:490px;
     border-radius:50%;
@@ -392,16 +392,16 @@
     transform-origin: -455px 0px;
 }
 .p0x4 {
-    -webkit-transform: translateX(148px) translateY(74px) rotate(268deg);
-    transform: translateX(148px) translateY(74px) rotate(268deg);
+    -webkit-transform: translateX(148px) translateY(75px) rotate(268deg);
+    transform: translateX(148px) translateY(75px) rotate(268deg);
 }
 .p15x4{
     -webkit-transform:translateX(72px) translateY(3px) rotate(358deg);
     transform:translateX(72px) translateY(3px) rotate(358deg);
 }
 .p30x4{
-    -webkit-transform: translateX(138px) translateY(-74px) rotate(88deg);
-    transform: translateX(138px)  translateY(-74px) rotate(88deg);
+    -webkit-transform: translateX(138px) translateY(-75px) rotate(88deg);
+    transform: translateX(138px)  translateY(-75px) rotate(88deg);
 }
 .p45x4{
     -webkit-transform: translateX(218px) translateY-3px) rotate(178deg);
