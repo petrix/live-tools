@@ -293,8 +293,8 @@
     position:absolute;
     width:26px;
     height:26px;
-    left:733px;
-    top:493px;
+    left:732px;
+    top:490px;
     border-radius:50%;
      /*border: 0px solid #ff8f00;*/
     /*box-shadow: 0px 0px 5px #ff8f00;*/
@@ -357,55 +357,57 @@
 
 .pointx3{
     position:absolute;
-    width:26px;
-    height:26px;
-    left:733px;
+    width:28px;
+    height:28px;
+    left:800px;
     top:490px;
     border-radius:50%;
-}
-.pointx3{
-    -webkit-transform-origin: -400px 0px;
-    transform-origin: -400px 0px;
+    -webkit-transform-origin: -455px 0px;
+    transform-origin: -455px 0px;
 }
 .p0x3 {
-    -webkit-transform: translateX(155px) rotate(268deg);
-    transform: translateX(155px) rotate(268deg);
+    -webkit-transform: translateX(146px) translateY(40px) rotate(268deg);
+    transform: translateX(146px) translateY(40px) rotate(268deg);
 }
 .p15x3{
-    -webkit-transform:translateX(155px) rotate(358deg);
-    transform:translateX(155px) rotate(358deg);
+    -webkit-transform:translateX(105px) translateY(2px) rotate(358deg);
+    transform:translateX(105px) translateY(2px) rotate(358deg);
 }
 .p30x3{
-    -webkit-transform: translateX(155px) rotate(88deg);
-    transform: translateX(155px) rotate(88deg);
+    -webkit-transform: translateX(141px) translateY(-40px) rotate(88deg);
+    transform: translateX(141px)  translateY(-40px) rotate(88deg);
 }
 .p45x3{
-    -webkit-transform: translateX(155px) rotate(178deg);
-    transform: translateX(155px) rotate(178deg);
+    -webkit-transform: translateX(185px) translateY(-2px) rotate(178deg);
+    transform: translateX(185px) translateY(-2px) rotate(178deg);
 }
 .pointx4{
     position:absolute;
-    width:26px;
-    height:26px;
-    left:733px;
+    width:24px;
+    height:24px;
+    left:800px;
     top:490px;
     border-radius:50%;
-}
-.pointx4{
-    -webkit-transform-origin: -400px 0px;
-    transform-origin: -400px 0px;
+    -webkit-transform-origin: -455px 0px;
+    transform-origin: -455px 0px;
 }
 .p0x4 {
-    -webkit-transform: translateX(155px) rotate(268deg);
-    transform: translateX(155px) rotate(268deg);
+    -webkit-transform: translateX(148px) translateY(74px) rotate(268deg);
+    transform: translateX(148px) translateY(74px) rotate(268deg);
+}
+.p15x4{
+    -webkit-transform:translateX(72px) translateY(3px) rotate(358deg);
+    transform:translateX(72px) translateY(3px) rotate(358deg);
+}
+.p30x4{
+    -webkit-transform: translateX(138px) translateY(-74px) rotate(88deg);
+    transform: translateX(138px)  translateY(-74px) rotate(88deg);
+}
+.p45x4{
+    -webkit-transform: translateX(218px) translateY-3px) rotate(178deg);
+    transform: translateX(218px) translateY(-3px) rotate(178deg);
 }
 
-
-
-
-
-
-/* Styling */
 
 .center{
 	position: relative;

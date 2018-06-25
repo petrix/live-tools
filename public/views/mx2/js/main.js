@@ -50,7 +50,6 @@ function updateClock(timeString) {
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
         $(".p" + i).css("background", "#422500").css("box-shadow", "0px 0px 5px 1px #422500");
-        
 
     }
     for (i = 0; i < (seconds + 1); i++) {
@@ -61,15 +60,19 @@ function updateClock(timeString) {
         $(".p" + i + "x2").css("background", "#420505").css("box-shadow", "0px 0px 5px 1px #420505");
     }
 
-
-
-
    for (i = 0; i < (seconds + 1); i++) {
         $(".p" + i + "x3").css("background", "#FF8F00").css("box-shadow", "0px 0px 10px 1px #FF8F00");
     }
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
         $(".p" + i + "x3").css("background", "#422500").css("box-shadow", "0px 0px 5px 1px #422500");
+   }
+   for (i = 0; i < (seconds + 1); i++) {
+        $(".p" + i + "x4").css("background", "#FF8F00").css("box-shadow", "0px 0px 10px 1px #FF8F00");
+    }
+    // clear remaining seconds
+    for (i = (seconds + 1); i < 60; i++) {
+        $(".p" + i + "x4").css("background", "#422500").css("box-shadow", "0px 0px 5px 1px #422500");
    }
 // }    
 

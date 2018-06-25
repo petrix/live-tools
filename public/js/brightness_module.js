@@ -1,15 +1,16 @@
 
-function brightness_module(brightnessValue) {
+function brightness_module(brightValue) {
 
          socket.on('brightness value', function(brightchanger) {
-			var brightvalue = (brightchanger * 100).toFixed(0);
-			$('#display-multi-layout').css('filter', 'brightness(' + brightvalue + '%)');
-			$('span.glyphicon').css('filter', 'brightness(' + brightvalue + '%)');
-			$('span#brightval').css('filter', 'brightness(' + brightvalue + '%)');
-				console.log("brightness - " + brightvalue);
-			 $('span#brightval').text(brightvalue + "%");
+			var brightValue = brightchanger;
+			$('#display-multi-layout').css('filter', 'brightness(' + brightValue + '%)');
+			$('span.glyphicon').css('filter', 'brightness(' + brightValue + '%)');
+			$('span#brightval').css('filter', 'brightness(' + brightValue + '%)');
+				console.log("brightness - " + brightValue);
+			 $('span#brightval').text(brightValue + "%");
+                
 
-
+             
     });
 
 }

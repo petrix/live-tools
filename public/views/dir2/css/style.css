@@ -2,7 +2,9 @@ body {
     margin: 0px;
     padding: 0px;
 }
-
+.modulebox {
+    padding-top: 3px;
+}
 
 textarea {
     color: #000 !important;
@@ -18,13 +20,13 @@ font-family: 'Comfortaa';
 }
 div#ccg-bar.progress {
     background-image: linear-gradient(to bottom,#cc1010 0,#cc1010 100%);
-    height: 30px;
+    height: 20px;
     margin-left: 7%; 
     margin-right: 7%;
     /*box-shadow: 0 0 0 #000 inset, 0 0 0 #444;*/
     border-radius: 15px;
     margin-bottom: 5px;
-    margin-top: 15px;
+    margin-top: 10px;
     /*filter: brightness(80%);*/
 }
 div#ccg-bar.progress-bar {
@@ -77,16 +79,11 @@ div#ccg-bar.progress-bar.progress-bar-success {
     float: none;
 }
 
-div {
-    border-style: solid;
-    border-color: white;
-    border-width: 0px;
-}
-
-#dir_countdown, #vt_countdown, #livestatus, #currentdate {
+#dir_countdown, #vt_countdown, #livestatus {
     /*font-size: 150px;*/
     color: #D4D5D6;
     width: 88%;
+    padding-bottom: 5px;
     min-width: 430px;
     /*height: 100%;*/
     text-align: center;
@@ -112,26 +109,13 @@ div {
 div#brightness-items{
     width: 60%;
     text-align: center;
-    /*margin-left: 15%;*/
-    /*margin-right: 15%;*/
-    /*padding-left: 15%;*/
-    /*padding-right: 15%;*/
-    /*border: 2px solid #ff8f00;*/
-/*    box-shadow: 0px 0px 4px 1px #ff8f00;
-    border-radius: 30px;
-    background-color: rgb(30, 15, 0);*/
 	margin-top: 15px;
 	margin-bottom:15px;
 	text-align:center;
 	align:center;
-  /* min-width: 400px;*/
-    /*width: 300px;*/
-    /*border-radius: 40px;*/
 }
 
 div#brightness-items button {
-   /* width: 30%;*/
-    /*width: 300px;*/
     min-height: 100px;
     text-align: center;
     vertical-align: center;
@@ -170,26 +154,16 @@ span.glyphicon.glyphicon-upload, span.glyphicon.glyphicon-download, span.glyphic
 }
 #livestatus
  {
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 100px;
     font-weight: bold;
 }
 
-div#countdown-items {
-    margin-top: 15px;
-    min-width: 400px;
-    width: 60%;
-    /*height: 50px;*/
-    /*border: 1px solid #000;
-    box-shadow: 0px 0px 4px 1px #ff8f00;
-    border-radius: 30px;
-    overflow: hidden;*/
-}
-
-div#countdown-items.btn-group button {
-    width: 12.5%;
-    min-width: 50px;
-    height: 50px;
+button#cdreset.btn.btn-danger, button#cdgo.btn.btn-success,button#cdgo.btn.btn-warning{
+    height: 80px;
+    min-width:80px;
+    width:100%;
+    margin: 0px;
     text-align: center;
     vertical-align: center;
     font-size: 15px;
@@ -198,6 +172,22 @@ div#countdown-items.btn-group button {
     font-style: normal;
     cursor: crosshair;
 }
+button#cdrm10m.btn.btn-default, button#cdrm1m.btn.btn-default,button#cdrm10s.btn.btn-default,button#cdadd10s.btn.btn-default,button#cdadd1m.btn.btn-default,button#cdadd10m.btn.btn-default{
+     /*width: 20%;*/
+    height: 41px;
+    width:80px;
+    /*width:100%;*/
+    /*padding: 2px;*/
+    text-align: center;
+    vertical-align: center;
+    font-size: 15px;
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    font-style: normal;
+    cursor: crosshair;
+}
+
+
 
 
 @media screen 
@@ -227,6 +217,7 @@ div#countdown-items.btn-group button {
 
 
 @media only screen and (min-width: 100px) {
+
     #livestatus{
         position: absolute;
         visibility: hidden;
@@ -238,27 +229,26 @@ div#countdown-items.btn-group button {
 
     #dir_countdown, #vt_countdown{
     width: 98%;
-    margin-top: 15px;
+    margin-top: 0px;
         margin-left: 1%;
         margin-right: 1%;
     }
     #dir_countdown_time, #vt_countdown_time {
         font-size: 100px;
-        line-height: 80%;
+        line-height: 75%;
     }
     #dir_countdown_title, #vt_countdown_title{
         padding-top: 10px;
         font-size: 20px;
     }
     div#countdown-items {
-    margin-top: 15px;
-    min-width: 400px;
-    width: 90%;
-    }
-    div#countdown-items.btn-group button {
-        font-size: 11px;
-        padding-left: 1px;
-        padding-right: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 460px;
+    width: 98%;
+    /*margin-right: 5%;*/
+    /*margin-left: 5%;*/
+
     }
 }
 
@@ -270,41 +260,38 @@ div#countdown-items.btn-group button {
         #brightness-setup, #brightness-items {
          /*position: absolute;*/
         visibility: hidden;
-        width: 80%;
-    margin-top: 10px;
-        margin-left: 1%;
-        margin-right: 1%;
     }
     #dir_countdown, #vt_countdown{
     width: 98%;
-    margin-top: 15px;
+    margin-top: 0px;
         margin-left: 1%;
         margin-right: 1%;
     }
     #vt_countdown{
     width: 98%;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
         margin-left: 1%;
         margin-right: 1%;
     }
     #dir_countdown_time, #vt_countdown_time {
         font-size: 100px;
-        line-height: 80%;
+        line-height: 75%;
     }
     #dir_countdown_title, #vt_countdown_title{
         padding-top: 10px;
         font-size: 20px;
     }
-    div#countdown-items {
-    margin-top: 15px;
-    min-width: 400px;
-    width: 90%;
-    }
-    div#countdown-items.btn-group button {
-        font-size: 13px;
-        padding-left: 1px;
-        padding-right: 1px;
-    }
+
+    button#cdreset.btn.btn-danger, button#cdgo.btn.btn-success,button#cdgo.btn.btn-warning{
+    height: 100px;
+    width:110px;
+}
+    button#cdrm10m.btn.btn-default, button#cdrm1m.btn.btn-default,button#cdrm10s.btn.btn-default,button#cdadd10s.btn.btn-default,button#cdadd1m.btn.btn-default,button#cdadd10m.btn.btn-default{
+     /*width: 20%;*/
+    height: 50px;
+    width:110px;
+}
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -316,12 +303,12 @@ div#countdown-items.btn-group button {
     width: 88%;
         margin-left: 6%;
         margin-right: 6%;
-        padding-bottom: 15px;
-        margin-top: 20px;
+        padding-bottom: 10px;
+        margin-top: 15px;
     }
     #dir_countdown_time, #vt_countdown_time {
         font-size: 140px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         /*line-height: 80%;*/
     }
     #dir_countdown_title, #vt_countdown_title{
@@ -332,16 +319,27 @@ div#countdown-items.btn-group button {
        margin:30px;
     }
     div#countdown-items {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 10px;
-    min-width: 400px;
-    width: 60%;
+    min-width: 630px;
+    /*width: 60%;*/
+    /*margin-left: 20%;*/
+    /*margin-right: 20%;*/
     }
     div#countdown-items.btn-group button {
         font-size: 15px;
         padding-left: 1px;
         padding-right: 1px;
     }
+      button#cdreset.btn.btn-danger, button#cdgo.btn.btn-success,button#cdgo.btn.btn-warning{
+    height: 120px;
+    width:130px;
+}
+    button#cdrm10m.btn.btn-default, button#cdrm1m.btn.btn-default,button#cdrm10s.btn.btn-default,button#cdadd10s.btn.btn-default,button#cdadd1m.btn.btn-default,button#cdadd10m.btn.btn-default{
+     /*width: 20%;*/
+    height: 60px;
+    width:130px;
+}
 }
 
 @media only screen and (min-width: 1000px) {
@@ -352,7 +350,7 @@ div#countdown-items.btn-group button {
         margin-top: 20px;
     }
     #dir_countdown{
-        margin-top: 40px;
+        margin-top: 20px;
     }
     #dir_countdown_time, #vt_countdown_time {
         font-size: 170px;
@@ -366,16 +364,27 @@ div#countdown-items.btn-group button {
        margin:30px;
     }
     div#countdown-items {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 10px;
     min-width: 400px;
-    width: 60%;
-    }
+    /*width: 80%;*/
+    /*margin-left: 20%;*/
+    /*margin-right: 20%;*/
+        }
     div#countdown-items.btn-group button {
         font-size: 15px;
         padding-left: 1px;
         padding-right: 1px;
     }
+        button#cdreset.btn.btn-danger, button#cdgo.btn.btn-success,button#cdgo.btn.btn-warning{
+    height: 140px;
+    width:160px;
+}
+    button#cdrm10m.btn.btn-default, button#cdrm1m.btn.btn-default,button#cdrm10s.btn.btn-default,button#cdadd10s.btn.btn-default,button#cdadd1m.btn.btn-default,button#cdadd10m.btn.btn-default{
+     /*width: 20%;*/
+    height: 70px;
+    width:160px;
+}
 }
 
 @media (min-width: 1800px) {
@@ -395,6 +404,15 @@ div#countdown-items.btn-group button {
          position: absolute; 
         visibility: hidden;
     }
+            button#cdreset.btn.btn-danger, button#cdgo.btn.btn-success,button#cdgo.btn.btn-warning{
+    height: 120px;
+    width:160px;
+}
+    button#cdrm10m.btn.btn-default, button#cdrm1m.btn.btn-default,button#cdrm10s.btn.btn-default,button#cdadd10s.btn.btn-default,button#cdadd1m.btn.btn-default,button#cdadd10m.btn.btn-default{
+     /*width: 20%;*/
+    height: 60px;
+    width:160px;
+}
 }
 
 div.footer-container {
