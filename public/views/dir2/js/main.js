@@ -38,18 +38,22 @@ $(function() {
     socket.on('custom play', function() {
         $(toggleSelector).removeClass('btn-warning');
         $(toggleSelector).addClass('btn-success');
+
         $(toggleSelector).text('START');
         $('#dir_countdown_time').css('color', 'rgb(30, 90, 150)');
+        
         socket.emit('status off air');
-        // $('#dir_countdown_time').css('text-shadow', '0px 0px 100px #3296ff;');
+
     });
 
     socket.on('custom pause', function() {
         $(toggleSelector).removeClass('btn-success');
         $(toggleSelector).addClass('btn-warning');
+
         $(toggleSelector).text('PAUSE');
+
         socket.emit('status on air reset');
-        // $('#dir_countdown').css('background-color', 'rgb(50, 25, 0)');
+
     });
 
     function ready() {
