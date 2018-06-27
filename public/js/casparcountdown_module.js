@@ -11,7 +11,16 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
                 path = path.substr(0, 33) + "...";
             }
             $(pathSelector).text(path);
+            // console.log(alwaysActive);
         }
+    });
+    socket.on('cg countdown outdata', function(outTime){
+      var mDate = moment.unix(outTime),
+          mHours       =   mDate.format('HH'),
+          mMinutes   =   mDate.format('mm'),
+          mSeconds   =   mDate.format('ss');
+        // console.log((mHours + ":" + mMinutes + ":"+ mSeconds));
+        $('#vt_out_time').text(mHours + ":" + mMinutes + ":"+ mSeconds);
     });
     socket.on('cg countdown timeData', function(time, totalTime) {
         var procentTime = ((time * 100) / totalTime);
@@ -30,7 +39,6 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
             $(timeSelector).text(hours + ':' + minutes + ':' + seconds);
         }
         var secdot = time;
-        var secdotonly;
         secdot = secdot.toFixed(1);
         if (secdot <= 15) {
             if (secdot >= 0) {

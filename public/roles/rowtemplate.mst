@@ -8,7 +8,9 @@
     <td>
         <select class="{{_id}} {{add}}" name="roleCategory">
             <option value="dir2">Dir-v2</option>
+			<option value="mx1">Multiview-x1</option>
             <option value="mx2">Multiview-x2</option>
+			
         </select>
     </td>
     <td>

@@ -7,7 +7,7 @@ function brightness_module(brightValue) {
 			$('#display-multi-layout').css('filter', 'brightness(' + brightValue + '%)');
 			$('span.glyphicon').css('filter', 'brightness(' + brightValue + '%)');
 			$('span#brightval').css('filter', 'brightness(' + brightValue + '%)');
-				console.log("brightness - " + brightValue);
+				// console.log("brightness - " + brightValue);
 			 $('span#brightval').text(brightValue + "%");
                 
 
