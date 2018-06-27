@@ -49,7 +49,7 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
         if (secdot <= 15) {
             if (secdot >= 0) {
                 $(timeSelector).css("color", "#cc1010");
-                $('#vt_out_time').css("color", "#cc7200");
+                $('#vt_out_time').css("color", "#cc1010");
             } 
         } else {
             $(timeSelector).css("color", "#10cc10");
