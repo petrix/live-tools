@@ -20,7 +20,11 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
           mMinutes   =   mDate.format('mm'),
           mSeconds   =   mDate.format('ss');
         // console.log((mHours + ":" + mMinutes + ":"+ mSeconds));
-        $('#vt_out_time').text(mHours + ":" + mMinutes + ":"+ mSeconds);
+        $('#vt_out_time').text(mHours + ":" + mMinutes + ":"+ mSeconds)/*.css('color', '#3296ff')*/;
+        // setTimeout(function(){$('#vt_out_time').css('color', '#ff8f00')}, 3000);
+
+
+
     });
     socket.on('cg countdown timeData', function(time, totalTime) {
         var procentTime = ((time * 100) / totalTime);
@@ -40,14 +44,16 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
         }
         var secdot = time;
         secdot = secdot.toFixed(1);
+        
+        
         if (secdot <= 15) {
             if (secdot >= 0) {
                 $(timeSelector).css("color", "#cc1010");
-            } else {
-                $(timeSelector).css("color", "#0000");
-            }
+                $('#vt_out_time').css("color", "#cc7200");
+            } 
         } else {
             $(timeSelector).css("color", "#10cc10");
+            $('#vt_out_time').css("color", "#5597dd");
         }
     });
     socket.on('custom active', function(customActive) {

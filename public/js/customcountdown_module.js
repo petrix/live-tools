@@ -12,7 +12,7 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
 
         if (data.customActive || alwaysActive) {
             $(titleSelector).text("Director's Countdown");
-            $(timeSelector).css("color", "#d4d5d6");
+            $(timeSelector).css("color", "#55dddd");
             (data.duration > 0) ? hours = Math.floor(data.duration / 3600): hours = Math.abs(Math.ceil(data.duration / 3600));
             (data.duration > 0) ? minutes = Math.floor((data.duration - hours * 3600) / 60): minutes = Math.abs(Math.ceil((data.duration - hours * 3600) / 60));
             (data.duration > 0) ? seconds = data.duration - (minutes * 60 + hours * 3600): seconds = Math.abs(data.duration - (minutes * 60 + hours * 3600));
@@ -24,9 +24,9 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
             var secdot = seconds;
             var secdotonly;
             secdot = secdot.toFixed(1);
-            secdotonly = seconds - secdot;
+            // secdotonly = seconds - secdot;
             // secdotonly = secdotonly + 1;
-            secdotonly = secdotonly.toFixed(2);
+            // secdotonly = secdotonly.toFixed(2);
             // seconds = seconds.toFixed(0);
             
 // console.log('secdotonly - ' + secdotonly);
@@ -45,18 +45,19 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
             // if (data.duration <= 15 && data.duration > 0) {
                 if (data.duration <= 15 && data.duration > 0) {
 
-                $(timeSelector).css("color", "rgb(255, 20, 20)");
+                $(timeSelector).css("color", "#cc1010");
                 // console.log(secdotonly);
 
                 
             } else {
-                $(timeSelector).css("color", "rgb(50, 150, 255)");
+                $(timeSelector).css("color", "55dddd");
             }
             
             if (data.duration < 0) {
                 // active = false;
+                // $(timeSelector).css( "color" , "#646566" ); 
                 socket.emit('reset custom countdown');
-                //$(timeSelector).css( "color" , "#646566" ); 
+                
             }
         }
         //here
