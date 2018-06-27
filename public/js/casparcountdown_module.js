@@ -53,7 +53,7 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
             } 
         } else {
             $(timeSelector).css("color", "#10cc10");
-            $('#vt_out_time').css("color", "#5597dd");
+            $('#vt_out_time').css("color", "#10cccc");
         }
     });
     socket.on('custom active', function(customActive) {
