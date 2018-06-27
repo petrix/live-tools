@@ -79,7 +79,7 @@ div#ccg-bar.progress-bar.progress-bar-success {
     float: none;
 }
 
-#dir_countdown, #vt_countdown, #livestatus {
+#timeofday, #vt_countdown, #livestatus {
     /*font-size: 150px;*/
     color: #D4D5D6;
     width: 88%;
@@ -95,6 +95,7 @@ div#ccg-bar.progress-bar.progress-bar-success {
     border-radius: 30px;
     background-color: rgb(30, 15, 0);
 }
+
 #brightness-setup{
 	margin-top:20px;
 	width: 98%;
@@ -139,14 +140,20 @@ span.glyphicon.glyphicon-upload, span.glyphicon.glyphicon-download, span.glyphic
     /*text-shadow: 0px 0px 3px #ff8f00;*/
 }
 
-#dir_countdown_time {
+#timeofday_time {
     font-size: 120px;
-    color: #5597dd;
+    color: #cc7200;
 }
-#vt_countdown_time {
+#vt_countdown_time, #vt_out_time {
     font-size: 120px;
 }
-#dir_countdown_title, #vt_countdown_title, #livestatus {
+#vt_countdown_time{
+    color:#10cc10;
+}
+#vt_out_time{
+    color:#5597dd;
+}
+#timeofday_title, #vt_countdown_title, #livestatus {
     padding-top: 15px;
     font-size: 30px;
     font-family: 'Comfortaa';
@@ -231,18 +238,21 @@ button#cdrm10m.btn.btn-default, button#cdrm1m.btn.btn-default,button#cdrm10s.btn
         visibility: visible;
     }
 
-    #dir_countdown, #vt_countdown{
+    #timeofday, #vt_countdown{
     width: 98%;
     margin-top: 0px;
         margin-left: 1%;
         margin-right: 1%;
     }
-    #dir_countdown_time, #vt_countdown_time {
+    #vt_countdown{
+        margin-top: 10px;
+    }
+    #timeofday_time, #vt_countdown_time, #vt_out_time {
         font-size: 100px;
         line-height: 75%;
     }
-    #dir_countdown_title, #vt_countdown_title{
-        padding-top: 10px;
+    #timeofday_title, #vt_countdown_title{
+        padding-top: 5px;
         font-size: 20px;
     }
     div#countdown-items {
@@ -274,7 +284,7 @@ padding-right: 0px;
          /*position: absolute;*/
         visibility: hidden;
     }
-    #dir_countdown, #vt_countdown{
+    #timeofday, #vt_countdown{
     width: 98%;
     margin-top: 0px;
         margin-left: 1%;
@@ -282,15 +292,15 @@ padding-right: 0px;
     }
     #vt_countdown{
     width: 98%;
-    /*margin-top: 15px;*/
+    margin-top: 10px;
         margin-left: 1%;
         margin-right: 1%;
     }
-    #dir_countdown_time, #vt_countdown_time {
-        font-size: 100px;
+    #timeofday_time, #vt_countdown_time, #vt_out_time {
+        font-size: 120px;
         line-height: 75%;
     }
-    #dir_countdown_title, #vt_countdown_title{
+    #timeofday_title, #vt_countdown_title{
         padding-top: 10px;
         font-size: 20px;
     }
@@ -320,19 +330,20 @@ padding-right: 0px;
         position: relative;
         visibility: visible;
     }
-    #dir_countdown, #vt_countdown{
+    #timeofday, #vt_countdown{
     width: 88%;
         margin-left: 6%;
         margin-right: 6%;
-        padding-bottom: 10px;
-        margin-top: 15px;
+        padding-bottom: 5px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
-    #dir_countdown_time, #vt_countdown_time {
+    #timeofday_time, #vt_countdown_time, #vt_out_time {
         font-size: 140px;
         padding-bottom: 10px;
         /*line-height: 80%;*/
     }
-    #dir_countdown_title, #vt_countdown_title{
+    #timeofday_title, #vt_countdown_title{
         /*padding-top: 10px;*/
         font-size: 30px;
     }
@@ -366,20 +377,20 @@ padding-right: 0px;
 }
 
 @media only screen and (min-width: 1000px) {
-    #dir_countdown, #vt_countdown{
+    #timeofday, #vt_countdown{
     width: 88%;
         margin-left: 6%;
         margin-right: 6%;
         margin-top: 20px;
     }
-    #dir_countdown{
-        margin-top: 20px;
+    #timeofday{
+        margin-top: 10px;
     }
-    #dir_countdown_time, #vt_countdown_time {
-        font-size: 170px;
+    #timeofday_time, #vt_countdown_time, #vt_out_time {
+        font-size: 230px;
         padding-bottom: 10px;
     }
-    #dir_countdown_title, #vt_countdown_title{
+    #timeofday_title, #vt_countdown_title{
         /*padding-top: 10px;*/
         font-size: 40px;
     }
@@ -411,15 +422,15 @@ padding-right: 0px;
 }
 
 @media (min-width: 1800px) {
-    #dir_countdown{
-        margin-top: 20px;
+    #timeofday{
+        margin-top: 10px;
         padding-bottom: 0px;
     }
-    #dir_countdown_time, #vt_countdown_time{
+    #timeofday_time, #vt_countdown_time, #vt_out_time{
         font-size: 370px;
         line-height: 70%
     }
-    #dir_countdown_title, #vt_countdown_title {
+    #timeofday_title, #vt_countdown_title {
         font-size: 60px;
     }
     div#countdown-items {

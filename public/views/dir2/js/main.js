@@ -64,7 +64,7 @@ $(function() {
         }
 
         // Set up time of day
-        timeofday_module('#timeofday span');
+        timeofday_module('#timeofday_time span');
 
         // Setup Caspar Countdown Module
         casparcountdown_module('#vt_countdown_time', '#vt_countdown_title', true);
