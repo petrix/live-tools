@@ -26,7 +26,7 @@ div#ccg-bar.progress {
     /*box-shadow: 0 0 0 #000 inset, 0 0 0 #444;*/
     border-radius: 15px;
     margin-bottom: 5px;
-    margin-top: 10px;
+    margin-top: 5px;
     /*filter: brightness(80%);*/
 }
 div#ccg-bar.progress-bar {
@@ -96,7 +96,7 @@ div#ccg-bar.progress-bar.progress-bar-success {
     background-color: rgb(30, 15, 0);
 }
 #brightness-setup{
-	margin-top:20px;
+	margin-top:10px;
 	width: 98%;
 	text-align: center;
     margin-left: 1%;
@@ -107,7 +107,7 @@ div#ccg-bar.progress-bar.progress-bar-success {
     background-color: rgb(30, 15, 0);
 }
 div#brightness-items{
-    width: 60%;
+    width: 40%;
     text-align: center;
 	margin-top: 15px;
 	margin-bottom:15px;
@@ -116,7 +116,7 @@ div#brightness-items{
 }
 
 div#brightness-items button {
-    min-height: 100px;
+    min-height: 70px;
     text-align: center;
     vertical-align: center;
     font-size: 15px;
@@ -126,15 +126,15 @@ div#brightness-items button {
     cursor: crosshair;
 }
 span#brightval{
-    font-size: 60px;
+    font-size: 50px;
 font-family: 'Comfortaa';
     font-weight: bold;
     font-style: normal;
     color: #ff8f00;
 }
-span.glyphicon.glyphicon-upload, span.glyphicon.glyphicon-download, span.glyphicon.glyphicon-adjust {
-    font-size: 60px;
-    top: 8px;
+span.glyphicon.glyphicon-upload, span.glyphicon.glyphicon-download, span.glyphicon.glyphicon-adjust,span.glyphicon.glyphicon-eye-open,span.glyphicon.glyphicon-eye-close {
+    font-size: 50px;
+    top: 6px;
     color: #ff8f00;
     /*text-shadow: 0px 0px 3px #ff8f00;*/
 }
@@ -143,7 +143,7 @@ span.glyphicon.glyphicon-upload, span.glyphicon.glyphicon-download, span.glyphic
     font-size: 120px;
     color: #5597dd;
 }
-#vt_countdown_time {
+#vt_countdown_time, #vt_out_time {
     font-size: 120px;
 }
 #dir_countdown_title, #vt_countdown_title, #livestatus {
@@ -156,12 +156,17 @@ span.glyphicon.glyphicon-upload, span.glyphicon.glyphicon-download, span.glyphic
 #livestatus
  {
     margin-top: 0px;
-    font-size: 100px;
+    font-size: 50px;
     font-weight: bold;
+    line-height: 80%;
 }
-
+button#brightdown.btn.btn-default, button#cdrm10m.btn.btn-default, button#cdrm1m.btn.btn-default, button#cdrm10s.btn.btn-default{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 button#cdreset.btn.btn-danger, button#cdgo.btn.btn-success,button#cdgo.btn.btn-warning{
-    height: 79px;
+    height: 80px;
     min-width:80px;
     padding-left: 0px;
     padding-right: 0px;
@@ -237,17 +242,17 @@ button#cdrm10m.btn.btn-default, button#cdrm1m.btn.btn-default,button#cdrm10s.btn
         margin-left: 1%;
         margin-right: 1%;
     }
-    #dir_countdown_time, #vt_countdown_time {
+    #dir_countdown_time, #vt_countdown_time, #vt_out_time {
         font-size: 100px;
         line-height: 75%;
     }
     #dir_countdown_title, #vt_countdown_title{
-        padding-top: 10px;
+        padding-top: 5px;
         font-size: 20px;
     }
     div#countdown-items {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     min-width: 440px;
     width: 98%;
     }
@@ -263,6 +268,10 @@ padding-left: : 0px;
 padding-right: 0px;
     font-size: 18px;
 }
+/*div#ccg-bar.progress {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}*/
 }
 
 @media only screen and (min-width: 580px) {
@@ -285,18 +294,19 @@ padding-right: 0px;
     /*margin-top: 15px;*/
         margin-left: 1%;
         margin-right: 1%;
+        padding-bottom: 0px;
     }
-    #dir_countdown_time, #vt_countdown_time {
+    #dir_countdown_time, #vt_countdown_time, #vt_out_time {
         font-size: 100px;
-        line-height: 75%;
+        line-height: 60%;
     }
     #dir_countdown_title, #vt_countdown_title{
-        padding-top: 10px;
+        padding-top: 0px;
         font-size: 20px;
     }
 
     button#cdreset.btn.btn-danger, button#cdgo.btn.btn-success,button#cdgo.btn.btn-warning{
-    height: 99px;
+    height: 100px;
     width:110px;
     padding-left: 0px;
     padding-right: 0px;
@@ -312,7 +322,10 @@ padding-right: 0px;
     font-size: 24px;
     text-shadow: 0px 0px 3px #000;
 }
-
+div#ccg-bar.progress {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
 }
 
 @media only screen and (min-width: 800px) {
@@ -327,17 +340,19 @@ padding-right: 0px;
         padding-bottom: 10px;
         margin-top: 15px;
     }
-    #dir_countdown_time, #vt_countdown_time {
-        font-size: 140px;
+    #dir_countdown_time, #vt_countdown_time, #vt_out_time {
+        font-size: 200px;
         padding-bottom: 10px;
         /*line-height: 80%;*/
     }
     #dir_countdown_title, #vt_countdown_title{
-        /*padding-top: 10px;*/
+        padding-top: 5px;
         font-size: 30px;
     }
-    .progress{
-       margin:30px;
+    div#ccg-bar.progress{
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px;
     }
     div#countdown-items {
     margin-top: 15px;
@@ -353,7 +368,7 @@ padding-right: 0px;
         padding-right: 1px;
     }
       button#cdreset.btn.btn-danger, button#cdgo.btn.btn-success,button#cdgo.btn.btn-warning{
-    height: 119px;
+    height: 120px;
     width:130px;
         font-size: 26px;
 }
@@ -370,25 +385,28 @@ padding-right: 0px;
     width: 88%;
         margin-left: 6%;
         margin-right: 6%;
-        margin-top: 20px;
+        margin-top: 15px;
     }
     #dir_countdown{
-        margin-top: 20px;
+        margin-top: 15px;
     }
-    #dir_countdown_time, #vt_countdown_time {
-        font-size: 170px;
-        padding-bottom: 10px;
+    #dir_countdown_time, #vt_countdown_time, #vt_out_time {
+        font-size: 230px;
+        padding-bottom: 0px;
     }
     #dir_countdown_title, #vt_countdown_title{
         /*padding-top: 10px;*/
         font-size: 40px;
     }
-    .progress{
-       margin:30px;
+    div#ccg-bar.progress{
+        height: 40px;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-bottom: 15px;
     }
     div#countdown-items {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: -5px;
     min-width: 400px;
     /*width: 80%;*/
     /*margin-left: 20%;*/
@@ -400,7 +418,7 @@ padding-right: 0px;
         padding-right: 1px;
     }
         button#cdreset.btn.btn-danger, button#cdgo.btn.btn-success,button#cdgo.btn.btn-warning{
-    height: 139px;
+    height: 140px;
     width:160px;
 }
     button#cdrm10m.btn.btn-default, button#cdrm1m.btn.btn-default,button#cdrm10s.btn.btn-default,button#cdadd10s.btn.btn-default,button#cdadd1m.btn.btn-default,button#cdadd10m.btn.btn-default{
@@ -415,8 +433,8 @@ padding-right: 0px;
         margin-top: 20px;
         padding-bottom: 0px;
     }
-    #dir_countdown_time, #vt_countdown_time{
-        font-size: 370px;
+    #dir_countdown_time, #vt_countdown_time, #vt_out_time{
+        font-size: 340px;
         line-height: 70%
     }
     #dir_countdown_title, #vt_countdown_title {
@@ -426,6 +444,12 @@ padding-right: 0px;
         width: 600px;
          position: absolute; 
         visibility: hidden;
+    }
+    div#ccg-bar.progress{
+        height: 40px;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
 
 }

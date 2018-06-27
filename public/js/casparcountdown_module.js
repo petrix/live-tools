@@ -47,13 +47,17 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
         
         
         if (secdot <= 15) {
-            if (secdot >= 0) {
+            if (secdot >= 1) {
                 $(timeSelector).css("color", "#cc1010");
                 $('#vt_out_time').css("color", "#cc1010");
             } 
         } else {
             $(timeSelector).css("color", "#10cc10");
             $('#vt_out_time').css("color", "#10cccc");
+        } 
+         if (secdot < 1) {
+            $(timeSelector).css("color", "#10cc10");
+            $('#vt_out_time').css("color", "#333");
         }
     });
     socket.on('custom active', function(customActive) {
