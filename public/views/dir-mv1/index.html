@@ -11,6 +11,8 @@
     <!-- Local CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/css/xtv.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/css/fontawesome.css"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -44,7 +46,9 @@
     <script src="/js/intercom_control_module.js"></script>
     <script src="/js/jquery.textfill.min.js"></script>
     <script src="/js/jquery.hotkeys.js"></script>
+    <!-- <script src="/js/fontawesome/js/all.js"></script> -->
     <script src="/js/brightness_module.js"></script>
+    
 </head>
 
 
@@ -98,6 +102,19 @@
                         <span>00:00:00</span>
                     </div>
                 </div>
+                <div id="timeofday" class="segment">
+                    <div id="timeofday_title">
+                        <span>Current Time</span>
+                    </div>
+                    <div id="timeofday_time" class="digital">
+                        <span>00:00:00</span>
+                    </div>
+                </div>
+
+
+
+
+
 
                 <div id="countdown-items">
                     <div class="btn-group">
@@ -143,7 +160,12 @@
 				<div id="brightness-items" class="btn-group-vertical">
                     <button id="brightup" class="btn btn-default"><span class="glyphicon glyphicon-upload"></span><span class="glyphicon glyphicon-eye-open"></span><span class="glyphicon glyphicon-eye-close"></span></button> 
 					
-                    <button id="brightdown" class="btn btn-default"><span class="glyphicon glyphicon-download"></span><span id="brightval">90%</span></button>		                   			
+                    <button id="brightdown" class="btn btn-default"><span class="glyphicon glyphicon-download"></span><span id="brightval">80%</span></button>	               			
+                </div>
+                <div id="time-items" class="btn-group">
+                    <button id="timertoggle" class="btn btn-default"><span class="glyphicon glyphicon-time"></span></button> 
+                    <button id="refreshwall" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span></button>
+                    <!-- <button class="btn btn-default"><span class="glyphicon glyphicon-download"></span><span id="brightval">90%</span></button>    -->
                 </div>
 		   </div>
 

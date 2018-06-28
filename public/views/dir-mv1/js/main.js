@@ -38,23 +38,26 @@ $(function() {
     socket.on('custom play', function() {
         $(toggleSelector).removeClass('btn-warning');
         $(toggleSelector).addClass('btn-success');
-
+// $('#cdbuttons').removeClass('fas fa-pause').addClass('fas fa-play');
+// $(toggleSelector).html('<i class="fas fa-play"></i>');
         $(toggleSelector).text('START');
-        // $('div#dir_countdown_time').css('color', '#646566');
-        
+        // $('div#dir_countdown_time').css('color', '#646566');       
         socket.emit('status off air');
-
     });
 
     socket.on('custom pause', function() {
         $(toggleSelector).removeClass('btn-success');
         $(toggleSelector).addClass('btn-warning');
-
+// $(toggleSelector).html('<i class="fas fa-pause"></i>');
+// $('#cdbuttons').removeClass('fas fa-play').addClass('fas fa-pause');
         $(toggleSelector).text('PAUSE');
 
         socket.emit('status on air reset');
 
     });
+
+
+
 
     function ready() {
 
@@ -64,7 +67,7 @@ $(function() {
         }
 
         // Set up time of day
-        timeofday_module('#timeofday span');
+        timeofday_module('#timeofday_time span');
 
         // Setup Caspar Countdown Module
         casparcountdown_module('#vt_countdown_time', '#vt_countdown_title', true);
@@ -82,7 +85,20 @@ $(function() {
         intercom_control_module();
 
         brightness_module('brightness');
+        // refresh_module('refresh');
     }
+
+    $('#timertoggle').click(function() {
+        if($('#dir_countdown').is(':visible')){
+        $('#dir_countdown').hide();
+        $('#countdown-items').hide();
+        $('#timeofday').show();
+        }else{
+        $('#timeofday').hide();   
+        $('#dir_countdown').show();
+        $('#countdown-items').show();
+        }
+    });
     $('#cdrm10m').click(function() {
         socket.emit('custom countdown rm10m');
     });
@@ -109,12 +125,17 @@ $(function() {
     });
 	$('#brightup').click(function() {
         socket.emit('brightness plus');
-		console.log("socket.emit brightness plus");
+		// console.log("socket.emit brightness plus");
     });
 	$('#brightdown').click(function() {
         socket.emit('brightness minus');
-		console.log("socket.emit brightness minus");
+		// console.log("socket.emit brightness minus");
     });
+    $('#refreshwall').click(function(){
+        socket.emit('refresh wall');
+        console.log("refresh");
+    });
+
     
     $('#sndMsg').click(function() {
         messaging_module_broadcastMessage($('#customMessage').val());

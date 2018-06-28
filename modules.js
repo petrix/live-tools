@@ -14,6 +14,7 @@ module.exports = function(http) {
     var messagingModule = require('./lib/messaging_module')(io);
     var txtimeModule = require('./lib/txtime_module')(io);
 	var brightnessModule = require('./lib/brightness')(io);
+    var refresh_module = require ('./lib/refresh')(io);
     var intercom_control_module = require('./lib/intercom_control_module')(io);
 
     var casparCountdown = require('./lib/caspar-countdown');

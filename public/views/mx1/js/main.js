@@ -12,6 +12,7 @@ $(function() {
         // Setup RX time display
         txtime_module('#timeTX', '#livestatus span', '#livestatus');
         brightness_module('brightness');
+        refresh_module('refresh');
 		// console.log(brightness);
     }
 // socket.on('lang ru', function() {
