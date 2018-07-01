@@ -40,7 +40,11 @@ $(function() {
         $(toggleSelector).addClass('btn-success');
 // $('#cdbuttons').removeClass('fas fa-pause').addClass('fas fa-play');
 // $(toggleSelector).html('<i class="fas fa-play"></i>');
-        $(toggleSelector).text('START');
+        
+        $('#cdgo #cdgo-play > i.fas').removeClass('fa-pause').addClass('fa-play');
+        $('#dir_countdown_time').css("color","#194b80");
+        // $('#cdgo #cdgo-play').removeClass('glyphicon-pause').addClass('glyphicon-play');
+        // $('#cdgo span').text('START');
         // $('div#dir_countdown_time').css('color', '#646566');       
         socket.emit('status off air');
     });
@@ -50,7 +54,11 @@ $(function() {
         $(toggleSelector).addClass('btn-warning');
 // $(toggleSelector).html('<i class="fas fa-pause"></i>');
 // $('#cdbuttons').removeClass('fas fa-play').addClass('fas fa-pause');
-        $(toggleSelector).text('PAUSE');
+
+        $('#cdgo #cdgo-play > i.fas').removeClass('fa-play').addClass('fa-pause');
+        $('#dir_countdown_time').css("color","#194b80");
+        // $('#cdgo #cdgo-play').removeClass('glyphicon-play').addClass('glyphicon-pause');
+        // $('#cdgo span').text('PAUSE');
 
         socket.emit('status on air reset');
 
@@ -91,12 +99,12 @@ $(function() {
     $('#timertoggle').click(function() {
         if($('#dir_countdown').is(':visible')){
         $('#dir_countdown').hide();
-        $('#countdown-items').hide();
+        // $('#countdown-items').hide();
         $('#timeofday').show();
         }else{
         $('#timeofday').hide();   
         $('#dir_countdown').show();
-        $('#countdown-items').show();
+        // $('#countdown-items').show();
         }
     });
     $('#cdrm10m').click(function() {

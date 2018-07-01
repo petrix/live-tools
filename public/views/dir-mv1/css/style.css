@@ -7,10 +7,18 @@ body {
 }
 
 .fa, .fas, .far{
-    font-size: 50px;
+    font-size: 60px;
     /*color: #fff;*/
 }
+#timertoggle > i.fas.fa-bong{
+    font-size: 90px;
+    color: #ff8f00;
+    text-shadow: 0px 0px 3px #ff8f00, 0 0 3px black;
+    vertical-align: top;
+    line-height: 130%;
 
+
+}
 textarea {
     color: #000 !important;
     font-size: 35px !important;
@@ -92,7 +100,7 @@ div#ccg-bar.progress-bar.progress-bar-success {
 }
 #dir_countdown, #vt_countdown, #livestatus, #timeofday {
     /*font-size: 150px;*/
-    color: #D4D5D6;
+    color: #333;
     width: 88%;
     padding-bottom: 5px;
     min-width: 430px;
@@ -107,6 +115,7 @@ div#ccg-bar.progress-bar.progress-bar-success {
     border-radius: 30px;
     background-color: rgb(30, 15, 0);
 }
+
 div#countdown-items {
     margin-top: 5px;
     margin-bottom: 10px;}
@@ -184,7 +193,11 @@ span.glyphicon.glyphicon-upload, span.glyphicon.glyphicon-download, span.glyphic
 #vt_countdown_time, #vt_out_time, #timeofday_time {
     font-size: 120px;
 }
+#vt_countdown_time{
+    color: #10cc10;
+}
 #dir_countdown_title, #vt_countdown_title, #livestatus,#timeofday_title {
+    color: #aaa;
     padding-top: 15px;
     font-size: 30px;
     font-family: 'Comfortaa';
@@ -314,6 +327,10 @@ padding-right: 0px;
 }
 
 @media only screen and (min-width: 580px) {
+    fa, .fas, .far{
+    font-size: 70px;
+    /*color: #fff;*/
+}
     #livestatus{
         /*position: absolute*/
         visibility: hidden;
@@ -369,6 +386,10 @@ div#ccg-bar.progress {
 }
 
 @media only screen and (min-width: 800px) {
+    fa, .fas, .far{
+    font-size: 80px;
+    /*color: #fff;*/
+}
      #livestatus{
         position: relative;
         visibility: visible;
@@ -422,6 +443,10 @@ div#ccg-bar.progress {
 }
 
 @media only screen and (min-width: 1000px) {
+    fa, .fas, .far{
+    font-size: 100px;
+    /*color: #fff;*/
+}
     #dir_countdown, #vt_countdown,#timeofday{
     width: 88%;
         margin-left: 6%;
