@@ -42,7 +42,8 @@ $(function() {
 // $(toggleSelector).html('<i class="fas fa-play"></i>');
         
         $('#cdgo #cdgo-play > i.fas').removeClass('fa-pause').addClass('fa-play');
-        $('#dir_countdown_time').css("color","#194b80");
+        // $('div#dir_countdown_time').css('color','#194b80');
+        
         // $('#cdgo #cdgo-play').removeClass('glyphicon-pause').addClass('glyphicon-play');
         // $('#cdgo span').text('START');
         // $('div#dir_countdown_time').css('color', '#646566');       
@@ -56,7 +57,7 @@ $(function() {
 // $('#cdbuttons').removeClass('fas fa-play').addClass('fas fa-pause');
 
         $('#cdgo #cdgo-play > i.fas').removeClass('fa-play').addClass('fa-pause');
-        $('#dir_countdown_time').css("color","#194b80");
+        // $('div#dir_countdown_time').css('color','#194b80');
         // $('#cdgo #cdgo-play').removeClass('glyphicon-play').addClass('glyphicon-pause');
         // $('#cdgo span').text('PAUSE');
 
@@ -99,12 +100,15 @@ $(function() {
     $('#timertoggle').click(function() {
         if($('#dir_countdown').is(':visible')){
         $('#dir_countdown').hide();
-        // $('#countdown-items').hide();
+        $('#countdown-items').hide();
+        $('#config-items').show();
         $('#timeofday').show();
         }else{
-        $('#timeofday').hide();   
+        $('#timeofday').hide();  
+        $('#config-items').hide();
+
         $('#dir_countdown').show();
-        // $('#countdown-items').show();
+        $('#countdown-items').show();
         }
     });
     $('#cdrm10m').click(function() {
@@ -144,7 +148,30 @@ $(function() {
         console.log("refresh");
     });
 
-    
+var tl = new TimelineMax({onUpdate:updateSlider});
+
+tl.to("#vt_countdown_title", 3, {scrambleText:{text:"ScrambleText allows you to animate the scrambling of text.", chars:"lowerCase", revealDelay:0.5, tweenLength:false, ease:Linear.easeNone}})
+    $("#scrambleSlider").slider({
+  range: false,
+  min: 0,
+  max: 1,
+  step:.001,
+  slide: function ( event, ui ) {
+    tl.progress( ui.value ).pause();
+  },
+  stop: function () {
+    tl.play();
+  }
+}); 
+
+function updateSlider() {
+  $("#scrambleSlider").slider("value", tl.progress());
+} 
+
+
+
+
+
     $('#sndMsg').click(function() {
         messaging_module_broadcastMessage($('#customMessage').val());
         $('.status').css("background", "linear-gradient(to bottom, #F0AD4E 0px, #EB9316 100%)");

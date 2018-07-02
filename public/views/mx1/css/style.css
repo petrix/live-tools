@@ -32,6 +32,10 @@ div.progress {
     margin-top: 5px;
 	margin-left: 3%; 
 	margin-right: 3%;
+    padding: 3px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    box-shadow: 0px -2px 20px #000 inset, 0px 0px 5px #000a;
 }
 div.progress-bar {
     transition: width 0.2s ease;
@@ -39,6 +43,9 @@ div.progress-bar {
 div.progress-bar.progress-bar-success {
     background-image: linear-gradient(to bottom,#10cc10 0,#10cc10 100%);
     margin-bottom: 5px;
+     border-radius: 15px;
+     box-shadow: 0px -2px 20px #333 inset, 0px 0px 5px #10cc10;
+
 }
 
 

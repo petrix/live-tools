@@ -11,6 +11,9 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
                 path = path.substr(0, 33) + "...";
             }
             $(pathSelector).text(path);
+            // var tl = new TimelineMax({onUpdate:updateSlider});
+
+// tl.to("#vt_countdown_title", 3, {scrambleText:{text:"(path)", chars:"lowerCase", revealDelay:0.5, tweenLength:false, ease:Linear.easeNone}})
             // console.log(alwaysActive);
         }
     });
