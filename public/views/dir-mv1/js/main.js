@@ -37,33 +37,31 @@ $(function() {
 
     socket.on('custom play', function() {
         $(toggleSelector).removeClass('btn-warning');
-        $(toggleSelector).addClass('btn-success');
-// $('#cdbuttons').removeClass('fas fa-pause').addClass('fas fa-play');
-// $(toggleSelector).html('<i class="fas fa-play"></i>');
-        
+        $(toggleSelector).addClass('btn-success');        
         $('#cdgo #cdgo-play > i.fas').removeClass('fa-pause').addClass('fa-play');
-        // $('div#dir_countdown_time').css('color','#194b80');
-        
-        // $('#cdgo #cdgo-play').removeClass('glyphicon-pause').addClass('glyphicon-play');
         // $('#cdgo span').text('START');
-        // $('div#dir_countdown_time').css('color', '#646566');       
+        $('div#dir_countdown_time').css('color', '#646566');       
         socket.emit('status off air');
+        
+                // $('#cdreset #cdgo-reset > i.fas').removeClass('fa-flushed').addClass('fa-grimace');
+            
+        $('#cdreset #cdgo-reset > i.fas').removeClass('fa-grimace').addClass('fa-flushed');
     });
 
     socket.on('custom pause', function() {
+                $('#cdreset #cdgo-reset > i.fas').removeClass('fa-flushed').addClass('fa-grimace');
+        
         $(toggleSelector).removeClass('btn-success');
         $(toggleSelector).addClass('btn-warning');
 // $(toggleSelector).html('<i class="fas fa-pause"></i>');
 // $('#cdbuttons').removeClass('fas fa-play').addClass('fas fa-pause');
-
         $('#cdgo #cdgo-play > i.fas').removeClass('fa-play').addClass('fa-pause');
-        // $('div#dir_countdown_time').css('color','#194b80');
-        // $('#cdgo #cdgo-play').removeClass('glyphicon-play').addClass('glyphicon-pause');
         // $('#cdgo span').text('PAUSE');
-
         socket.emit('status on air reset');
 
     });
+
+
 
 
 
@@ -98,17 +96,21 @@ $(function() {
     }
 
     $('#timertoggle').click(function() {
+        
         if($('#dir_countdown').is(':visible')){
         $('#dir_countdown').hide();
         $('#countdown-items').hide();
         $('#config-items').show();
         $('#timeofday').show();
+        // $('#cdreset #cdgo-reset > i.fas').removeClass('fa-bong').addClass('fa-grimace');
         }else{
         $('#timeofday').hide();  
         $('#config-items').hide();
 
         $('#dir_countdown').show();
         $('#countdown-items').show();
+        // $('#cdreset #cdgo-reset > i.fas').removeClass('fa-grimace').addClass('fa-bong');
+
         }
     });
     $('#cdrm10m').click(function() {
@@ -130,6 +132,15 @@ $(function() {
         socket.emit('custom countdown 10m');
     });
     $('#cdreset').click(function() {
+        // if($('#cdreset #cdgo-reset > i.fas').hasClass)
+                // $('#cdreset #cdgo-reset > i.fas').removeClass('fa-bong').addClass('fa-grimace');
+        if($('#dir_countdown').is(':visible')){
+
+        $('#cdreset #cdgo-reset > i.fas').removeClass('fa-flushed').addClass('fa-grimace');
+            }else{
+        $('#cdreset #cdgo-reset > i.fas').removeClass('fa-grimace').addClass('fa-flushed');
+
+        }
         socket.emit('reset custom countdown');
     });
     $('#cdgo').click(function() {

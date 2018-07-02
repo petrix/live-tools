@@ -6,7 +6,7 @@ body {
     padding-top: 3px;
 }
 
-.fa, .fas, .far{
+.fa, .fas, .far, .fab{
     font-size: 60px;
     /*color: #fff;*/
 }
@@ -21,11 +21,33 @@ body {
 #refreshwall > i.fas.fa-dizzy{
     font-size: 65px;
     color: #ff8f00;
-    text-shadow: 0px 0px 3px #ff8f00, 0 0 3px black;
+    text-shadow: 0px 0px 3px #ff8f00;
     vertical-align: top;
     line-height: 100%;
     align-self: center;
 }
+#config-items > div > button:nth-child(2) > i{
+    color: #10cc10;
+    text-shadow: 0px 0px 3px #ff8f00;
+}
+#config-items > div > button:nth-child(3) > i{
+    color: #cc10cc;
+    text-shadow: 0px 0px 3px #ff8f00;
+}
+#config-items > div > button:nth-child(4) > i{
+    color: #ccaacc;
+    text-shadow: 0px 0px 3px #ff8f00;
+}
+#config-items > div > button:nth-child(5) > i{
+    color: #ccc;
+    text-shadow: 0px 0px 3px #ff8f00;
+}
+#config-items > div > button:nth-child(6) > i{
+    color: #fff;
+    text-shadow: 0px 0px 3px #ff8f00;
+}
+
+
 
 textarea {
     color: #000 !important;
@@ -43,7 +65,7 @@ div#ccg-bar.progress {
     background-image: linear-gradient(to bottom,#cc1010 0,#cc1010 100%);
     height: 30px;
     border-radius: 30px;
-    padding:2px 3px 3px 3px;
+    padding:2px 2px 3px 2px;
     margin-left: 7%; 
     margin-right: 7%;
     /*box-shadow: 0 0 0 #000 inset, 0 0 0 #444;*/
@@ -64,6 +86,9 @@ div#ccg-bar.progress-bar.progress-bar-success {
     box-shadow: 0px -3px 20px #333a inset, 0px 0px 5px #10cc10;
 
 }
+  
+
+
 .mainrow {
     margin-bottom: 12px;
 }
@@ -131,7 +156,9 @@ div#ccg-bar.progress-bar.progress-bar-success {
 
 div#countdown-items, div#config-items {
     margin-top: 5px;
-    margin-bottom: 10px;}
+    margin-bottom: 10px;
+}
+
 #brightness-setup{
 	margin-top:10px;
 	width: 98%;
@@ -150,14 +177,14 @@ div#brightness-items, div#time-items{
 	align:center;
 }
 div#brightness-items button {
-    padding: 0px 0px;
+    padding: 0px 0px 0px 0px;
     align-self: center;
     width: 180px;
     min-height: 60px;
     text-align: center;
     vertical-align: center;
-    font-size: 15px;
-    font-family: 'Comfortaa';
+    /*font-size: 15px;*/
+    /*font-family: 'Comfortaa';*/
     font-weight: bold;
     font-style: normal;
     cursor: crosshair;
@@ -194,7 +221,7 @@ span.glyphicon.glyphicon-refresh{
 }
 span.glyphicon.glyphicon-upload, span.glyphicon.glyphicon-download, span.glyphicon.glyphicon-adjust,span.glyphicon.glyphicon-eye-open,span.glyphicon.glyphicon-eye-close {
     font-size: 50px;
-    top: 5px;
+    top: 4px;
     color: #ff8f00;
     /*text-shadow: 0px 0px 3px #ff8f00;*/
 }
@@ -246,9 +273,9 @@ button#cdreset.btn.btn-danger, button#cdgo.btn.btn-success,button#cdgo.btn.btn-w
     text-shadow: 0px 0px 2px #fff;
 }
 #config-items > div > button{
-    height: 80px;
+    height: 81px;
     width: 80px;
-    padding: 3px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
     text-align: center;
     align-self: center;
     font-size: 50px;
