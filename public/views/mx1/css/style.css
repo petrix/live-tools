@@ -45,7 +45,7 @@ div.progress-bar.progress-bar-success {
     background-image: linear-gradient(to bottom,#10cc10 0,#10cc10 100%);
     margin-bottom: 5px;
     border-radius: 30px;
-    box-shadow: 0px -2px 20px #333 inset, 0px 0px 10px #032103;
+    box-shadow: 0px -2px 20px #333 inset/* , 0px 0px 10px #032103 */;
 
 }
 
