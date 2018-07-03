@@ -156,28 +156,10 @@ $(function() {
     });
     $('#refreshwall').click(function(){
         socket.emit('refresh wall');
-        console.log("refresh");
+        // console.log("refresh");
     });
 
-var tl = new TimelineMax({onUpdate:updateSlider});
 
-tl.to("#vt_countdown_title", 3, {scrambleText:{text:"ScrambleText allows you to animate the scrambling of text.", chars:"lowerCase", revealDelay:0.5, tweenLength:false, ease:Linear.easeNone}})
-    $("#scrambleSlider").slider({
-  range: false,
-  min: 0,
-  max: 1,
-  step:.001,
-  slide: function ( event, ui ) {
-    tl.progress( ui.value ).pause();
-  },
-  stop: function () {
-    tl.play();
-  }
-}); 
-
-function updateSlider() {
-  $("#scrambleSlider").slider("value", tl.progress());
-} 
 
 
 
