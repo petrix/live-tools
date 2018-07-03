@@ -6,6 +6,7 @@ $(function() {
 
     $('.confirmRole').click(function() {
         var idCode = $('#roles option:selected').val();
+        // var idCode = $('#roles').val();
         var webRTC = doesBrowserSupportWebRTC();
         localStorage.setItem('identity', idCode);
         socket.emit('i am', {

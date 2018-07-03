@@ -21,15 +21,15 @@ font-family: 'Comfortaa';
 div#ccg-bar.progress {
     background-image: linear-gradient(to bottom,#cc1010 0,#cc1010 100%);
     height: 30px;
-    border-radius: 15px;
-    padding:2px;
+    border-radius: 30px;
+    padding: 2px 2px 3px 2px;
     margin-left: 7%; 
     margin-right: 7%;
     /*box-shadow: 0 0 0 #000 inset, 0 0 0 #444;*/
     
     margin-bottom: 5px;
     margin-top: 5px;
-    box-shadow: 0px 0px 20px #000 inset, 0px 0px 5px #000a;
+    box-shadow: 0px -5px 20px #000c inset, 0px 0px 5px #000a;
     /*filter: brightness(80%);*/
 }
 div#ccg-bar.progress-bar {
@@ -38,8 +38,10 @@ div#ccg-bar.progress-bar {
 div#ccg-bar.progress-bar.progress-bar-success {
     background-image: linear-gradient(to bottom,#10cc10 0,#10cc10 100%);
     /*box-shadow: 0 2px 0 rgba(255, 255, 255, .5) inset;*/
-    margin-bottom: 5px;
-    border-radius: 15px;
+   margin-bottom: 5px;
+    border-radius: 30px;
+    box-shadow: 0px -5px 20px #333c inset, 0px 0px 30px #000;
+
 }
 .mainrow {
     margin-bottom: 12px;

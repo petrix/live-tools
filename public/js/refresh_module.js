@@ -1,6 +1,5 @@
 
 function refresh_module(refreshValue) {
-
          socket.on('refresh', function(refresher) {
          if (refresher == 1){
          	// console.log(refresher);
@@ -11,12 +10,6 @@ function refresh_module(refreshValue) {
            if(sPath =="/views/mx1/index.html"){
            	location.reload();
            }
-
-
-         }
-                
-
-             
+         }             
     });
-
 }

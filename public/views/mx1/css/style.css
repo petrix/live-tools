@@ -28,14 +28,15 @@ div.progress {
     background-image: linear-gradient(to bottom,#cc1010 0,#cc1010 100%);
     height: 30px;
     border-radius: 30px;
+    padding:2px 1px 3px 1px;
+    margin-left: 7%; 
+    margin-right: 7%;
+    overflow: hidden;
+    /*box-shadow: 0 0 0 #000 inset, 0 0 0 #444;*/
+   
     margin-bottom: 5px;
     margin-top: 5px;
-	margin-left: 3%; 
-	margin-right: 3%;
-    padding:2px 2px 3px 2px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    box-shadow: 0px -2px 20px #000 inset, 0px 0px 5px #000a;
+    box-shadow: 0px -5px 20px #000c inset, 0px 0px 5px #000a;
 }
 div.progress-bar {
     transition: width 0.2s ease;
@@ -43,8 +44,8 @@ div.progress-bar {
 div.progress-bar.progress-bar-success {
     background-image: linear-gradient(to bottom,#10cc10 0,#10cc10 100%);
     margin-bottom: 5px;
-     border-radius: 30px;
-     box-shadow: 0px -2px 20px #333 inset, 0px 0px 5px #10cc10;
+    border-radius: 30px;
+    box-shadow: 0px -5px 20px #333c inset, 0px 0px 30px #000;
 
 }
 
