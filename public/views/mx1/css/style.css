@@ -26,8 +26,8 @@ body{
 
 div.progress {
     background-image: linear-gradient(to bottom,#cc1010 0,#cc1010 100%);
-    height: 30px;
-    border-radius: 30px;
+    height: 50px;
+    border-radius: 50px;
     padding:2px 1px 3px 1px;
     margin-left: 7%; 
     margin-right: 7%;
@@ -97,7 +97,7 @@ div.progress-bar.progress-bar-success {
 
 #vt_countdown {
     width: 100%;
-    height: 420px;
+    height: 440px;
     text-align: center;
 	padding-top: 5px;
     padding-bottom: 20px;
