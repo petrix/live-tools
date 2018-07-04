@@ -133,6 +133,7 @@ div.progress-bar.progress-bar-success {
 #dir_countdown_time, #vt_countdown_time, #vt_out_time{
     font-size: 210px;
     line-height: 75%;
+	text-shadow: 0px 0px 30px #ff8f00;
 }
 #dir_countdown_time{
     color: #333;
