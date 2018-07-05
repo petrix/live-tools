@@ -132,15 +132,6 @@ $(function() {
         socket.emit('custom countdown 10m');
     });
     $('#cdreset').click(function() {
-        // if($('#cdreset #cdgo-reset > i.fas').hasClass)
-                // $('#cdreset #cdgo-reset > i.fas').removeClass('fa-bong').addClass('fa-grimace');
-        if($('#dir_countdown').is(':visible')){
-
-        $('#cdreset #cdgo-reset > i.fas').removeClass('fa-flushed').addClass('fa-grimace');
-            }else{
-        $('#cdreset #cdgo-reset > i.fas').removeClass('fa-grimace').addClass('fa-flushed');
-
-        }
         socket.emit('reset custom countdown');
     });
     $('#cdgo').click(function() {
