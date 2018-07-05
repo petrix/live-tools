@@ -244,7 +244,7 @@ span.glyphicon.glyphicon-upload, span.glyphicon.glyphicon-download, span.glyphic
     padding-top: 15px;
     font-size: 30px;
     font-family: 'Comfortaa';
-    font-weight: 300;
+    font-weight: bold;
     font-style: normal;
 }
 #livestatus
