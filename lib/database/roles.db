@@ -8,3 +8,13 @@
 {"roleName":"CAM2","shortName":"CAM2","roleCategory":"camera","location":"STUDIO","inputNumber":2,"hasTalkBack":true,"_id":"YoUPyW3jSGMNgHHl"}
 {"roleName":"MULTI-X1","shortName":"MX1","roleCategory":"mx1","location":"ASB","inputNumber":0,"hasTalkBack":false,"_id":"jxcx0RRJD226l56X"}
 {"roleName":"CAM5","shortName":"CAM5","roleCategory":"camera","location":"STUDIO","inputNumber":5,"hasTalkBack":true,"_id":"qdBoC1CfvYwOZw9r"}
+{"roleName":"CAM1","shortName":"CAM1","roleCategory":"camera","location":"STUDIO","inputNumber":1,"hasTalkBack":true,"_id":"1ouKtghSTNSCIw6L"}
+{"roleName":"CAM2","shortName":"CAM2","roleCategory":"camera","location":"STUDIO","inputNumber":2,"hasTalkBack":true,"_id":"YoUPyW3jSGMNgHHl"}
+{"roleName":"CAM3","shortName":"CAM3","roleCategory":"camera","location":"STUDIO","inputNumber":3,"hasTalkBack":true,"_id":"K6UbyzlLDaDWwlof"}
+{"roleName":"CAM4","shortName":"CAM4","roleCategory":"camera","location":"STUDIO","inputNumber":4,"hasTalkBack":true,"_id":"Ax8jHIeubCcEgL1N"}
+{"roleName":"CAM5","shortName":"CAM5","roleCategory":"camera","location":"STUDIO","inputNumber":5,"hasTalkBack":true,"_id":"qdBoC1CfvYwOZw9r"}
+{"roleName":"CAM6","shortName":"CAM6","roleCategory":"camera","location":"STUDIO","inputNumber":6,"hasTalkBack":true,"_id":"CQg8tx5R5de3Dyef"}
+{"roleName":"DIRECTOR","shortName":"DMV1","roleCategory":"dir-mv1","location":"ASB","inputNumber":0,"hasTalkBack":true,"_id":"90NgbuSRSTjBENJS"}
+{"roleName":"Dir2","shortName":"DIR2","roleCategory":"dir2","location":"ASB","inputNumber":0,"hasTalkBack":true,"_id":"Ov1Uj9fUa9mwZZVC"}
+{"roleName":"MULTI-X1","shortName":"MX1","roleCategory":"mx1","location":"ASB","inputNumber":0,"hasTalkBack":false,"_id":"jxcx0RRJD226l56X"}
+{"roleName":"MULTI-X2","shortName":"MX2","roleCategory":"mx2","location":"ASB","inputNumber":0,"hasTalkBack":false,"_id":"RHAWlHW2VeZan6Kj"}
