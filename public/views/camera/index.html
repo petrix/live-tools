@@ -18,7 +18,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- Socket.io -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+    <script src="/js/socket.io.1-7-4.min.js"></script>
     <!-- Local JS -->
     <script src="/js/handshaking_module.js"></script>
     <script src="/js/tally_module.js"></script>
@@ -78,9 +78,6 @@ Buttons:
                 <div id="timeofday" class="segment">
                     <span></span>
                 </div>
-                <div id="timeofday" class="segment">
-                    <span></span>
-                </div>
             </div>
             <!-- Countdown -->
             <div class="modulebox col-xs-4">
@@ -90,6 +87,12 @@ Buttons:
                 <div id="countdown" class="segment">
                     <span>00:00:00</span>
                 </div>
+                <div id="vt_countdown_title" class="boxtitle">
+                    <span>Countdown</span>
+                </div>
+                
+                    <span id="vt_countdown_time" class="segment">00:00:00</span>
+                
             </div>
         </div>
         <!-- End Row 1 -->

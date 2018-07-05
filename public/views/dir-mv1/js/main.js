@@ -145,6 +145,15 @@ $(function() {
         socket.emit('brightness minus');
 		// console.log("socket.emit brightness minus");
     });
+$('#brightclockup').click(function() {
+        socket.emit('brightness clock plus');
+        console.log("socket.emit brightness clock plus");
+    });
+    $('#brightclockdown').click(function() {
+        socket.emit('brightness clock minus');
+        console.log("socket.emit brightness clock minus");
+    });
+
     $('#refreshwall').click(function(){
         socket.emit('refresh wall');
         // console.log("refresh");

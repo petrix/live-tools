@@ -24,7 +24,8 @@ $(function() {
         timeofday_module('#timeofday span');
 
         // Setup Caspar Countdown Module
-        casparcountdown_module('#countdown span', '#countdownTitle span');
+        // casparcountdown_module('#vt_countdown_time span', '#vt_countdown_title span');
+        casparcountdown_module('#vt_countdown_time', '#vt_countdown_title', true);
 
         // Setup Custom Countdown
         customcountdown_module('#countdown span', '#countdownTitle span');

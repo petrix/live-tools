@@ -11,8 +11,12 @@ $(function() {
         customcountdown_module('#dir_countdown_time', '#dir_countdown_title', true);
         // Setup RX time display
         txtime_module('#timeTX', '#livestatus span', '#livestatus');
-        brightness_module('brightness');
+        brightness_module('brightness', 'brightnessclock');
         refresh_module('refresh');
+        messaging_module_initialise(newMessage);
+
+        intercom_listen_module("#muteDir", "#director-playback", "#localTx");
+
 		// console.log(brightness);
     }
 // socket.on('lang ru', function() {
@@ -33,6 +37,43 @@ socket.on('custom play', function() {
         // $('#dir_countdown').css('background-color', 'rgb(50, 25, 0)');
     });
 });
+
+
+
+$('div#messageDisplay .acknowledge').hide();
+
+    function newMessage(message, sender) {
+        $('div#messageDisplay .title').text(sender);
+        $('div#messageDisplay .message').text(message);
+
+        $('div#messageDisplay .title').show();
+        $('div#messageDisplay .message').show();
+        $('div#messageDisplay .acknowledge').show();
+
+        var ack = setInterval(function () {
+            $('div#messageDisplay .acknowledge').fadeToggle(800);
+        }, 800);
+
+        $('div#messageDisplay').on('click', function () {
+            messaging_module_acknowledge();
+            $('div#messageDisplay .title').hide(400);
+            $('div#messageDisplay .message').hide(400);
+            $('div#messageDisplay .acknowledge').hide(400);
+            clearInterval(ack);
+        });
+    }
+
+$('#liveSymbol').hide();
+
+    function liveStatusTrigger(isLive) {
+        if (isLive) {
+            $('#liveSymbol').show(400);
+        } else {
+            $('#liveSymbol').hide(400);
+        }
+    }
+
+
 function updateClock(timeString) {
     var date = new Date(timeString);
     hours = date.getHours();
