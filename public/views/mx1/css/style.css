@@ -28,7 +28,7 @@ div.progress {
     background-image: linear-gradient(to bottom,#cc1010 0,#cc1010 100%);
     height: 50px;
     border-radius: 50px;
-    padding:2px 1px 3px 1px;
+    padding:5px 5px 6px 5px;
     margin-left: 7%; 
     margin-right: 7%;
     overflow: hidden;
