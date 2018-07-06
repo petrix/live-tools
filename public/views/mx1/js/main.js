@@ -3,6 +3,7 @@ $(function() {
     ready();
     // handshaking_module(ready);
     function ready() {
+
         // Set up time of day
         timeofday_module('', updateClock);
         // Setup Caspar Countdown Module
@@ -15,7 +16,7 @@ $(function() {
         refresh_module('refresh');
         messaging_module_initialise(newMessage);
 
-        intercom_listen_module("#muteDir", "#director-playback", "#localTx");
+        // intercom_listen_module("#muteDir", "#director-playback", "#localTx");
 
 		// console.log(brightness);
     }
@@ -25,21 +26,6 @@ $(function() {
 // socket.on('lang en', function() {
 //         $('#currentdate_txt').moment().format('dddd ll');
 //     });
-
-socket.on('custom play', function() {
-        $('#dir_countdown_time').css('color', 'rgb(30, 90, 150)');
-        socket.emit('status off air');
-        // $('#dir_countdown_time').css('text-shadow', '0px 0px 100px #3296ff;');
-    });
-
-    socket.on('custom pause', function() {
-        socket.emit('status on air reset');
-        // $('#dir_countdown').css('background-color', 'rgb(50, 25, 0)');
-    });
-});
-
-
-
 $('div#messageDisplay .acknowledge').hide();
 
     function newMessage(message, sender) {
@@ -63,6 +49,26 @@ $('div#messageDisplay .acknowledge').hide();
         });
     }
 
+
+
+
+
+socket.on('custom play', function() {
+        $('#dir_countdown_time').css('color', 'rgb(30, 90, 150)');
+        socket.emit('status off air');
+        // $('#dir_countdown_time').css('text-shadow', '0px 0px 100px #3296ff;');
+    });
+
+    socket.on('custom pause', function() {
+        socket.emit('status on air reset');
+        // $('#dir_countdown').css('background-color', 'rgb(50, 25, 0)');
+    });
+});
+
+
+
+
+
 $('#liveSymbol').hide();
 
     function liveStatusTrigger(isLive) {
@@ -72,7 +78,16 @@ $('#liveSymbol').hide();
             $('#liveSymbol').hide(400);
         }
     }
-
+    $('#requestFullscreen').click(function() {
+        var
+          el = document.body
+        , rfs =
+               el.requestFullScreen
+            || el.webkitRequestFullScreen
+            || el.mozRequestFullScreen
+        ;
+        rfs.call(el);
+    })
 
 function updateClock(timeString) {
     var date = new Date(timeString);
@@ -123,7 +138,7 @@ function updateClock(timeString) {
 
 // $("#currentdate_txt").click(function(){
 // var langvar='ru';
-moment.lang('uk');
+moment.locale('uk');
 var date = moment().format('dddd ll');
 $("#currentdate_txt").text(date);
 // }
