@@ -28,11 +28,11 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
     });
     socket.on('cg volume 1ch', function(volLeftCh){
         // console.log((100+volLeftCh).toFixed(4));
-$('#ccgLeftChBar').css('width', (100+volLeftCh).toFixed(4) + "%");
+$('#ccgLeftChBar').css('width', (100+volLeftCh).toFixed(5) + "%");
     });
     socket.on('cg volume 2ch', function(volRightCh){
         // console.log((100+volRightCh).toFixed(4));
-$('#ccgRightChBar').css('width', (100+volRightCh).toFixed(4) + "%");
+$('#ccgRightChBar').css('width', (100+volRightCh).toFixed(5) + "%");
     });
     socket.on('cg countdown timeData', function(time, totalTime) {
         var procentTime = ((time * 100) / totalTime);
