@@ -63,6 +63,7 @@ socket.on('custom play', function() {
         socket.emit('status on air reset');
         // $('#dir_countdown').css('background-color', 'rgb(50, 25, 0)');
     });
+    
 });
 
 
