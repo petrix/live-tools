@@ -27,11 +27,11 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
         // setTimeout(function(){$('#vt_out_time').css('color', '#ff8f00')}, 3000);
     });
     socket.on('cg volume 1ch', function(volLeftCh){
-        console.log((100+volLeftCh).toFixed(4));
+        // console.log((100+volLeftCh).toFixed(4));
 $('#ccgLeftChBar').css('width', (100+volLeftCh).toFixed(4) + "%");
     });
     socket.on('cg volume 2ch', function(volRightCh){
-        console.log((100+volRightCh).toFixed(4));
+        // console.log((100+volRightCh).toFixed(4));
 $('#ccgRightChBar').css('width', (100+volRightCh).toFixed(4) + "%");
     });
     socket.on('cg countdown timeData', function(time, totalTime) {
