@@ -27,13 +27,24 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
         // setTimeout(function(){$('#vt_out_time').css('color', '#ff8f00')}, 3000);
     });
     socket.on('cg volume 1ch', function(volLeftCh){
-        // console.log((100+volLeftCh).toFixed(4));
-$('#ccgLeftChBar').css('width', (100+volLeftCh).toFixed(5) + "%");
-    });
+        $('#ccgLeftChBar').css('width', (90+volLeftCh).toFixed(5) + "%");
+        });
     socket.on('cg volume 2ch', function(volRightCh){
-        // console.log((100+volRightCh).toFixed(4));
-$('#ccgRightChBar').css('width', (100+volRightCh).toFixed(5) + "%");
-    });
+        $('#ccgRightChBar').css('width', (90+volRightCh).toFixed(5) + "%");
+        });
+/*    socket.on('cg pfs 1ch', function(pfsLeftCh){
+        $('#ccgLeftChBar').css('width', (pfsLeftCh*100).toFixed(5) + "%");
+        });*/
+/*    socket.on('cg pfs 2ch', function(pfsRightCh){
+        $('#ccgRightChBar').css('width', (pfsRightCh*100).toFixed(5) + "%");
+        });*/
+
+    
+
+
+
+
+
     socket.on('cg countdown timeData', function(time, totalTime) {
         var procentTime = ((time * 100) / totalTime);
         $('div#ccg-bar.progress-bar.progress-bar-success').css('width', procentTime.toFixed(0) + '%');

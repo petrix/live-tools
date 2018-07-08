@@ -13,12 +13,12 @@ function brightness_module(brightValue, brightclockValue) {
          socket.on('brightness clock value', function(brightclockchanger) {
          	// updateData(true, socket.brightchanger);
 			var brightclockValue = (brightclockchanger);
-			$('#display-multi-layout > div.clock').css('filter', 'blur(' + brightclockValue + 'px)');
+			$('#display-multi-layout').css('filter', 'saturate(' + brightclockValue + '%)');
 
 			// $('span#brightclockval').css('filter', 'blur(' + brightclockValue + 'px)');
-			$('#brightclockup > i').css('filter', 'blur(' + brightclockValue + 'px)');
-      $('#brightclockdown > i').css('filter', 'blur(' + brightclockValue + 'px)');
-			 $('span#brightclockval').text(brightclockValue + "px");        
+			$('#brightclockup > i').css('filter', 'saturate(' + brightclockValue + '%)');
+      $('#brightclockdown > i').css('filter', 'saturate(' + brightclockValue + '%)');
+			 $('span#brightclockval').text(brightclockValue + "%");        
     });
 
 }
