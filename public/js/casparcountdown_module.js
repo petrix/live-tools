@@ -7,10 +7,11 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
     };
     socket.on('cg countdown path', function(path) {
         if (casparcountdownActive || alwaysActive) {
-            if (path.length > 35) {
-                path = path.substr(0, 33) + "...";
+            var ccgPath = path.split("/").pop().replace(".mov","").replace(".mp4","");
+            if (ccgPath.length > 35) {
+                ccgPath = ccgPath.substr(0, 33) + "...";
             }
-            $(pathSelector).text(path);
+            $(pathSelector).text(ccgPath);
             // var tl = new TimelineMax({onUpdate:updateSlider});
 
 // tl.to("#vt_countdown_title", 3, {scrambleText:{text:"(path)", chars:"lowerCase", revealDelay:0.5, tweenLength:false, ease:Linear.easeNone}})

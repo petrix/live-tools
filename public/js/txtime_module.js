@@ -34,7 +34,7 @@ function txtime_module(timeSelector, titleSelector, divSelector, liveFunction) {
                 break;
             case 'off air':
                 $(titleSelector).text('OFF AIR');
-                $(divSelector).css('background', '#7e0000');
+                $(divSelector).css('background', '#550707');
                 if (liveFunction) {
                     liveFunction(false);
                 }

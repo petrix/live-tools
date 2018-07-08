@@ -10,7 +10,7 @@ function brightness_module(brightValue, brightclockValue) {
       $('span#brightval').css('filter', 'brightness(' + brightValue + '%)');
 			 $('span#brightval').text(brightValue + "%");        
     });
-         socket.on('brightness clock value', function(brightclockchanger) {
+/*         socket.on('brightness clock value', function(brightclockchanger) {
          	// updateData(true, socket.brightchanger);
 			var brightclockValue = (brightclockchanger);
 			$('#display-multi-layout').css('filter', 'saturate(' + brightclockValue + '%)');
@@ -20,5 +20,5 @@ function brightness_module(brightValue, brightclockValue) {
       $('#brightclockdown > i').css('filter', 'saturate(' + brightclockValue + '%)');
 			 $('span#brightclockval').text(brightclockValue + "%");        
     });
-
+*/
 }
