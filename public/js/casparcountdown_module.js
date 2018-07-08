@@ -8,8 +8,8 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
     socket.on('cg countdown path', function(path) {
         if (casparcountdownActive || alwaysActive) {
             var ccgPath = path.split("/").pop().replace(".mov","").replace(".mp4","");
-            if (ccgPath.length > 35) {
-                ccgPath = ccgPath.substr(0, 33) + "...";
+            if (ccgPath.length > 43) {
+                ccgPath = ccgPath.substr(0, 40) + "...";
             }
             $(pathSelector).text(ccgPath);
             // var tl = new TimelineMax({onUpdate:updateSlider});
