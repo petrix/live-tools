@@ -12,4 +12,8 @@ function refresh_module(refreshValue) {
            }
          }             
     });
+         socket.on('ip', function(ip){
+          $("span.ipaddr").text(ip);
+// console.log(ip);
+         });
 }

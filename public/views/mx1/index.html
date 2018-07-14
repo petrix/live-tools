@@ -26,7 +26,7 @@
     <script src="/js/bs/dist/js/bootstrap.min.js"></script>
 
     <!-- Socket.io -->
-    <script src="/js/socket.io.1-7-4.min.js"></script>
+    <script src="/js/socket.io.2-1-1.min.js"></script>
 
     <!-- Local Scripts -->
     <script src="/js/handshaking_module.js"></script>
@@ -40,6 +40,7 @@
     <script src="js/main.js"></script>
     <script src="/js/jquery.textfill.min.js"></script>
     <script src="/js/moment-with-locales.js"></script>
+    <!-- <script src="/js/moment-duration-format.js"></script> -->
 	<script src="/js/brightness_module.js"></script>
     <script src="/js/refresh_module.js"></script>
     <!-- <script src="/js/GaugeMeter.js"></script> -->
@@ -69,6 +70,8 @@ Time since RX: #timeRX
     <div class="footer-container" style="padding-left: 0px; padding-right: 0px;">
     <div class="btn-group">
             <button class="button" style="position:absolute; z-index:10; bottom:12px; left:12px;" onclick="localStorage.removeItem('identity'); document.location.href='/';"><span class="glyphicon glyphicon-equalizer"></span></button>
+            <button class="button" style="position:absolute; z-index:10; bottom:12px; left:72px; width: 200px;"><span class="ipaddr">ipaddress</span></button>
+            <!-- <span id="ipaddr">ipaddress</span> -->
         </div></div>
     <!-- <button class="btn btn-default" style="position:absolute; z-index:10; bottom:12px; left:12px;" onclick="localStorage.removeItem('identity'); document.location.href='/';">
         <span class="glyphicon glyphicon-log-out"></span>

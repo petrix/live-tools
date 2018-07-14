@@ -8,29 +8,19 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
             countdownFunction(time);
         }
 
-        casparcountdownActive = !data.customActive;
+        // casparcountdownActive = !data.customActive;
 
         if (data.customActive || alwaysActive) {
             // $(titleSelector).text("Director's Countdown");
             $(timeSelector).css("color", "#55dddd");
+
+
             (data.duration > 0) ? hours = Math.floor(data.duration / 3600): hours = Math.abs(Math.ceil(data.duration / 3600));
             (data.duration > 0) ? minutes = Math.floor((data.duration - hours * 3600) / 60): minutes = Math.abs(Math.ceil((data.duration - hours * 3600) / 60));
             (data.duration > 0) ? seconds = data.duration - (minutes * 60 + hours * 3600): seconds = Math.abs(data.duration - (minutes * 60 + hours * 3600));
 
-            // socket.emit('active custom status', true);
 
-            // console.log(alwaysActive + "- alWays active");     
-            // console.log(casparcountdownActive + "- casparcountdownActive");
-            // var secdot = seconds;
-            // var secdotonly;
-            // secdot = secdot.toFixed(1);
-            // secdotonly = seconds - secdot;
-            // secdotonly = secdotonly + 1;
-            // secdotonly = secdotonly.toFixed(2);
-            // seconds = seconds.toFixed(0);
-            
-// console.log('secdotonly - ' + secdotonly);
-// console.log(seconds);
+
             seconds = Math.floor(seconds);
             hours = ((hours < 10 && hours >= 0) ? "0" : "") + hours;
             minutes = ((minutes < 10 && minutes >= 0) ? "0" : "") + minutes;
@@ -41,6 +31,10 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
 
 
             $(timeSelector).text(hours + ':' + minutes + ':' + seconds);
+
+            // $(timeSelector).text(moment.unix(data.duration).format('hh:mm:ss'));
+
+            // console.log(moment.unix(data.duration).format('hh:mm:ss')); 
 
             // if (data.duration <= 15 && data.duration > 0) {
                 if (data.duration <= 15 && data.duration > 1) {

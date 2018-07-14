@@ -195,7 +195,7 @@ div.footer-container .btn-group button {
     height: 50px;
     text-align: center;
     font-size: 28px;
-    border-radius: 50% !important ;
+    border-radius: 25px !important ;
     margin-bottom: 3px;
     margin-right: 6px;
     outline: 0 !important;
@@ -208,7 +208,14 @@ div.footer-container .btn-group button.highlighted {
     background-color: #D4D5D6;
 }
 
+span.ipaddr{
 
+    /*font-family: "DS-Digital";*/
+    font-family: "Comfortaa";
+    font-weight: bold;
+    line-height: 125%;
+    font-size: 40px;
+}
 
 
 
