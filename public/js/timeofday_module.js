@@ -1,7 +1,8 @@
 function timeofday_module(clockSelector, timeFunction) {
 
     socket.on('timeofday', function(newDate) {	
-		
+		socket.emit('current time', (Math.floor(newDate / 1000)));
+        // console.log("timeofday_module - current time - " + (Math.floor(newDate / 1000)));
         var date = new Date(newDate);
         if (timeFunction !== undefined) {
             timeFunction(date);

@@ -2,8 +2,12 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
     if (typeof alwaysActive == 'undefined') {
         alwaysActive = false;
     };
-
+    socket.on('current time', function(currenttime){
+        console.log("currenttime - " + currenttime);
+    });
     socket.on('countdown', function(data) {
+        var tmpx = data.duration;
+        console.log(tmpx);
         if (countdownFunction !== undefined) {
             countdownFunction(time);
         }

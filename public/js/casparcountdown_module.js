@@ -28,10 +28,10 @@ function casparcountdown_module(timeSelector, pathSelector, alwaysActive, countd
         // setTimeout(function(){$('#vt_out_time').css('color', '#ff8f00')}, 3000);
     });
     socket.on('cg volume 1ch', function(volLeftCh){
-        $('#ccgLeftChBar').css('width', (90+volLeftCh).toFixed(5) + "%");
+        $('#ccgLeftChBar').css('width', (90+volLeftCh).toFixed(1) + "%");
         });
     socket.on('cg volume 2ch', function(volRightCh){
-        $('#ccgRightChBar').css('width', (90+volRightCh).toFixed(5) + "%");
+        $('#ccgRightChBar').css('width', (90+volRightCh).toFixed(1) + "%");
         });
 /*    socket.on('cg pfs 1ch', function(pfsLeftCh){
         $('#ccgLeftChBar').css('width', (pfsLeftCh*100).toFixed(5) + "%");
