@@ -4,6 +4,9 @@
   "bin": "index.js",
   "description": "A node.js based system providing various functionality during live broadcasts.",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/petrix/live-tools.git"
@@ -27,9 +30,6 @@
     "q": "^1.4.1",
     "redis": "^2.8.0",
     "socket.io": "^1.7.4"
-  },
-  "scripts": {
-    "pkg": "pkg index.js"
   },
   "pkg": {
     "scripts": [
