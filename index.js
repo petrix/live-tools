@@ -10,12 +10,13 @@ var http = require('http').Server(app);
 var PORT = 3000;
 
 
-var ExpressPeerServer = require('peer').ExpressPeerServer;
+
+/*var ExpressPeerServer = require('peer').ExpressPeerServer;
 var options = {
     debug: true
 }
 var PeerServer = require('peer').PeerServer;
-var server = PeerServer({port: 9000, path: '/'});
+var server = PeerServer({port: 9000, path: '/'});*/
 
 
 
