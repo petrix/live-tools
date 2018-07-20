@@ -7,7 +7,7 @@ function customcountdown_module(timeSelector, titleSelector, alwaysActive, count
     });
     socket.on('countdown', function(data) {
         var tmpx = data.duration;
-        console.log(tmpx);
+        // console.log(tmpx);
         if (countdownFunction !== undefined) {
             countdownFunction(time);
         }
