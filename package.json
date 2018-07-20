@@ -31,6 +31,14 @@
     "redis": "^2.8.0",
     "socket.io": "^1.7.4"
   },
+  "scripts": {
+    "pkg": "pkg index.js"
+  },
+  "pkg": {
+    "scripts": [
+      "lib/database/configuration.config"
+    ]
+  },
   "directories": {
     "lib": "lib"
   },
