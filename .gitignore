@@ -34,8 +34,8 @@ node_modules
 npm-debug.log
 
 # nedb connectedclients database
-lib/database/connected-clients.db
-lib/database/roles.db
+#lib/database/connected-clients.db
+#lib/database/roles.db
 
  # OS generated files #
 ######################
