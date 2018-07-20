@@ -33,9 +33,7 @@
   },
   "pkg": {
     "assets": [
-      "lib/database/configuration.config"
-      "lib/database/connected-clients.db"
-      "lib/database/role.db"
+      "lib/database/*.*"
     ]
   },
   "directories": {
