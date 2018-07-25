@@ -8,6 +8,8 @@
 	<script src="js/audiodisplay.js"></script>
 	<script src="js/recorderjs/recorder.js"></script>
 	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="/css/revealjs/reveal.css">
+		<link rel="stylesheet" href="/css/revealjs/theme/white.css">
 	<style>
 	html { overflow: hidden; }
 	body { 
@@ -54,20 +56,34 @@
 	}
 	@media (orientation: landscape) {
 		body { flex-direction: row;}
-		#controls { flex-direction: column; height: 100%; width: 10%;}
+		#controls { flex-direction: column; height: 100%; width: 20%;}
 		#viz { height: 100%; width: 90%;}
 	}
 
 	</style>
 </head>
 <body>
+	<div class="reveal">
+	<div class="slides">
+		<section data-transition="zoom">
 	<div id="viz">
 		<canvas id="analyser" width="1024" height="500"></canvas>
-		<canvas id="wavedisplay" width="1024" height="500"></canvas>
-	</div>
-	<div id="controls">
+		<div id="controls">
 		<img id="record" src="img/mic128.png" onclick="toggleRecording(this);">
-		<a id="save" href="#"><img src="img/save.svg"></a>
+			</div></div>
+</section>
+<section data-transition="zoom">
+		<canvas id="wavedisplay" width="1024" height="500"></canvas>
+<!-- <div id="controls"> -->
+<a id="save" href="#"><img src="img/save.svg"></a>
+	<!-- </div> -->
+</section>
 	</div>
+</div>
+
+	<script src="/js/reveal.js"></script>
+		<script>
+			Reveal.initialize();
+		</script>
 </body>
 </html>
