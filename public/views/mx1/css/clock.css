@@ -118,7 +118,7 @@
 .p21{
     -webkit-transform: translateX(144px) rotate(34deg);
     transform: translateX(144px) rotate(34deg);
-}  
+}
 .p22{
     -webkit-transform: translateX(144px) rotate(40deg);
     transform: translateX(144px) rotate(40deg);
@@ -404,8 +404,8 @@
     transform: translateX(137.7px)  translateY(-75px) rotate(88deg);
 }
 .p45x4{
-    -webkit-transform: translateX(218px) translateY-3.7px) rotate(178deg);
-    transform: translateX(218px) translateY(-3.2px) rotate(178deg);
+    -webkit-transform: translateX(218px) translateY(-3.7px) rotate(178deg);
+    transform: translateX(218px) translateY(-3.7px) rotate(178deg);
 }
 
 

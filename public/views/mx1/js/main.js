@@ -102,15 +102,14 @@ function updateClock(timeString) {
 
 
     for (i = 0; i < (seconds + 1); i++) {
-        $(".p" + i).css("background", "#FF8F00").css("box-shadow", "0px 0px 10px 1px #ff8f00");
+      $(".p" + i).css("background", "#FF8F00").css("box-shadow", "0px 0px 10px 1px #ff8f00");
     }
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
         $(".p" + i).css("background", "#422500").css("box-shadow", "0px 0px 5px 1px #422500");
-
     }
     for (i = 0; i < (seconds + 1); i++) {
-        $(".p" + i + "x2").css("background", "#cc1010").css("box-shadow", "0px 0px 10px 1px #cc1010");    
+        $(".p" + i + "x2").css("background", "#cc1010").css("box-shadow", "0px 0px 10px 1px #cc1010");
     }
     // clear remaining seconds
     for (i = (seconds + 1); i < 60; i++) {
@@ -131,9 +130,9 @@ function updateClock(timeString) {
     for (i = (seconds + 1); i < 60; i++) {
         $(".p" + i + "x4").css("background", "#422500").css("box-shadow", "0px 0px 5px 1px #422500");
    }
-// }    
+// }
 
-   
+
 
 
 // $("#currentdate_txt").click(function(){
@@ -151,6 +150,3 @@ $("#currentdate_txt").text(date);
 // });
 
 // moment();
-   
-    
-
